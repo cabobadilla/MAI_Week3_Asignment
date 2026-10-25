@@ -1,0 +1,13 @@
+{
+  "task": "HTTP-EXPORT-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 2,
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "source_sha256": "b8b0a4ef5fc84e1dd45af509faf56faf27618e7021d955b06a67df882e83577b",
+  "status": "integrated",
+  "app_llm_calls": false,
+  "real_env_read": false
+}

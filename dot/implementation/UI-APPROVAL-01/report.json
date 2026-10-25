@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-25T20:55:31Z",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "5dd64fd4297cf720a5f372f20a278d5c228d0cce2493c6d9310cd3cb18aa54b8",
+  "integrated": true,
+  "contract_tests": 1,
+  "browser_checks": 19,
+  "browser_errors": 0,
+  "initial": "/tmp/gwa-ui-approval-round0",
+  "repair1": "/tmp/gwa-ui-approval-repair1",
+  "repair2": "/tmp/gwa-ui-approval-repair2",
+  "remaining_repairs": 0,
+  "family_status": "approval component accepted; original export UI capability incomplete and blocked by exhausted family budget",
+  "app_llm_calls": false,
+  "native_ml": false
+}

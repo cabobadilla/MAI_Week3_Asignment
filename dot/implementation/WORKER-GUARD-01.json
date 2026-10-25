@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "51b6e1c67d9d79836685a373b7dd2d9268fb2b0870804b74830f25237769193c",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-worker-guard-round0",
+  "repair_count": 0,
+  "native_executed": false,
+  "demo_restarted": false,
+  "scope": "mandatory embedding guard before local loader; mock proof only"
+}

@@ -1,0 +1,41 @@
+// Static example only. Resolve/pin @playwright/test before use; do not npx-install implicitly.
+// Supervisor supplies immutable suite/config and output dirs outside candidate/coder writable roots.
+import { defineConfig } from '@playwright/test';
+
+const testDir = process.env.DOT_PROTECTED_SUITE;
+const out = process.env.DOT_ARTIFACTS_DIR;
+const baseURL = process.env.DOT_BASE_URL;
+if (!testDir || !out || !baseURL || !/^http:\/\/127\.0\.0\.1:\d+$/.test(baseURL)) {
+  throw new Error('Explicit protected suite, artifact directory and loopback origin are required');
+}
+
+export default defineConfig({
+  testDir,
+  outputDir: `${out}/test-results`,
+  forbidOnly: true,
+  fullyParallel: false,
+  workers: 1,
+  retries: 0,
+  timeout: 30_000,
+  globalTimeout: 300_000,
+  reporter: [
+    ['json', { outputFile: `${out}/report.json` }],
+    ['html', { outputFolder: `${out}/html`, open: 'never' }],
+  ],
+  use: {
+    baseURL,
+    browserName: 'chromium',
+    headless: true,
+    permissions: [],
+    acceptDownloads: false,
+    serviceWorkers: 'block',
+    screenshot: 'only-on-failure',
+    trace: 'retain-on-failure',
+  },
+  projects: [
+    { name: 'desktop', use: { viewport: { width: 1280, height: 800 } } },
+    { name: 'mobile', use: { viewport: { width: 375, height: 812 } } },
+  ],
+  // No webServer command from candidate package scripts, no channel/connect/persistent profile.
+  // Protected fixtures must enforce origin rules, capture logs and attach key-state screenshots.
+});

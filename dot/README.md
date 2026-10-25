@@ -1,0 +1,4 @@
+# GrowWithAI · índice vigente
+1. STATUS.md: checkpoint actual. 2. DECISIONS.md: autoridad/alcance confirmado. 3. ../docs/specs/sponsor-materials/README.md: índice canónico specs r4. 4. Tarea concreta y aceptación. 5. Evidencia spec-verification.json.
+Perfil general reutilizable PYTHON_AGENT_PROFILE.md; propuesta driver ADAPTER_PROPOSAL.md, aún no implementada. AUTH_DEFINITION.md resume auth; diseño elegido DESIGN_REVIEW.md y design-decisions/gwa-ui-v1-B-selection.json; detalles nuevos UI_SCOPE_EXTENSION.md. Mockups v1 en design/gwa-ui-v1/index.html, no prueba de aplicación.
+Harness fijado harness/manifest.json, snapshot físico sin herencia viva. DECISION_HISTORY.md es histórico; LESSONS.md observaciones/propuestas. No confundir status de app, ejecución coder y aceptación final. Sin dashboard live ni contrato de ejecución listo.

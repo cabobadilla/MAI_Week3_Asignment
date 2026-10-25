@@ -1,0 +1,14 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "d0c1749873b786b0d138c8d66f66653bcd9326d1c3b7ec1d5ab6ea5331db3179",
+  "protected_tests": 2,
+  "browser_checks": 21,
+  "errors": 0,
+  "run": "/tmp/gwa-runtime-demo-round0",
+  "repair_count": 0,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "env_read": false,
+  "scope": "usable demo organization/campaign/editor/approval/export; manualregister screens pending"
+}

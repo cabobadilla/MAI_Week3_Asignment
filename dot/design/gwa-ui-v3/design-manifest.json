@@ -1,0 +1,118 @@
+{
+  "version": "B/v3",
+  "organization_revision": 1,
+  "status": "pending_visual_approval",
+  "app_implemented": false,
+  "all_records": "fictional",
+  "files": {
+    "organizations.html": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6",
+    "tracking.html": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc",
+    "directed.html": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+  },
+  "evidence": "evidence-organizations-tracking-directed.json",
+  "screenshots": [
+    {
+      "screen": "organizations",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-desktop.png",
+      "sha256": "2b0ca87bdc91ef948ecc0dbe23eec2c0c6561b50874c5ba0150e220a645f77ec",
+      "html_sha256": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6"
+    },
+    {
+      "screen": "tracking",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-desktop.png",
+      "sha256": "854fa150e5967da020f14d9017c6a1e292a10abff25cd05b7617856288cf8cd2",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    },
+    {
+      "screen": "directed",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/directed-desktop.png",
+      "sha256": "19f81a4080ad6e789ddeb4131d4ad7ec227985d691e8d0a5f615e2211ec4a855",
+      "html_sha256": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+    },
+    {
+      "screen": "organizations",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-mobile.png",
+      "sha256": "23b825f5fef79570857409c75fcf496a023db3320c631306e27d58b95b236e69",
+      "html_sha256": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6"
+    },
+    {
+      "screen": "tracking",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-mobile.png",
+      "sha256": "79dbc4f5afceb58541924c9ec13564dd85f434e9088e0ad7e1d23c65cc2c972a",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    },
+    {
+      "screen": "directed",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/directed-mobile.png",
+      "sha256": "cbb1091b8cec04561f32063980f6feb4546517c53f599037f62bf942bb69bc22",
+      "html_sha256": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+    }
+  ],
+  "coder_runs": {
+    "runs": {
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "outcome": "response_received",
+      "server_stopped": true,
+      "elapsed_seconds_approx_from_receipt": 344.31,
+      "response_sha256": "8b7fd0ca0844085bb090aa481d2720eee11fe59caf748ca7b5c04b8e5b1b2c80"
+    },
+    "org_mockup": {
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "outcome": "response_received",
+      "server_stopped": true,
+      "elapsed_seconds_approx_from_receipt": 283.91,
+      "response_sha256": "b6654491f69574a9a09e2296e8dec574af7981a04f80d8fe0d3027e9e6c76f02"
+    },
+    "public_mockup": {
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "outcome": "response_received",
+      "server_stopped": true,
+      "elapsed_seconds_approx_from_receipt": 161.96,
+      "response_sha256": "b7a686f384aec8b15f7dec674dfda8676a65d2ebb4354ca0f034f3daf5fa19e1"
+    },
+    "directed_mockup": {
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "outcome": "response_received",
+      "server_stopped": true,
+      "elapsed_seconds_approx_from_receipt": 274.37,
+      "response_sha256": "6d7afa3de4f752f4d02f05ed8ed6148fbcfa38f489dc1a5f61c54e349488c99a"
+    },
+    "org_css_repair1": {
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "outcome": "response_received",
+      "server_stopped": true,
+      "elapsed_seconds_approx_from_receipt": 2.75,
+      "response_sha256": "07e211e6909f37142e351326d035d00e21a2327d00f6d8f79b1f53f646497712"
+    }
+  },
+  "manual_inspection": "Desktop all3 and mobile screenshots reviewed; typography defect fixed by GO exactCSSpatch",
+  "controls_note": "Preview checker corrected to allow only explicitly requested form preventDefault literal and same-file fragment anchors; no product tests/assertions altered",
+  "approval_gate": "AGENTS.md:11; functional organization UI denied and not retried",
+  "remaining": "visual approval then independent backend/API/mock integration, UI and e2e; native RAG paused"
+}

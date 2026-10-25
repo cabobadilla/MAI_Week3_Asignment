@@ -1,0 +1,13 @@
+{
+  "task": "HTTP-DEMO-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 1,
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "source_sha256": "5231ad4d3a182475153bf166779e8a50407984cf5173e63ecf1ae4b3ea704cb8",
+  "initial_output_rejected": "raw DSML command not executed",
+  "status": "integrated",
+  "app_llm_calls": false
+}

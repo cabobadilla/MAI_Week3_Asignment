@@ -1,0 +1,13 @@
+{
+  "task": "HTTP-REVIEW-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "source_sha256": "e1d1a0c1cd4e40c3ecee44a62011364eacd8bb760953cc3c616a875430632683",
+  "status": "integrated",
+  "scope": "immutable version edits; exact-current-bundle human approval; no export/send",
+  "app_llm_calls": false
+}

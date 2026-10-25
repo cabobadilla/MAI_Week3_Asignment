@@ -1,0 +1,15 @@
+{
+  "task": "RAG-ISO-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 1,
+  "mock_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "native_executed": false,
+  "native_pause_preserved": true,
+  "files": {
+    "isolated_embeddings.py": "ba740b24e3acb6c03910824de0397993a98a6c0c350f0aafbe2812c412322caa",
+    "embedding_worker.py": "8f49fdfbfaaa64515d97d40b36ee4e2d28e74b65e2f290b227167335d75997a2"
+  }
+}

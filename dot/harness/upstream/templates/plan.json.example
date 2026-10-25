@@ -1,0 +1,98 @@
+{
+  "plan_version": "4",
+  "destination": {
+    "mode": null,
+    "approved_by": null,
+    "approval_ref": null
+  },
+  "stack": {
+    "baseline": "cloudflare",
+    "local_runner": "wrangler",
+    "exception": null
+  },
+  "runtime_ai": {
+    "enabled": false,
+    "gateway": null
+  },
+  "ui": true,
+  "design": {
+    "options": [
+      {
+        "id": "A",
+        "version": "v1",
+        "assets": [
+          {
+            "path": "REPLACE_A_desktop.png",
+            "sha256": "REPLACE_SHA256",
+            "viewport": "desktop",
+            "state": "REPLACE_RELEVANT_STATE"
+          },
+          {
+            "path": "REPLACE_A_mobile.png",
+            "sha256": "REPLACE_SHA256",
+            "viewport": "mobile",
+            "state": "REPLACE_RELEVANT_STATE"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "version": "v1",
+        "assets": [
+          {
+            "path": "REPLACE_B_desktop.png",
+            "sha256": "REPLACE_SHA256",
+            "viewport": "desktop",
+            "state": "REPLACE_RELEVANT_STATE"
+          },
+          {
+            "path": "REPLACE_B_mobile.png",
+            "sha256": "REPLACE_SHA256",
+            "viewport": "mobile",
+            "state": "REPLACE_RELEVANT_STATE"
+          }
+        ]
+      }
+    ],
+    "selected": null,
+    "approved_by": null,
+    "approval_ref": null
+  },
+  "dashboard": {
+    "required": true,
+    "task_id": "DASH-01",
+    "deployment": {
+      "status": "pending",
+      "mode": "cloudflare_central",
+      "decision_ref": "user-dashboard-central-direction"
+    },
+    "observability_contract_version": "1",
+    "design": {
+      "status": "pending"
+    },
+    "auth": {
+      "status": "pending"
+    },
+    "implementation": {
+      "status": "pending"
+    }
+  },
+  "execution": {
+    "max_repairs": 2
+  },
+  "authentication": {
+    "required": true,
+    "status": "pending",
+    "approach": null,
+    "roles": [],
+    "protected_resources": [],
+    "test_ids": {
+      "unauthenticated": [],
+      "session_logout": [],
+      "authorization": []
+    },
+    "exception": null,
+    "passwords": null,
+    "password_policy": null
+  }
+}

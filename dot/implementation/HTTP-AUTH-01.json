@@ -1,0 +1,19 @@
+{
+  "task": "HTTP-AUTH-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "sha256": "3950d0d89538ff14f98dd8ee10aec6e647b00cdc9c1f6140bc9abc2babb199c7",
+  "tests_kind": "ASGI TestClient synthetic authentication, sandbox network denied",
+  "live_server_started": false,
+  "app_llm_calls": false,
+  "real_auth_integration": {
+    "passed": 1,
+    "failed": 0,
+    "password": "synthetic only",
+    "database": "temporary SQLite",
+    "session_restart_invalidated": true
+  }
+}

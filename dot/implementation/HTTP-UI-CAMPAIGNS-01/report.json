@@ -1,0 +1,13 @@
+{
+  "task": "UI-CAMPAIGNS-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "source_sha256": "6810f59bda8e7d5283d140e79271cf1058f975fd9b42ac52e7833589f53e4d46",
+  "contract_tests": 1,
+  "live_browser_checks": 10,
+  "real_http_auth_sqlite": true,
+  "automatic_generation_on_create": false,
+  "fixture_stopped": true,
+  "scope": "catalog creation/selection with QA workspace placeholder; full workspace not implemented",
+  "first_fixture_failure": "Audience/tone required fields were omitted by test; fixture completed inputs, source/assertions unchanged"
+}

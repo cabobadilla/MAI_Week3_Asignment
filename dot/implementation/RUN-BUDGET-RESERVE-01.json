@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "a1eca9ce000b4e5d4601fab52001899d4c0a2b3940484202573a6c3e68b8f71d",
+  "tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-run-budget-reserve-round0",
+  "repair_count": 0,
+  "application_llm_calls": false,
+  "user_database_touched": false,
+  "scope": "atomic pre-call reservation only; settlement and graph integration separate"
+}

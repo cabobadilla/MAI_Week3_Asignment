@@ -1,0 +1,26 @@
+{
+  "design_id": "gwa-ui-v2",
+  "status": "pending_visual_review_not_approved",
+  "source": "OpenCode GO file-map design task, distinct from product guard",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "files": {
+    "index.html": "84b3839446505d7ae28c0c6a223a87bfbe3dbfbb76e1b93bffd1e524aef61b27"
+  },
+  "app_implemented": false,
+  "library_uploaded": false,
+  "first_attempt": "timeout; own server stopped; supported session export found no complete file-map (assistant text831chars)",
+  "retry": "one reduced two-screen proposal, native tools denied",
+  "static_resource_checks": "pass",
+  "visual_browser_checks": {
+    "state": "passed",
+    "checks": 34,
+    "errors": 0,
+    "external_requests": 0,
+    "evidence": "evidence.json",
+    "scope": "prototype only, no user visual approval"
+  }
+}

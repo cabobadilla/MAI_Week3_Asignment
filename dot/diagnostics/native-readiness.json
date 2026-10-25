@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-10-25T23:16:55.295998+00:00",
+  "status": "NOT_READY_FOR_NATIVE_EXECUTION",
+  "native_imports_executed": false,
+  "llm_calls": false,
+  "credentials_read": false,
+  "source_sha256": {
+    "app/isolated_embeddings.py": "ba740b24e3acb6c03910824de0397993a98a6c0c350f0aafbe2812c412322caa",
+    "app/embedding_worker.py": "51b6e1c67d9d79836685a373b7dd2d9268fb2b0870804b74830f25237769193c",
+    "app/local_embeddings.py": "b853757cdf5b123b460a1b86a6dddcb6d3a82325810cc6932a39df16ee0e0dc2",
+    "app/retrieval.py": "5026f289fd44931466ddf4d3edaeca861a92a1ac1eed3688732a04ad0a3bd390",
+    "tests/test_isolated_embeddings.py": "3174998417fb5b1047caeb63e0fc5c4f699d753eedeca3140cc1f322b337302e",
+    "app/native_runtime_guard.py": "6f2164442259f38a51db9672c82cc3eb203df30448e10a6534b1950ca88b6f5e"
+  },
+  "mock_evidence": "dot/implementation/reports/isolated_embeddings_mock-1792968346178252000",
+  "mock_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "existing_controls": [
+    {
+      "file": "app/isolated_embeddings.py",
+      "line": 109,
+      "fact": "Fresh sys.executable -I -B worker; sanitized offline environment; timeout and owned PID response check"
+    },
+    {
+      "file": "app/embedding_worker.py",
+      "line": 170,
+      "fact": "Checks faiss sys.modules before and after loading/encoding local model"
+    },
+    {
+      "file": "app/local_embeddings.py",
+      "line": 274,
+      "fact": "SentenceTransformer CPU, local_files_only, trust_remote_code=False, token=False"
+    }
+  ],
+  "gaps": [
+    {
+      "file": "app/local_embeddings.py",
+      "gap": "Direct loader remains unguarded and ST/Transformers can require sklearn; pre-import worker guard blocks it safely but real loading not yet verified."
+    },
+    {
+      "file": "app/isolated_embeddings.py",
+      "gap": "close_fds=False and real worker output bounds still need review."
+    }
+  ],
+  "openmp_files_present_not_loaded_by_this_audit": [
+    {
+      "package_relative_path": "faiss/.dylibs/libomp.dylib",
+      "bytes": 755680,
+      "sha256": "bb055b57fe9d6867bc0c8494f71c40a9d2403f8e15b5594e551317918f38d71a"
+    },
+    {
+      "package_relative_path": "sklearn/.dylibs/libomp.dylib",
+      "bytes": 678720,
+      "sha256": "7fe04d06d824817d39e4c99ec44e837fd6b5f0f75f2cc3e77a384c298f3f1709"
+    },
+    {
+      "package_relative_path": "torch/lib/libomp.dylib",
+      "bytes": 856096,
+      "sha256": "6256bee09e93c28d71c65711cc69224d69994c6965648b628b70a22772fe98d4"
+    }
+  ],
+  "interpretation": "Distinct OpenMP copies are a static risk; this audit does not prove current co-loading or establish a fully safe native mitigation.",
+  "guard_mock_tests": {
+    "native_guard": 18,
+    "worker": 4,
+    "vector": 6
+  },
+  "integrated_receipts": [
+    "NATIVE-GUARD-01",
+    "WORKER-GUARD-01",
+    "VECTOR-GUARD-01"
+  ],
+  "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed."
+}

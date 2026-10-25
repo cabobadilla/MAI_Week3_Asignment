@@ -1,0 +1,5 @@
+# Detalles nuevos Mesa editorial · gate B v2
+Alcance funcional ya confirmado: campañas generales, empresas/contactos y seguimiento manual. Base B v1 elegida, bytes/capturas intactos; estilos/pantallas nuevas no aprobadas.
+UX implementable en ../docs/specs/sponsor-materials/ux.md. T-01 debe presentar dos variantes acotadas del detalle de seguimiento dentro del estilo B (panel lateral frente a pestaña de campaña) y aprobar opción/versión/hashes desktop/móvil antes de implementación visual. No reabrir la elección de estilo B o frontera de envío.
+Pantallas: Campañas (objetivo/audiencia/formatos/fuentes/destinos), Empresas/contactos (alta/archivo), Seguimiento (manual por destinatario o público, duplicados, notas/respuestas/próximo paso) y editor (versiones/citas/aprobación/export). Estados: vacío/carga/fallo recuperable/pregunta/no aprobado/corrección/lote/duplicado/reinicio, accesibles por teclado.
+No mockup nuevo en esta tarea, ni aprobación fabricada. Specs sí se redactan completas; el gate visual acota la futura tarea UI, no bloquea documentos/backend/fixtures. No construir organizaciones beneficiarias/CRM/sender.

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1",
+  "project_id": "example-project",
+  "event_id": "event-000001",
+  "seq": 1,
+  "timestamp_utc": "2026-01-01T00:00:00Z",
+  "run_id": null,
+  "task_id": "DASH-01",
+  "round": null,
+  "stage": "planning",
+  "type": "decision_pending",
+  "actor": {
+    "role": "coordinator",
+    "id": "local-executor"
+  },
+  "state": "pending",
+  "agent": null,
+  "execution_mode": "human",
+  "model": {
+    "requested": null,
+    "effective": null,
+    "status": "not_applicable"
+  },
+  "last_heartbeat_utc": null,
+  "base_sha": null,
+  "candidate_sha": null,
+  "contract_sha256": null,
+  "gate_manifest_sha256": null,
+  "tests": {
+    "expected": null,
+    "executed": null,
+    "passed": null,
+    "failed": null,
+    "skipped": null,
+    "not_run": null,
+    "phase": null
+  },
+  "cost": {
+    "value": null,
+    "currency": null,
+    "source": "unknown",
+    "kind": "unknown"
+  },
+  "decisions_pending": [
+    {
+      "id": "dashboard-ui-auth",
+      "kind": "design",
+      "reference_id": "dashboard-central-direction"
+    }
+  ],
+  "artifacts": []
+}

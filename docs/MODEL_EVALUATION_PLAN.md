@@ -1,0 +1,12 @@
+# Modelo de app y evaluación posterior
+Decisión humana Sentinel_998e1fefe2248191b30a4466a676b7a6: qwen/qwen3.8-flash por OpenRouter, configurable por APP_LLM_MODEL. Coder sigue opencode-go/deepseek-v4.1-flash; embeddings son MiniLM local. Ejemplo actualizado, .env real no leído/modificado. APP_LLM_ENABLED=false; construcción con mocks. Elegir modelo no autoriza evaluación paga amplia ni transmisión de documentos/contactos.
+
+## Flujo y tokens estimados, aún no medidos
+Ruta propuesta normal: una llamada de generación de suite (LinkedIn/email/artículo/3anuncios) y una de revisión,2solicitudes. RAG/historial local no suma llamadas OpenRouter. Una revisión material puede añadir regeneración+revisión; hasta dos ciclos de revisión:6llamadas exitosas, con techo global8intentosHTTP incluyendo retries. Fuente faltante/pregunta puede pausar sin llamada; no bucles autónomos.
+Estimación de planificación por suite normal: generación entrada3–5mil/salida1,5–3mil tokens; revisión entrada5–9mil/salida0,3–1mil. Total orientativo8–14mil de entrada y1,8–4mil de salida, dependiente del historial/formatos/JSON. No son mediciones ni garantía de coste. Precio se aplica al proveedor efectivo; presupuesto económico lo controla usuario en la API key.
+Controles configurados: input<=12000/request, output<=4096/request, total por run64000 e intentos<=8/retries<=2. Reservas conservadoras, detener antes de superar plan; coste/usage ausente=unknown, no0. Verificar compatibilidad con modelo/tokenización antes de llamadas reales. Un tope local no garantiza corte económico del proveedor.
+
+## Evaluación reproducible posterior
+Preparar fixtures SINTÉTICOS versionados: hechos citables, precio/fecha faltantes, alianza no confirmada, certificado propio frente a propuesta futura, historia repetida e instrucción maliciosa en texto histórico. Mismo fixture/prompt/parametros por modelo; registrar versiones/hashes, modelo efectivo, latencia, usage reportado y coste reportado/unknown, sin Authorization/key/prompt crudo/contactos.
+Criterios: fidelidad a fuente y ausencia de hechos inventados; español claro, cuatro formatos adecuados; citas válidas; preguntas ante faltantes/contradicciones; repetición como aviso; JSON/longitudes y fallo recuperable. Comparar coste/latencia solo después de verificar esos criterios. No declarar determinismo por temperatura0 ni calidad por un happy path.
+Estado: plan documental, sin llamadas reales ni dataset ejecutado. Smoke futuro solo mínimo sintético y alcance claro, tras estabilizar runtime y autorizarlo; no todos los documentos.

@@ -1,0 +1,15 @@
+{
+  "task": "HTTP-ORG-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 1,
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "source_sha256": "60b759b982b7d62b280e8b3d8fa21ec5f0c7775a3ca5503c1269e8a1289c569c",
+  "initial_output_rejected": "DSML text; command not executed",
+  "real_env_read": false,
+  "user_database_touched": false,
+  "status": "integrated",
+  "control_update": "AGENTS modification rejected and not executed; approval retained in design decision file; no retry of control edit"
+}

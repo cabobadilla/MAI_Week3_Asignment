@@ -1,0 +1,18 @@
+{
+  "id": "ARCH-DEC-01",
+  "state": "proposal_registered",
+  "canonical_files": {
+    "dot/backlog/ARCH-DEC-01.md": "d5173c5282355917325685b35002050ca9aa6ce5b139066ebe46beec491e67fe",
+    "lecciones/growwithai-architecture-decisions-20261025.md": "707b2db955ba50993a447c8224ab794bc192bbc2ef6afd5c15ddb47b908c2ba8"
+  },
+  "consumer_file": "dot/architecture-placement-lesson-20261025.md",
+  "unrelated_files_unchanged": {
+    "dot/README.md": "2ef18a57a080844add5b28f18042fa286ede4207f4803e152647585e1befc15f",
+    "dot/plan-dos-macs.md": "1756ad0094ba8dd5952fa8677919fb5525dc27c4edc2d403d04e4b180d4368ca"
+  },
+  "runtime_shared_changed": false,
+  "version_pin_changed": false,
+  "commit_push": false,
+  "future_cloud_multiuser_documented": true,
+  "architecture_kept_current": true
+}

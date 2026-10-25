@@ -1,0 +1,26 @@
+{
+  "task": "T-03",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 0,
+  "tests": {
+    "passed": 18,
+    "failed": 0,
+    "suite_sha256": "90549f4039e4f3a272491b53d6fd063ef1257ed94d47156cfb474c68a49705f8"
+  },
+  "files": {
+    "app/storage.py": "d5eb3d678431a82f97dfe7a53c00524fe5e8b1df5a7ecc5599674613c6dec952",
+    "app/companies.py": "fac9c73d55362224e102b9910b3e5b2fe371a35efa3ad83e4bbd11de0ef377cb",
+    "app/migrations/001_initial.sql": "4f15d8692d3e710fbdc3ac49c6c1e3d678c0afcf2e0e29f7f01c6574f5afdb67"
+  },
+  "migration_origin": "approved schema reference, identical bytes; application logic authored by GO",
+  "initial_runner_issue": "snapshot omitted accepted app.config dependency; fixed snapshot only, no GO code/test assertions changed",
+  "real_user_db_created": false,
+  "app_llm_calls": false,
+  "native_tools": "all_denied",
+  "server_stopped": true
+}

@@ -1,0 +1,25 @@
+{
+  "task": "AUTH-BACKEND",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "tests": {
+    "passed": 13,
+    "failed": 0,
+    "suite_sha256": "3bf38e0bbfac86a6d8300a512e8c5d65f11d3ab868d26de4d30a7842a5d9d802"
+  },
+  "files": {
+    "app/auth.py": "2c4dac30ef167eb494095ca6eb913b73bb46ae4f858d8980eef4420b4533fdec"
+  },
+  "real_password_provisioned": false,
+  "limitations": [
+    "no HTTP/session cookie/CSRF route tests yet",
+    "no UI/password provisioning screen implemented"
+  ],
+  "native_tools": "all_denied",
+  "app_llm_calls": false,
+  "server_stopped": true
+}

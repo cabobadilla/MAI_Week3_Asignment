@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "3377097c2da8ab1059aa6a99f2b25124d197113d42f571c44061516f85429941",
+  "tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-llm-client-round0",
+  "repair_count": 0,
+  "application_llm_calls": false,
+  "demo_restarted": false,
+  "scope": "OpenRouter single-request adapter, bounded input/output, safe errors; HTTP mock tests only; no run budget graph yet"
+}

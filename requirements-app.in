@@ -1,0 +1,18 @@
+# Candidatas r4, NO instaladas ni lock validado. Resolver versiones/hashes en T-02.
+fastapi
+uvicorn
+jinja2
+python-multipart
+argon2-cffi
+langchain
+langchain-openai
+langgraph
+langgraph-checkpoint-sqlite
+faiss-cpu
+sentence-transformers
+python-docx
+beautifulsoup4
+python-dotenv
+pytest
+ruff
+httpx

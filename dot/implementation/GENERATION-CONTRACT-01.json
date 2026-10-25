@@ -1,0 +1,16 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "6a2172f13cedece95af15b51ef2b3287b7a5881f32e6878e8a320308a201abf0",
+  "tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-generation-contract-round0",
+  "initial_result": "wrong envelope rejected without execution",
+  "repair1": "/tmp/gwa-generation-contract-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "application_llm_calls": false,
+  "scope": "generator prompt/schema only; not a completed generation workflow"
+}

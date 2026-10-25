@@ -1,0 +1,15 @@
+{
+  "task": "UI-ORG-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "source_sha256": "b32ded3f3a18548a009ded073cb07411074e8d481616492d2b24853e15690016",
+  "contract_tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "browser_behavior_checks": 7,
+  "network_attempts": 0,
+  "real_backend": false,
+  "approval": "dot/design/gwa-ui-v3/decision.json",
+  "status": "integrated; live route integration pending"
+}

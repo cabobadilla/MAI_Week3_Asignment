@@ -1,0 +1,19 @@
+{
+  "manifest_version": "1",
+  "status": "draft",
+  "source_mode": "local-snapshot",
+  "source_version": "0.9.0-pilot",
+  "source_git_sha": null,
+  "source_package_sha256": "REPLACE_WITH_PACKAGE_DIGEST",
+  "consumer_project": "REPLACE_WITH_PROJECT_ID",
+  "copies": [
+    {
+      "source": "templates/tarea.md",
+      "destination": "dot/harness/tarea.md",
+      "sha256": "REPLACE_WITH_COPIED_BYTES_DIGEST"
+    }
+  ],
+  "overrides": [],
+  "spend_authorized": false,
+  "authorization_ref": null
+}

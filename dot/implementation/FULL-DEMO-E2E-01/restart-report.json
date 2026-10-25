@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "saved password works after owned process restart",
+    "organizations campaigns publications email records and notes survive restart",
+    "all six frozen export downloads retain exact SHA after restart"
+  ],
+  "errors": [],
+  "blocked": [],
+  "owned_process_restart": true,
+  "synthetic_data_only": true,
+  "app_llm_calls": false,
+  "native_ml": false
+}

@@ -1,0 +1,18 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "excerpts": [
+    {
+      "path": "/tmp/gwa-ui-approval-repair1-prompt.txt",
+      "sha256": "6bf803a5797b50b06440da643b94a3d23ee80885fd85d65056a79b16ca6867ca",
+      "literal_excerpt": "Reduce scope to APPROVALONLY; export isreservednextrepair/subunit, notacounterreset."
+    },
+    {
+      "path": "/tmp/gwa-ui-approval-repair2-prompt.txt",
+      "sha256": "3eff20d4eac6dd7dd963a6ee538e49296f9dab00fc7753d7ab8f1b06e33ef977",
+      "literal_excerpt": "Correct ONLY listener target to document."
+    }
+  ],
+  "note": "Earlier human-readable spacing was a paraphrase, not byte-exact quote. Use these verified exact excerpts.",
+  "recommended_clean_literal": "Reduce scope to APPROVALONLY",
+  "human_approval_literal_exact": "NeverapproveonGET/events/edit; checkbox+clickrequired."
+}

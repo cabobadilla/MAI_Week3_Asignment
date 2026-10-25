@@ -1,0 +1,256 @@
+{
+  "timestamp": "2026-10-25T23:31:10.010877+00:00",
+  "go_active_calls": 0,
+  "owned_go_servers_stopped": true,
+  "approval_B_v3": "approved; no user permission pending",
+  "completed_this_turn": {
+    "HTTP_EXPORT": "finalrepair2 integrated8/8",
+    "NOTE_ID": "existingoutputapplied+integrated32/32"
+  },
+  "workspace": {
+    "integrated": true,
+    "browser_checks": 16
+  },
+  "next": [
+    "validate retrieval/checkpoint/human interrupt graph with mocks",
+    "reviewer contract",
+    "durable LLM execution",
+    "connect generator/reviewer and bounded real test"
+  ],
+  "prepared": {
+    "public_api_prompt": "/tmp/gwa-web-publications-prompt.txt",
+    "public_api_tests": "/tmp/gwa-sandbox-control/test_web_publications.py",
+    "recipients_prompt": "/tmp/gwa-web-recipients-prompt.txt",
+    "live_qa_launcher": "/tmp/gwa-run-live-catalog.py",
+    "live_qa_server": "/tmp/gwa-sandbox-control/catalog_live_fixture.py",
+    "live_qa_browser": "/tmp/gwa-test-live-catalog.cjs"
+  },
+  "last_integrated_from_prior": {
+    "UIcampaign": "1contract+10realbrowser checks; app/ui_campaigns.py",
+    "demo_generation": "repair1 14/14",
+    "HTTPdemo": "repair1 5/5",
+    "HTTPreview": "10/10",
+    "UIshell": "repair1 1contract+8realbrowser checks"
+  },
+  "no_real_Qwen": true,
+  "native_RAG_paused": true,
+  "env_real_read": false,
+  "full_app_e2e": false,
+  "permission_blocker": null,
+  "approval": {
+    "timestamp": "2026-10-25T20:55:31Z",
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "5dd64fd4297cf720a5f372f20a278d5c228d0cce2493c6d9310cd3cb18aa54b8",
+    "integrated": true,
+    "contract_tests": 1,
+    "browser_checks": 19,
+    "browser_errors": 0,
+    "initial": "/tmp/gwa-ui-approval-round0",
+    "repair1": "/tmp/gwa-ui-approval-repair1",
+    "repair2": "/tmp/gwa-ui-approval-repair2",
+    "remaining_repairs": 0,
+    "family_status": "accepted; export passed after single explicitly authorized exception",
+    "app_llm_calls": false,
+    "native_ml": false
+  },
+  "app_full_e2e": false,
+  "publication_writer": {
+    "timestamp": "2026-10-25T20:58:01Z",
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "run": "/tmp/gwa-web-publication-write-round0",
+    "scope": "POST manual publication record only; no read/reaction/correction/send",
+    "source_sha256": "c92a2d183e4ebd4c91e5254282ca5fa750c43df8f20bcdc4d4396291a5fd7079",
+    "tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "guard": "passed",
+    "integrated": true,
+    "repair_count": 0,
+    "server_stopped": true
+  },
+  "blockers": {},
+  "export_ui": {
+    "timestamp": "2026-10-25T21:08:38Z",
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "0e82ab502d27f579897b036423b89a5f1a9adcfba00e8a5014218d1f1486c6e3",
+    "integrated": true,
+    "contract_tests": 1,
+    "browser_checks": 21,
+    "errors": 0,
+    "run": "/tmp/gwa-ui-export-exception1",
+    "parent_family": "UI-APPROVAL-01",
+    "explicit_exception_user": "Sentinel_e1b47c169e808191a9d4bd8f8aab65eb",
+    "remaining_exception_rounds": 0,
+    "fixture_correction": "QA outputroot resolved to physical /private/tmp; product symlink refusal and frozen browser tests unchanged",
+    "app_llm_calls": false,
+    "native_ml": false
+  },
+  "directed_writer": "integrated6/6",
+  "runtime": "finalDEMO runninglocalhost8501 exec85026; noreset",
+  "current_demo_url": "http://127.0.0.1:8501",
+  "user_data_rule": "Do not run QA or reset user data/demo; use separate temporary DB",
+  "report_docx": {
+    "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/GrowWithAI_Project_Report_EN.docx",
+    "bytes": 38924,
+    "sha256": "a1407faa3523f3f1c5166f70d5c5e40c1dfe580e34c12a74a430a3beb015763e"
+  },
+  "public_ui": "integrated1contract+24browser checks",
+  "runtime_public": "incorporated in running final runtime",
+  "recipient_writer": "integrated6/6 afterrepair1",
+  "thread_reader": {
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "integrated": true,
+    "source_sha256": "b251d7b80a4d9e4719a5e1ae28c2fbbaca38ab5028329ccd71c102cbf4a5cced",
+    "tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-web-thread-read-round0",
+    "repair1": "/tmp/gwa-web-thread-read-repair1",
+    "repair_count": 1,
+    "remaining_repairs": 1,
+    "scope": "readonly organization thread, exact versions, archivedcontacts, correctionhistory, untrustedtexts"
+  },
+  "directed_view": "integrated3/3",
+  "active_go": {
+    "unit": "RETRIEVAL-GRAPH-01",
+    "run": "/tmp/gwa-agent-retrieval-graph-round0",
+    "exec_session": 7556,
+    "maximum_round_seconds": 600
+  },
+  "directed_context_ui": "integrated;28browserchecks",
+  "directed_record_ui": "integrated;finalrepair2accepted33checks;remainingrepairs0",
+  "directed_note_ui": "integrated;repair1accepted33checks",
+  "completion_checkpoint": {
+    "timestamp": "2026-10-25T22:51:38Z",
+    "phase": "reconnected reconciliation complete; real AI readiness review",
+    "go_active_calls": 0,
+    "owned_go_servers_stopped": true,
+    "demo": {
+      "timestamp": "2026-10-25T22:46:33Z",
+      "url": "http://127.0.0.1:8501",
+      "exec_session_id": 85026,
+      "previous_exec_session_id": 86618,
+      "previous_pid_stopped": 28292,
+      "health": {
+        "status": "ok",
+        "mode": "demo",
+        "generation": "simulated"
+      },
+      "updated_directed_controls_present": true,
+      "user_tables_preserved": true,
+      "database_integrity": "ok",
+      "password_modified_by_agent": false,
+      "secret_values_read": false,
+      "app_llm_calls": false,
+      "native_ml": false,
+      "runtime_sha256": "87052175d8e900adbdc08670307286b54532aaaa903d1eaa8f181ab551e0cdc3",
+      "reconnected_health": {
+        "status": "ok",
+        "mode": "demo",
+        "generation": "simulated"
+      },
+      "reconnected_exec_session_id": 85026,
+      "updated_controls_verified": true,
+      "previous_process_not_listening": true,
+      "previous_verified_timestamp": "2026-10-25T22:02:55Z",
+      "previous_session_after_disconnect": 20074
+    },
+    "app_code_snapshot_match_files": 41,
+    "database_integrity": "ok",
+    "checks_previously_passed_unchanged_app": {
+      "http_ui_tests": 90,
+      "browser_workflow": 33,
+      "owned_QA_restart": 3
+    },
+    "app_llm_calls": false,
+    "env_real_read": false,
+    "native_rag_executed_on_reconnect": false,
+    "demo_end_to_end": true,
+    "real_agent_complete": false,
+    "uncertain_write_reconciled": "Finalwrite did not execute; stale three checkpoints replaced from verified receipts",
+    "backup": "/tmp/gwa-checkpoint-reconcile-1792968393211888000",
+    "remaining": [
+      "pre-import/runtime isolation guards and native-only smoke prerequisites",
+      "real RAG/history selector and LangGraph generation/review with bounded budgets and persistence",
+      "OpenRouter Qwen configurable client and mocked evaluations before any real call",
+      "manual distribution correction HTTP/UI using existing append-only domain service",
+      "DASH-01 separate portal metadata task"
+    ],
+    "next": "Document and prepare fail-closed synthetic native probe; do not execute it or call Qwen yet",
+    "readiness_plan": "docs/IA_REAL_READINESS.md",
+    "native_audit": "dot/diagnostics/native-readiness.json",
+    "native_probe": "dot/diagnostics/native-smoke-proposal.json",
+    "native_probe_status": "PREPARED_NOT_READY_NOT_EXECUTED",
+    "mock_isolation_tests": {
+      "passed": 11,
+      "failed": 0
+    },
+    "native_blocker": "Pre-import/opposing-stack and transitive OpenMP guards not implemented/reviewed; do not run native smoke yet"
+  },
+  "readiness_plan": "docs/IA_REAL_READINESS.md",
+  "native_probe_status": "PREPARED_NOT_READY_NOT_EXECUTED",
+  "latest_checkpoint": {
+    "timestamp": "2026-10-25T23:16:55.295998+00:00",
+    "phase": "real-agent implementation with mock-only validation",
+    "active_go": {
+      "unit": "RUN-BUDGET-RESERVE-01",
+      "run": "/tmp/gwa-run-budget-reserve-round0",
+      "exec_session": 67113,
+      "maximum_round_seconds": 600
+    },
+    "guard_tests": {
+      "native_guard": 18,
+      "worker": 4,
+      "vector": 6
+    },
+    "client_mock_tests": 18,
+    "integrated_receipts": [
+      "NATIVE-GUARD-01",
+      "WORKER-GUARD-01",
+      "VECTOR-GUARD-01",
+      "LLM-CLIENT-01"
+    ],
+    "demo_user_active": true,
+    "demo_restarted": false,
+    "real_agent_complete": false,
+    "native_execution": false,
+    "application_llm_calls": false,
+    "credentials_read": false,
+    "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed.",
+    "next": [
+      "validate atomic call reservation",
+      "history context selection",
+      "persistent generation/review graph with mocks",
+      "bounded real evaluation separately authorized"
+    ]
+  },
+  "real_agent_complete": false,
+  "demo_end_to_end": true,
+  "reservation_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "trial_authorized_usd_max": "0.10",
+  "application_llm_calls": false,
+  "native_execution": false,
+  "demo_restarted": false,
+  "history_context": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "a03d17708f49855335a9d17f2c6f0f046c9347a1b324c41d06b274284fe526d3",
+    "tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-history-context-round0",
+    "repair1": "/tmp/gwa-history-context-repair1",
+    "repair2": "/tmp/gwa-history-context-repair2",
+    "repair_count": 2,
+    "remaining_repairs": 0,
+    "application_llm_calls": false,
+    "scope": "read-only explicit-campaign history, current corrections, bounded untrusted data; no LLM quality claim"
+  },
+  "generation_contract": "integrated12/12"
+}

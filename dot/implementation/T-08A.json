@@ -1,0 +1,30 @@
+{
+  "task": "T-08A",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 0,
+  "tests": {
+    "passed": 25,
+    "failed": 0,
+    "suite_sha256": "9c062d5014b8355074d12380290c5fd52fa3e79f80ec347468116abca896e9f9"
+  },
+  "files": {
+    "app/distribution.py": "2217bd449413cb4f5297fdd284c877432e50d88260794eebbdcada281163f92c"
+  },
+  "response_sha256": "17f112a38ae901f10ee4b91a135fff274d609e09b2c1263ca6bb877ffa3738b2",
+  "diff_scope": "exact one new product file",
+  "app_llm_calls": false,
+  "sending": false,
+  "native_tools": "all_denied",
+  "server_stopped": true,
+  "fixture_correction": {
+    "initial": "24 passed; one fixture INSERT referenced nonexistent company.updated_at before invoking candidate",
+    "change": "Removed that nonexistent field/value from fixture only to match approved DDL. Same product bytes and atomicity assertions.",
+    "result": "25 passed; includes two concurrent clicks and nested transaction failure rollback"
+  },
+  "limits": "service/API only; no browser declaration or actual external delivery verified"
+}

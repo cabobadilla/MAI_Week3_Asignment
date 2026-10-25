@@ -1,0 +1,17 @@
+{
+  "task": "DEMO-GEN-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 1,
+  "tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "source_sha256": "6e514e0ff45423dc00dedebf038b15e60ea21d19508b8abd0d7dddb32092c47c",
+  "request_duration_approx_seconds": 591.69,
+  "server_stopped": true,
+  "app_llm_calls": false,
+  "native_ml_loaded": false,
+  "source_kind": "synthetic fixture; not real RAG",
+  "status": "integrated corrected; HTTP/UI integration pending",
+  "audit": "Initial12passed; new DB-denied-history test failed; exactSQL onefunction repair byGO; all14pass"
+}

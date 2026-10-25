@@ -1,0 +1,215 @@
+{
+  "pid": 98703,
+  "captureTime": "2026-10-25 13:54:08.6264 -0300",
+  "exception": {
+    "codes": "0x0000000000000001, 0x0000000000000008",
+    "rawCodes": [
+      1,
+      8
+    ],
+    "type": "EXC_BAD_ACCESS",
+    "signal": "SIGSEGV",
+    "subtype": "KERN_INVALID_ADDRESS at 0x0000000000000008"
+  },
+  "fault_thread": 5,
+  "frames": [
+    {
+      "image": "libomp.dylib",
+      "symbol": "void __kmp_suspend_64<false, true>(int, kmp_flag_64<false, true>*)",
+      "sourceFile": null
+    },
+    {
+      "image": "libomp.dylib",
+      "symbol": "kmp_flag_64<false, true>::wait(kmp_info*, int, void*)",
+      "sourceFile": null
+    },
+    {
+      "image": "libomp.dylib",
+      "symbol": "__kmp_hyper_barrier_release(barrier_type, kmp_info*, int, int, int, void*)",
+      "sourceFile": null
+    },
+    {
+      "image": "libomp.dylib",
+      "symbol": "__kmp_fork_barrier(int, int)",
+      "sourceFile": null
+    },
+    {
+      "image": "libomp.dylib",
+      "symbol": "__kmp_launch_thread",
+      "sourceFile": null
+    },
+    {
+      "image": "libomp.dylib",
+      "symbol": "__kmp_launch_worker(void*)",
+      "sourceFile": null
+    },
+    {
+      "image": "libsystem_pthread.dylib",
+      "symbol": "_pthread_start",
+      "sourceFile": null
+    },
+    {
+      "image": "libsystem_pthread.dylib",
+      "symbol": "thread_start",
+      "sourceFile": null
+    }
+  ],
+  "relevant_images": [
+    {
+      "name": "_swigfaiss.abi3.so",
+      "path": "/Users/USER/*/_swigfaiss.abi3.so"
+    },
+    {
+      "name": "libfaiss.dylib",
+      "path": "/Users/USER/*/libfaiss.dylib"
+    },
+    {
+      "name": "libomp.dylib",
+      "path": "/Users/USER/*/libomp.dylib"
+    },
+    {
+      "name": "libtorch_global_deps.dylib",
+      "path": "/Users/USER/*/libtorch_global_deps.dylib"
+    },
+    {
+      "name": "libtorch_python.dylib",
+      "path": "/Users/USER/*/libtorch_python.dylib"
+    },
+    {
+      "name": "libtorch.dylib",
+      "path": "/Users/USER/*/libtorch.dylib"
+    },
+    {
+      "name": "libtorch_cpu.dylib",
+      "path": "/Users/USER/*/libtorch_cpu.dylib"
+    },
+    {
+      "name": "libomp.dylib",
+      "path": "/Users/USER/*/libomp.dylib"
+    },
+    {
+      "name": "_decomp_lu_cython.cpython-311-darwin.so",
+      "path": "/Users/USER/*/_decomp_lu_cython.cpython-311-darwin.so"
+    },
+    {
+      "name": "_decomp_update.cpython-311-darwin.so",
+      "path": "/Users/USER/*/_decomp_update.cpython-311-darwin.so"
+    },
+    {
+      "name": "_decomp_interpolative.cpython-311-darwin.so",
+      "path": "/Users/USER/*/_decomp_interpolative.cpython-311-darwin.so"
+    },
+    {
+      "name": "libomp.dylib",
+      "path": "/Users/USER/*/libomp.dylib"
+    },
+    {
+      "name": "_middle_term_computer.cpython-311-darwin.so",
+      "path": "/Users/USER/*/_middle_term_computer.cpython-311-darwin.so"
+    }
+  ],
+  "controlled_followup": {
+    "exit_code": 134,
+    "error": "OpenMP error15 multiple runtime copies initialized",
+    "single_thread_not_sufficient": true,
+    "unsafe_override_used": false
+  },
+  "initial_test": {
+    "script": "check_real_rag.py",
+    "pid": 98703,
+    "exit_code": 139,
+    "scope": "isolated reference snapshot only; no app/env/key read"
+  },
+  "recovery_plan": "process-isolate embedding runtime from FAISS; no global library/security changes",
+  "second_crash": [
+    {
+      "report_file": "/Users/bobadillachristian/Library/Logs/DiagnosticReports/Python-2026-10-25-135907.ips",
+      "pid": 99473,
+      "captureTime": "2026-10-25 13:59:06.8943 -0300",
+      "exception": {
+        "codes": "0x0000000000000000, 0x0000000000000000",
+        "rawCodes": [
+          0,
+          0
+        ],
+        "type": "EXC_CRASH",
+        "signal": "SIGABRT"
+      },
+      "termination": {
+        "flags": 0,
+        "code": 6,
+        "namespace": "SIGNAL",
+        "indicator": "Abort trap: 6",
+        "byProc": "Python",
+        "byPid": 99473
+      },
+      "frames": [
+        {
+          "image": "libsystem_kernel.dylib",
+          "symbol": "__pthread_kill"
+        },
+        {
+          "image": "libsystem_pthread.dylib",
+          "symbol": "pthread_kill"
+        },
+        {
+          "image": "libsystem_c.dylib",
+          "symbol": "abort"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "__kmp_abort_process"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "__kmp_fatal"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "__kmp_register_library_startup()"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "__kmp_do_serial_initialize()"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "__kmp_get_global_thread_id_reg"
+        },
+        {
+          "image": "libomp.dylib",
+          "symbol": "omp_set_num_threads"
+        },
+        {
+          "image": "_swigfaiss.abi3.so",
+          "symbol": null
+        },
+        {
+          "image": "Python",
+          "symbol": "cfunction_vectorcall_O"
+        },
+        {
+          "image": "Python",
+          "symbol": "_PyEval_EvalFrameDefault"
+        },
+        {
+          "image": "Python",
+          "symbol": "PyEval_EvalCode"
+        },
+        {
+          "image": "Python",
+          "symbol": "run_eval_code_obj"
+        }
+      ]
+    }
+  ],
+  "native_reproduction_suspended": true,
+  "native_reproduction_suspended_by": "Sentinel_fa78c22a9364819183af359b043d3e92 / parent priority",
+  "mitigation_proposal": {
+    "design": "embedding in owned isolated process, FAISS parent; no shared loaded Torch/FAISS OpenMP runtimes",
+    "implemented": false,
+    "executed": false,
+    "unsafe_duplicate_runtime_override": false,
+    "global_libraries_changed": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "task": "HTTP-CAMPAIGNS-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "source_sha256": "d2dd11ec6972fe5fcc42f66ae239eb59ecf5c424a127ca013d53d90f5d3946a2",
+  "real_env_read": false,
+  "user_database_touched": false,
+  "status": "integrated"
+}

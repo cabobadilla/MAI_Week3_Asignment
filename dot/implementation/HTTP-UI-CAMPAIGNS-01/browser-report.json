@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "real password setup and HTTP login",
+    "cookie inaccessible to JS",
+    "organization created through real UI/API/SQLite",
+    "reload preserves authenticated saved organization",
+    "real CSRF rejection without data write",
+    "campaign brief created through real UI/API; no automatic generation",
+    "persisted campaign selection opens workspace",
+    "live mobile layout",
+    "logout failure visible; no false signed-out state",
+    "logout invalidates real session"
+  ],
+  "errors": [],
+  "blocked": [],
+  "real_http": true,
+  "real_sqlite": true,
+  "real_auth": true,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "scope": "catalog vertical only; not full campaign workflow"
+}

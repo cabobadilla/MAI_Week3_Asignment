@@ -1,0 +1,9 @@
+{
+  "branch": "main",
+  "origin_matches_original": true,
+  "status_entries": 14,
+  "env_ignored": true,
+  "virtualenv_ignored": true,
+  "env_not_tracked": true,
+  "commits_push_deploy_performed_by_agent": false
+}

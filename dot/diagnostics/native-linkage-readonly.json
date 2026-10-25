@@ -1,0 +1,64 @@
+{
+  "method": "otool -L metadata only; no target libraries loaded",
+  "native_stack_executed": false,
+  "binaries": [
+    {
+      "binary": "faiss/_swigfaiss.abi3.so",
+      "exit": 0,
+      "dependencies": [
+        "\t@rpath/_swigfaiss.abi3.so (compatibility version 0.0.0, current version 0.0.0)",
+        "\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 343.19.0)",
+        "\t/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit (compatibility version 1.0.0, current version 165.2.0)",
+        "\t/System/Library/Frameworks/MetalPerformanceShaders.framework/Versions/A/MetalPerformanceShaders (compatibility version 1.0.0, current version 127.5.2)",
+        "\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 2503.1.0)",
+        "\t@loader_path/libfaiss.dylib (compatibility version 0.0.0, current version 0.0.0)",
+        "\t@loader_path/.dylibs/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)",
+        "\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 1700.255.5)",
+        "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1345.120.2)",
+        "\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 2503.1.0)"
+      ],
+      "stderr": ""
+    },
+    {
+      "binary": "faiss/libfaiss.dylib",
+      "exit": 0,
+      "dependencies": [
+        "\t@rpath/libfaiss.dylib (compatibility version 0.0.0, current version 0.0.0)",
+        "\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)",
+        "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1345.120.2)",
+        "\t@loader_path/.dylibs/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)",
+        "\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 1700.255.5)"
+      ],
+      "stderr": ""
+    },
+    {
+      "binary": "torch/lib/libtorch_cpu.dylib",
+      "exit": 0,
+      "dependencies": [
+        "\t@rpath/libtorch_cpu.dylib (compatibility version 0.0.0, current version 0.0.0)",
+        "\t/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation (compatibility version 300.0.0, current version 5026.5.4, weak)",
+        "\t/System/Library/Frameworks/MetalPerformanceShaders.framework/Versions/A/MetalPerformanceShaders (compatibility version 1.0.0, current version 129.5.1, weak)",
+        "\t/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/Versions/A/MetalPerformanceShadersGraph (compatibility version 1.0.0, current version 1.0.0, weak)",
+        "\t/System/Library/Frameworks/Metal.framework/Versions/A/Metal (compatibility version 1.0.0, current version 373.2.0, weak)",
+        "\t/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (compatibility version 1.0.0, current version 275.0.0, weak)",
+        "\t@loader_path/libc10.dylib (compatibility version 0.0.0, current version 0.0.0)",
+        "\t/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)",
+        "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)",
+        "\t@loader_path/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)",
+        "\t/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation (compatibility version 150.0.0, current version 5026.5.4)",
+        "\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)",
+        "\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0, weak)"
+      ],
+      "stderr": ""
+    },
+    {
+      "binary": "sklearn/utils/_openmp_helpers.cpython-311-darwin.so",
+      "exit": 0,
+      "dependencies": [
+        "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1345.120.2)",
+        "\t@loader_path/../.dylibs/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)"
+      ],
+      "stderr": ""
+    }
+  ]
+}

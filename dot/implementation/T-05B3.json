@@ -1,0 +1,36 @@
+{
+  "task": "T-05B3",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 1,
+  "initial_tests": {
+    "passed": 9,
+    "failed": 1,
+    "reason": "model root symlink followed by os.stat"
+  },
+  "tests": {
+    "passed": 10,
+    "failed": 0,
+    "suite_sha256": "53a4f785c9000150ec1168a79c72a21fd03b9e3943f04caee80a50c28df7d650"
+  },
+  "files": {
+    "app/local_embeddings.py": "b853757cdf5b123b460a1b86a6dddcb6d3a82325810cc6932a39df16ee0e0dc2"
+  },
+  "repair_response_sha256": "6f20633aba4312ee8d98378be4a045be03fb16dd315fa0085b20f1ac896e3b03",
+  "repair_scope": "one GO-authored function; literal patch verified against frozen base, terminal newline locator normalization only",
+  "server_stopped": true,
+  "native_tools": "all_denied",
+  "app_llm_calls": false,
+  "runtime": "actual pinned local CPU embedding weights; synthetic text; network denied",
+  "transport_incident": {
+    "initial_supervisor": "lost after exec transport disconnect; no final request.json",
+    "orphan_server": "PID94905 verified cwd/PPID1/PGID, stopped before new inference",
+    "recovery": "supported own-session export found complete file-map; model GO exact; no new initial generation",
+    "deadline_note": "Cannot certify 600s supervisor enforcement during transport loss; incident preserved, not normal clean-run evidence"
+  },
+  "validation_orchestration_incident": "First patch application rejected missing terminal newline in old locator; downstream shell wrongly ran unpatched snapshot (9/10). Correct target then staged via guard and same frozen tests10/10; no second model repair."
+}

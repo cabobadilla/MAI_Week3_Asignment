@@ -1,0 +1,9 @@
+{
+  "action": "register new mock suites in scripts/run_protected_tests.py",
+  "outcome": "auto-review rejected before execution",
+  "reason": "review treats runner as protected shared harness runtime",
+  "runner_modified": false,
+  "retry_attempted": false,
+  "optional_action_deferred": true,
+  "existing_unit_validator_tests_remain_valid": true
+}

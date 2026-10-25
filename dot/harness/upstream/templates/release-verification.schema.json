@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "dotHarness release verification contract v1",
+  "description": "Normalized frozen policy and receipt shape; check_release.py enforces semantics. Not an attestation or permission to deploy.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_version": {
+          "const": "1"
+        },
+        "app_plan_sha256": {
+          "type": "string"
+        },
+        "target_environment": {
+          "enum": [
+            "local",
+            "test_remote",
+            "production"
+          ]
+        },
+        "target_runtime": {
+          "type": "string"
+        },
+        "authorization_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "expectation_source": {
+          "type": "string"
+        },
+        "expectations_copied_from_candidate": {
+          "type": "boolean"
+        },
+        "config_sha256": {
+          "type": "string"
+        },
+        "validator_bundle_sha256": {
+          "type": "string"
+        },
+        "root_authenticated_status": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 599
+        },
+        "root_anonymous_status": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 599
+        },
+        "api_anonymous_status": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 599
+        },
+        "cpu_budget_ms": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "previous_cpu_budget_ms": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cpu_increase_authorization_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "critical_features": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "dependencies_reviewed": {
+          "type": "boolean"
+        },
+        "dependency_manifest_sha256": {
+          "type": "string"
+        },
+        "external_material_authority": {
+          "type": "string"
+        },
+        "sandbox_proves_trust": {
+          "type": "boolean"
+        },
+        "probe_cleanup_required": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "policy_version",
+        "app_plan_sha256",
+        "target_environment",
+        "target_runtime",
+        "authorization_ref",
+        "expectation_source",
+        "expectations_copied_from_candidate",
+        "config_sha256",
+        "validator_bundle_sha256",
+        "root_authenticated_status",
+        "root_anonymous_status",
+        "api_anonymous_status",
+        "cpu_budget_ms",
+        "previous_cpu_budget_ms",
+        "cpu_increase_authorization_ref",
+        "critical_features",
+        "dependencies_reviewed",
+        "dependency_manifest_sha256",
+        "external_material_authority",
+        "sandbox_proves_trust",
+        "probe_cleanup_required"
+      ]
+    },
+    "receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "receipt_version": {
+          "const": "1"
+        },
+        "candidate_sha": {
+          "type": "string"
+        },
+        "app_plan_sha256": {
+          "type": "string"
+        },
+        "policy_sha256": {
+          "type": "string"
+        },
+        "phase": {
+          "const": "independent_final"
+        },
+        "environment": {
+          "type": "string"
+        },
+        "target_runtime": {
+          "type": "string"
+        },
+        "deployment_version": {
+          "type": "string"
+        },
+        "config_sha256": {
+          "type": "string"
+        },
+        "identity_verified": {
+          "type": "boolean"
+        },
+        "secret_presence_verified": {
+          "type": "boolean"
+        },
+        "validators_before_sha256": {
+          "type": "string"
+        },
+        "validators_after_sha256": {
+          "type": "string"
+        },
+        "assets_mode": {
+          "type": "string"
+        },
+        "synthetic_root_rewrite": {
+          "type": "boolean"
+        },
+        "compatibility_probes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "measurements": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "smoke": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "desktop": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "root_authenticated_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "root_anonymous_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "api_anonymous_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "login": {
+                  "type": "string"
+                },
+                "panel": {
+                  "type": "string"
+                },
+                "api": {
+                  "type": "string"
+                },
+                "logout": {
+                  "type": "string"
+                },
+                "anonymous_denied": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "root_authenticated_status",
+                "root_anonymous_status",
+                "api_anonymous_status",
+                "login",
+                "panel",
+                "api",
+                "logout",
+                "anonymous_denied"
+              ]
+            },
+            "mobile": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "root_authenticated_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "root_anonymous_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "api_anonymous_status": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "login": {
+                  "type": "string"
+                },
+                "panel": {
+                  "type": "string"
+                },
+                "api": {
+                  "type": "string"
+                },
+                "logout": {
+                  "type": "string"
+                },
+                "anonymous_denied": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "root_authenticated_status",
+                "root_anonymous_status",
+                "api_anonymous_status",
+                "login",
+                "panel",
+                "api",
+                "logout",
+                "anonymous_denied"
+              ]
+            }
+          },
+          "required": [
+            "desktop",
+            "mobile"
+          ]
+        },
+        "probe_cleanup": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "authorization_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "authorization_ref",
+            "reason"
+          ]
+        },
+        "evidence_class": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "receipt_version",
+        "candidate_sha",
+        "app_plan_sha256",
+        "policy_sha256",
+        "phase",
+        "environment",
+        "target_runtime",
+        "deployment_version",
+        "config_sha256",
+        "identity_verified",
+        "secret_presence_verified",
+        "validators_before_sha256",
+        "validators_after_sha256",
+        "assets_mode",
+        "synthetic_root_rewrite",
+        "compatibility_probes",
+        "measurements",
+        "smoke",
+        "probe_cleanup",
+        "evidence_class"
+      ]
+    }
+  },
+  "required": [
+    "policy",
+    "receipt"
+  ]
+}

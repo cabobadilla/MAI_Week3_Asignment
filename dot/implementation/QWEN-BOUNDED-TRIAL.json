@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-25T23:21:15.091464+00:00",
+  "authorization": "Sentinel_f14aee33ed3c81918367d9985fb7b562",
+  "maximum_total_usd": null,
+  "model": "qwen/qwen3.8-flash",
+  "transport": "OpenRouter only",
+  "allowed_data": "reviewed excerpts from the two GrowWithAI documents and synthetic data; no real contact names/emails",
+  "executed": false,
+  "calls": 0,
+  "cost_usd": "0",
+  "pricing_reference": "https://openrouter.ai/qwen/qwen3.8-flash",
+  "observed_price_usd_per_million_tokens": {
+    "input": "0.15",
+    "output": "0.47",
+    "cache_write": "0.20"
+  },
+  "status": "NOT_READY; mocked graph/technical validation pending, no monetary approval pending",
+  "no_native_rag_authorization_implied": true,
+  "prior_maximum_total_usd": "0.10",
+  "budget_control": "user API key; no additional numerical cap imposed by application trial",
+  "superseding_authorization": "Sentinel_346522e1a6948191a6419b6dead59553"
+}

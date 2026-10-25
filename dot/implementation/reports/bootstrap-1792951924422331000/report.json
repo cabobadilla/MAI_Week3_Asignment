@@ -1,0 +1,38 @@
+{
+  "suite": "bootstrap",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-ba0urn8x",
+  "input_sha256": {
+    "tests/test_bootstrap.py": "d56f434bc1c65973ebc3a69b1d0a96dc734976b9f894f2927f0faaa260e95a15",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/bootstrap.py": "5e10902938ad189729ce449c91ef523af814578d9dece4ae9b506657d2e75bd3"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "16d91b5582ed46bf50b023739af1e59b71f967ca096bce5503d03d75d3dae6cc",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-ba0urn8x/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-ba0urn8x/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-ba0urn8x/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-ba0urn8x/scratch/junit.xml",
+    "/private/tmp/gwa-validate-ba0urn8x/tests/test_bootstrap.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

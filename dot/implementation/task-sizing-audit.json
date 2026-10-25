@@ -1,0 +1,243 @@
+{
+  "observed_at_utc": "2026-10-25T16:12:06.900529+00:00",
+  "harness_sha": "2e5d217f55b3a26543d3d52edb39d7204e35c258",
+  "rule": "one small verifiable unit/capability; not just one file",
+  "numeric_file_line_token_limit_found": false,
+  "timeout_seconds_per_round": 600,
+  "max_repairs_after_initial": 2,
+  "one_active_task_per_host": true,
+  "references": {
+    "docs/definicion.md:5": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/definicion.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/definicion.md",
+      "sha256": "4a9714ad241c4dbd9af0b5bc8359dc94959620ea2e88638eedce2ba8c94b7a41",
+      "same_bytes": true
+    },
+    "docs/arranque.md:24": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/arranque.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/arranque.md",
+      "sha256": "c2cc2f3840f0b7aaee50c61a8bdeaaaf7cb72d229faf10943f1c45088682b495",
+      "same_bytes": true
+    },
+    "docs/workflow.md:43": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/workflow.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/workflow.md",
+      "sha256": "d5034a83a6c2f712c0a359c116b0432a68bfd7353e8922160cbc3c6cd4018f5c",
+      "same_bytes": true
+    },
+    "docs/workflow.md:47": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/workflow.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/workflow.md",
+      "sha256": "d5034a83a6c2f712c0a359c116b0432a68bfd7353e8922160cbc3c6cd4018f5c",
+      "same_bytes": true
+    },
+    "docs/workflow.md:77": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/workflow.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/workflow.md",
+      "sha256": "d5034a83a6c2f712c0a359c116b0432a68bfd7353e8922160cbc3c6cd4018f5c",
+      "same_bytes": true
+    },
+    "docs/despliegue.md:18": {
+      "canonical": "/Users/bobadillachristian/CodeLab/dotHarness/docs/despliegue.md",
+      "snapshot": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/harness/upstream/docs/despliegue.md",
+      "sha256": "2d6930d586ee32ea3003e7395cf5f90ceb749b94a72ee64d80cbdd147fcda9d1",
+      "same_bytes": true
+    }
+  },
+  "recent_comparison": {
+    "B-v2-round0": "Too many screens/layouts/states in one generation; timeout; no complete file-map after own-session reconciliation",
+    "B-v2-round1": "Reduced two-screen prototype succeeded; still needs browser checks, not visually approved",
+    "retrieval-round0": "Combined VectorStore, persistence and model loader; timeout; no assistant text recovered",
+    "vectorstore-round0": "Already active before sizing audit; model loader removed, still combines index+persist. Do not duplicate/relaunch; inspect result under unchanged tests then future work divided",
+    "prior_passed_units": "Small service scopes accepted with protected tests, no claim that one file alone proves suitable task size"
+  },
+  "causation": "Timeout observed; task complexity/size causal contribution not measured. No universal claim.",
+  "future_policy": "One GO generation at a time; coordinator tests/preparation can proceed independently; no new chars/LOC thresholds invented; exact scope and acceptance before launch",
+  "attempt_families": {
+    "B-v2": {
+      "initial": "/tmp/gwa-design-v2-round0",
+      "repair1": "/tmp/gwa-design-v2-round1",
+      "remaining_repairs": 1
+    },
+    "T-05B": {
+      "initial": "/tmp/gwa-retrieval-round0",
+      "repair1_scoped": "/tmp/gwa-vectorstore-round0",
+      "directory_suffix_note": "round0 directory name is historical; policy attempt counted as first scoped continuation, not reset to evade limit",
+      "remaining_repairs": 1
+    },
+    "UI-APPROVAL-01": {
+      "timestamp": "2026-10-25T20:55:31Z",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "5dd64fd4297cf720a5f372f20a278d5c228d0cce2493c6d9310cd3cb18aa54b8",
+      "integrated": true,
+      "contract_tests": 1,
+      "browser_checks": 19,
+      "browser_errors": 0,
+      "initial": "/tmp/gwa-ui-approval-round0",
+      "repair1": "/tmp/gwa-ui-approval-repair1",
+      "repair2": "/tmp/gwa-ui-approval-repair2",
+      "remaining_repairs": 0,
+      "family_status": "approval and export accepted after one explicitly authorized exception; no remaining extra rounds",
+      "app_llm_calls": false,
+      "native_ml": false,
+      "explicit_exception": {
+        "user_reference": "Sentinel_e1b47c169e808191a9d4bd8f8aab65eb",
+        "instruction": "Ok ejecuta esa ronda adicional",
+        "scope": "ONE additional round only visual export control and connection",
+        "run": "/tmp/gwa-ui-export-exception1",
+        "counter_reset": false,
+        "further_repairs_authorized": 0,
+        "result": {
+          "timestamp": "2026-10-25T21:08:38Z",
+          "model": "opencode-go/deepseek-v4.1-flash",
+          "source_sha256": "0e82ab502d27f579897b036423b89a5f1a9adcfba00e8a5014218d1f1486c6e3",
+          "integrated": true,
+          "contract_tests": 1,
+          "browser_checks": 21,
+          "errors": 0,
+          "run": "/tmp/gwa-ui-export-exception1",
+          "parent_family": "UI-APPROVAL-01",
+          "explicit_exception_user": "Sentinel_e1b47c169e808191a9d4bd8f8aab65eb",
+          "remaining_exception_rounds": 0,
+          "fixture_correction": "QA outputroot resolved to physical /private/tmp; product symlink refusal and frozen browser tests unchanged",
+          "app_llm_calls": false,
+          "native_ml": false
+        }
+      }
+    },
+    "UI-DIRECTED-RECORD-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "5e9d089aa4b88e4c12a33729b6d5ac51e214efe637cd1bd3334a64a74f433784",
+      "contract_tests": 1,
+      "browser_checks": 33,
+      "errors": 0,
+      "initial": "/tmp/gwa-ui-directed-record-round0",
+      "repair1": "/tmp/gwa-ui-directed-record-repair1",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "scope": "manualexternalemail record only; duplicate and doubleclick checked",
+      "runtime_wiring_pending": true,
+      "repair2": "/tmp/gwa-ui-directed-record-repair2",
+      "context_isolation": "new campaign resets date/checkbox/errors; changed recipients/version requires new confirmation"
+    },
+    "NATIVE-GUARD-01": {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "integrated": true,
+      "source_sha256": "6f2164442259f38a51db9672c82cc3eb203df30448e10a6534b1950ca88b6f5e",
+      "tests": {
+        "passed": 18,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-native-guard-round0",
+      "repair_count": 2,
+      "native_executed": false,
+      "scope": "stdlib pre-import guard only; worker wiring and physical OpenMP safety not yet verified",
+      "repair1": "/tmp/gwa-native-guard-repair1",
+      "repair2": "/tmp/gwa-native-guard-repair2",
+      "remaining_repairs": 0
+    },
+    "WORKER-GUARD-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "51b6e1c67d9d79836685a373b7dd2d9268fb2b0870804b74830f25237769193c",
+      "tests": {
+        "passed": 4,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-worker-guard-round0",
+      "repair_count": 0,
+      "native_executed": false,
+      "demo_restarted": false,
+      "scope": "mandatory embedding guard before local loader; mock proof only",
+      "remaining_repairs": 2
+    },
+    "VECTOR-GUARD-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "5026f289fd44931466ddf4d3edaeca861a92a1ac1eed3688732a04ad0a3bd390",
+      "tests": {
+        "passed": 6,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-vector-guard-round0",
+      "repair_count": 0,
+      "native_executed": false,
+      "demo_restarted": false,
+      "scope": "pre-import vector role guard and assertion on each operation; fake modules only",
+      "remaining_repairs": 2
+    },
+    "LLM-CLIENT-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "3377097c2da8ab1059aa6a99f2b25124d197113d42f571c44061516f85429941",
+      "tests": {
+        "passed": 18,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-llm-client-round0",
+      "repair_count": 0,
+      "application_llm_calls": false,
+      "demo_restarted": false,
+      "scope": "OpenRouter single-request adapter, bounded input/output, safe errors; HTTP mock tests only; no run budget graph yet",
+      "remaining_repairs": 2
+    },
+    "RUN-BUDGET-RESERVE-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "a1eca9ce000b4e5d4601fab52001899d4c0a2b3940484202573a6c3e68b8f71d",
+      "tests": {
+        "passed": 11,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-run-budget-reserve-round0",
+      "repair_count": 0,
+      "application_llm_calls": false,
+      "user_database_touched": false,
+      "scope": "atomic pre-call reservation only; settlement and graph integration separate",
+      "remaining_repairs": 2
+    },
+    "HISTORY-CONTEXT-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "a03d17708f49855335a9d17f2c6f0f046c9347a1b324c41d06b274284fe526d3",
+      "tests": {
+        "passed": 9,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-history-context-round0",
+      "repair1": "/tmp/gwa-history-context-repair1",
+      "repair2": "/tmp/gwa-history-context-repair2",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "application_llm_calls": false,
+      "scope": "read-only explicit-campaign history, current corrections, bounded untrusted data; no LLM quality claim"
+    },
+    "GENERATION-CONTRACT-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "6a2172f13cedece95af15b51ef2b3287b7a5881f32e6878e8a320308a201abf0",
+      "tests": {
+        "passed": 12,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-generation-contract-round0",
+      "initial_result": "wrong envelope rejected without execution",
+      "repair1": "/tmp/gwa-generation-contract-repair1",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "application_llm_calls": false,
+      "scope": "generator prompt/schema only; not a completed generation workflow"
+    },
+    "RETRIEVAL-GRAPH-01": {
+      "unit": "RETRIEVAL-GRAPH-01",
+      "run": "/tmp/gwa-agent-retrieval-graph-round0",
+      "exec_session": 7556,
+      "maximum_round_seconds": 600,
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "status": "initial active"
+    }
+  },
+  "shared_harness_modified": false
+}

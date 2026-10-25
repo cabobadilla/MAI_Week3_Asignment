@@ -1,0 +1,14 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "ce7d568d83ea5bfaa1ce2258d6a8e4241b9eba0ed84df7bea3a494469f8c5a62",
+  "contract_tests": 1,
+  "browser_checks": 24,
+  "errors": 0,
+  "mobile_visual_qa": "passed",
+  "run": "/tmp/gwa-ui-publication-round0",
+  "repair_count": 0,
+  "runtime_wiring_pending": true,
+  "app_llm_calls": false,
+  "native_ml": false
+}

@@ -1,0 +1,35 @@
+# Parámetros propuestos; el futuro código debe cargarlos explícitamente.
+[app]
+host = "127.0.0.1"
+port = 8501
+language = "es"
+mode = "draft_only"
+[storage]
+index = "data/index"
+checkpoints = "data/checkpoints/agent.sqlite"
+exports = "outputs"
+[limits]
+retrieval_queries = 2
+tool_retries = 2
+revision_cycles = 2
+graph_transitions = 20
+tool_timeout_seconds = 30
+[approval]
+required_before_export = true
+invalidate_on_edit = true
+
+[llm]
+provider = "openrouter"
+api_base = "https://openrouter.ai/api/v1"
+model_env = "APP_LLM_MODEL"
+api_key_env = "OPENROUTER_API_KEY"
+enabled_env = "APP_LLM_ENABLED"
+enabled_default = false
+budget_control = "user_managed_api_key"
+model_fallback = false
+max_input_tokens = 12000
+max_output_tokens = 4096
+max_total_tokens_per_run = 64000
+max_request_attempts_per_run = 8
+max_retries = 2
+timeout_seconds = 30

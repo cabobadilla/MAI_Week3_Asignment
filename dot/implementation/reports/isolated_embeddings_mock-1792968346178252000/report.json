@@ -1,0 +1,39 @@
+{
+  "suite": "isolated_embeddings_mock",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-d35q5ttx",
+  "input_sha256": {
+    "tests/test_isolated_embeddings.py": "3174998417fb5b1047caeb63e0fc5c4f699d753eedeca3140cc1f322b337302e",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/isolated_embeddings.py": "ba740b24e3acb6c03910824de0397993a98a6c0c350f0aafbe2812c412322caa",
+    "candidate/app/embedding_worker.py": "8f49fdfbfaaa64515d97d40b36ee4e2d28e74b65e2f290b227167335d75997a2"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "2b7dc80bbabdac09b078e194650f053db6a5be9b0733511ac595be1866bdb6fb",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-d35q5ttx/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-d35q5ttx/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-d35q5ttx/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-d35q5ttx/scratch/junit.xml",
+    "/private/tmp/gwa-validate-d35q5ttx/tests/test_isolated_embeddings.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

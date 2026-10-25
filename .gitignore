@@ -1,0 +1,40 @@
+# Material de apoyo personal — no es documentación del producto
+prompts.md
+docs/referencia-*.md
+
+# Datos personales usados como insumo (CV real, exports de cuentas, etc.).
+# Los fixtures versionados usan datos ficticios, nunca estos.
+# Añade aquí la carpeta concreta del proyecto si la hay.
+
+# Dependencias y artefactos
+node_modules/
+dist/
+build/
+coverage/
+
+# Salidas de las herramientas de verificación.
+# El MCP de Playwright deja snapshots, logs y descargas dentro del proyecto:
+# una descarga de prueba puede traerse datos reales del usuario.
+.playwright-mcp/
+
+# Entorno y secretos
+.env
+.env.*
+*.local
+.dev.vars
+
+# Sistema
+.DS_Store
+
+.venv/
+.setup-venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/
+outputs/
+logs/
+*.sqlite*
+*.log
+!.env.example

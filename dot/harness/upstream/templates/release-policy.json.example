@@ -1,0 +1,29 @@
+{
+  "policy_version": "1",
+  "app_plan_sha256": "REPLACE_FROZEN_APP_PLAN_SHA256",
+  "target_environment": "production",
+  "target_runtime": "REPLACE_ACTUAL_TARGET_RUNTIME",
+  "authorization_ref": null,
+  "expectation_source": "REPLACE_FROZEN_ACCEPTANCE_REF",
+  "expectations_copied_from_candidate": false,
+  "config_sha256": "REPLACE_CONFIG_SHA256",
+  "validator_bundle_sha256": "REPLACE_VALIDATOR_SHA256",
+  "root_authenticated_status": 200,
+  "root_anonymous_status": 302,
+  "api_anonymous_status": 401,
+  "cpu_budget_ms": null,
+  "previous_cpu_budget_ms": null,
+  "cpu_increase_authorization_ref": null,
+  "critical_features": [
+    {
+      "id": "REPLACE_CRITICAL_FEATURE",
+      "parameters_sha256": "REPLACE_PARAMETERS_SHA256",
+      "decision_ref": "REPLACE_DECISION_REF"
+    }
+  ],
+  "dependencies_reviewed": false,
+  "dependency_manifest_sha256": "REPLACE_DEPENDENCY_MANIFEST_SHA256",
+  "external_material_authority": "data-only",
+  "sandbox_proves_trust": false,
+  "probe_cleanup_required": true
+}

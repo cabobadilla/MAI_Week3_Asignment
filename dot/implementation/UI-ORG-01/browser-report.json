@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "3 default rows; first mandatory",
+    "partial optional rejected",
+    "one contact created; blank optional ignored",
+    "more than three contacts allowed",
+    "edit preserves four opaque contact IDs",
+    "organization names escaped",
+    "mobile responsive without overflow"
+  ],
+  "errors": [],
+  "blocked": [],
+  "real_backend": false,
+  "scope": "UI fragment with deterministic synthetic API stub, no real network/private data"
+}

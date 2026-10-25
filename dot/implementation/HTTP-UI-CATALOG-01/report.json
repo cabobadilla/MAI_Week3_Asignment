@@ -1,0 +1,17 @@
+{
+  "task": "UI-SHELL-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 1,
+  "source_sha256": "06a90cf61b4b2b82104551d47bd3319ea36cbce4f0d63860c1e721b5e6887c21",
+  "contract_tests": 1,
+  "live_browser_checks": 8,
+  "real_http": true,
+  "real_auth": true,
+  "real_sqlite": true,
+  "owned_fixture_stopped": true,
+  "initial_failure": "wrong logout path; exactGO function repair; failure feedback added",
+  "user_database_touched": false,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "scope": "authentication/catalog segment only; not complete campaign workflow"
+}

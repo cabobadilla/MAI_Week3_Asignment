@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-25T22:46:33Z",
+  "url": "http://127.0.0.1:8501",
+  "exec_session_id": 85026,
+  "previous_exec_session_id": 86618,
+  "previous_pid_stopped": 28292,
+  "health": {
+    "status": "ok",
+    "mode": "demo",
+    "generation": "simulated"
+  },
+  "updated_directed_controls_present": true,
+  "user_tables_preserved": true,
+  "database_integrity": "ok",
+  "password_modified_by_agent": false,
+  "secret_values_read": false,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "runtime_sha256": "87052175d8e900adbdc08670307286b54532aaaa903d1eaa8f181ab551e0cdc3",
+  "reconnected_health": {
+    "status": "ok",
+    "mode": "demo",
+    "generation": "simulated"
+  },
+  "reconnected_exec_session_id": 85026,
+  "updated_controls_verified": true,
+  "previous_process_not_listening": true,
+  "previous_verified_timestamp": "2026-10-25T22:02:55Z",
+  "previous_session_after_disconnect": 20074
+}

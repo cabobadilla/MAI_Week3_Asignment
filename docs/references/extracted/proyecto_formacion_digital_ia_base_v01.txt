@@ -1,0 +1,175 @@
+[p001] Formación digital e IA para jóvenes en comunas de Chile
+[p002] Documento base y análisis con el Business Model Canvas
+[p003] Versión 0.2 · 24 de octubre de 2026
+[p004] La iniciativa conectará empresas patrocinadoras y comunidades de Chile para ofrecer formación digital e inteligencia artificial, coaching y apoyo práctico a jóvenes. El objetivo principal es desarrollar autonomía digital y uso responsable de IA, con preparación de currículum vitae e entrevistas como aplicación concreta. No se promete empleo.
+[p005] El modelo se organiza con los nueve bloques del Business Model Canvas de Osterwalder y Pigneur, difundido por Strategyzer [1], y una capa adicional de impacto social. Esta versión incorpora las decisiones sobre el piloto y mantiene abiertas la figura jurídica, el presupuesto y las alianzas. No es todavía un plan de negocios validado.
+[p006] Decisiones que definen el piloto
+[p007] Dimensión
+[p008] Definición acordada
+[p009] Participantes
+[p010] 15 jóvenes de 18 a 29 años. Selección compartida con la comuna y equilibrio entre ambos perfiles de entrada.
+[p011] Curso
+[p012] 3 semanas, 6 clases de 90 minutos: martes en la tarde-noche y sábados. Total de clases: 9 horas.
+[p013] Tareas y trabajo final
+[p014] Tareas individuales cada semana, con entrega los domingos. El trabajo final será el currículum vitae en formato digital.
+[p015] Acompañamiento posterior
+[p016] 3 semanas adicionales de consultas por escrito y una sesión individual de 30 minutos por alumno, con reserva previa.
+[p017] Acceso y financiamiento
+[p018] Todo el recorrido se diseñará para celular. Piloto gratuito para jóvenes y comuna, financiado por patrocinadores por conseguir.
+[p019] Certificación inicial
+[p020] Certificado propio de logro: al menos 80% de asistencia y aprobación de tareas y trabajo final.
+[p021] 
+[p022] Qué hace valiosa la propuesta
+[p023] La diferenciación a demostrar será el acompañamiento de grupos pequeños, la conexión comunal y el aprendizaje verificable. En Chile existen iniciativas de formación digital e IA anunciadas por SENCE con Microsoft y Talento Digital [2][3]; ofrecer contenidos o gratuidad, por sí solos, no basta para distinguirse.
+[p024] El programa completo tendrá 6 semanas: 3 de curso y 3 de soporte. La entidad tendrá propósito social, pero su forma jurídica se decidirá después de validar el interés de empresas y comunas. No hay patrocinadores ni convenios confirmados.
+[p025] 
+[p026] 1 Vista resumida del Canvas
+[p027] Los nueve bloques distinguen a los beneficiarios, a quienes financian y a quienes facilitan el acceso. El diseño del piloto ya está definido; la demanda, las alianzas y la sostenibilidad económica deben validarse.
+[p028] Bloque
+[p029] Modelo actualizado
+[p030] 1 Segmentos de clientes
+[p031] Beneficiarios: jóvenes de 18 a 29 años, con y sin formación digital previa. Financiadores iniciales: empresas patrocinadoras. La comuna es aliada territorial sin cobro inicial.
+[p032] 2 Propuesta de valor
+[p033] Autonomía digital e IA, CV digital y apoyo de entrevistas para jóvenes. Programa social ejecutado y medible para empresas; formación acompañada para la comunidad.
+[p034] 3 Canales
+[p035] Búsqueda paralela de empresas y comunas. Convocatoria local, inscripción asistida, clases digitales y vinculación territorial presencial cuando sea útil.
+[p036] 4 Relaciones con clientes
+[p037] Curso de 3 semanas y soporte de 3 semanas, con consultas escritas y una sesión individual por alumno. Coordinación local e informes agregados para aliados.
+[p038] 5 Fuentes de ingresos
+[p039] Patrocinio empresarial del piloto. Más adelante, posibles aportes de comunas o jóvenes para programas más largos o complejos. Aportes en especie separados del dinero.
+[p040] 6 Recursos clave
+[p041] Dos impulsores capaces de crear contenidos e impartir cursos; tutoría, evaluaciones, herramientas utilizables desde celular y coordinación territorial.
+[p042] 7 Actividades clave
+[p043] Captar aliados, seleccionar y diagnosticar, diseñar para móvil, formar, revisar tareas, acompañar, evaluar, certificar y medir resultados.
+[p044] 8 Asociaciones clave
+[p045] Empresas, comuna y organizaciones comunitarias. Futuro aliado que aporte certificación. Conectividad o dispositivos por convenios opcionales, no asegurados.
+[p046] 9 Estructura de costos
+[p047] Diseño, docencia, sesiones individuales, consultas, revisión de tareas, tecnología, coordinación, captación, evaluación y administración.
+[p048] 
+[p049] La lógica de intercambio
+[p050] La empresa aporta financiamiento y puede acercar experiencia profesional. La comuna facilita la convocatoria, participa en la selección y puede aportar apoyo local o una sala con conectividad. La entidad ejecuta y verifica el aprendizaje. Los jóvenes reciben formación y acompañamiento, sin cobro en el piloto.
+[p051] La forma jurídica no elimina la necesidad de ingresos: el modelo debe cubrir el trabajo real y la continuidad. Los aliados recibirían resultados agregados; no acceso automático a datos personales ni control sobre las calificaciones.
+[p052] 
+[p053] 2 Participantes y propuesta de valor
+[p054] Dos perfiles con un objetivo común
+[p055] El piloto atenderá tanto a jóvenes sin experiencia ni formación digital como a jóvenes con estudios que necesitan reforzar capacidades. La selección se realizará con la comuna, buscando un grupo equilibrado. Los criterios deberán ser claros y comunicados a los postulantes; el número de cupos de cada perfil todavía no se fija.
+[p056] Un diagnóstico inicial permitirá adaptar el apoyo y la complejidad de los ejercicios. Se mantienen rutas diferenciadas por punto de partida, sin comprometer dos cursos completos separados dentro de las seis clases. Las habilidades de entrada y la organización pedagógica se precisarán al diseñar el temario.
+[p057] Formación más coaching y apoyo
+[p058] La formación desarrollará habilidades digitales y uso práctico y responsable de IA. Los ejercicios deberán ayudar a realizar tareas útiles, revisar resultados y proteger información. El coaching y el soporte se orientarán también a preparar un CV fiel a la experiencia y a practicar entrevistas con retroalimentación humana.
+[p059] La última tarea y trabajo final será el currículum vitae en formato digital. No se añade un proyecto distinto ni una explicación separada obligatoria. La preparación laboral complementa el objetivo de autonomía; aprobar el programa no garantiza contratación ni inserción laboral.
+[p060] Un recorrido completo desde el celular
+[p061] El celular será el requisito mínimo. Clases, ejercicios de IA, tareas, elaboración y envío del CV, consultas y sesión individual deberán poder completarse desde ese dispositivo. El computador será opcional, no una condición de acceso ni un requisito oculto de una actividad.
+[p062] Los participantes podrán conectarse a wifi propio o utilizar una sala con conectividad que pudiera facilitar la comuna. Esta posibilidad no es un aporte confirmado: habrá que verificar capacidad, horarios de martes tarde-noche y sábados, y acceso suficiente para completar tareas. El curso se probará en teléfonos antes de lanzar.
+[p063] Los convenios de dispositivos o datos con una empresa de telecomunicaciones siguen siendo una posibilidad futura. No se condiciona el piloto a regalar equipos o contratar planes. Se deberá comprobar que las herramientas elegidas, sus cuentas y sus costos no introduzcan barreras no previstas.
+[p064] Canales locales y apoyo a la inscripción
+[p065] La convocatoria se apoyaría en municipios y organizaciones comunitarias, con inscripción asistida para quien la necesite. Las OMIL son posibles aliadas: SENCE describe servicios de orientación laboral y acceso a capacitación [4]. El apoyo de CV e entrevistas debe complementar la oferta local, no duplicarla sin coordinación.
+[p066] 
+[p067] 3 Diseño y operación del programa
+[p068] Etapa
+[p069] Actividades y entregas
+[p070] Antes del inicio
+[p071] Confirmar financiamiento, aliado territorial y acceso. Seleccionar 15 participantes, diagnosticar necesidades y probar el recorrido móvil.
+[p072] Semanas 1 a 3
+[p073] Dos clases semanales de 90 minutos: martes tarde-noche y sábado. Tareas individuales con entrega los domingos. Última entrega: CV digital.
+[p074] Semanas 4 a 6
+[p075] Canal escrito para consultas y ayuda de entrevistas. Una sesión individual de 30 minutos por participante, con reserva previa.
+[p076] Cierre
+[p077] Verificar asistencia y aprobación, emitir certificados que correspondan y revisar aprendizaje, continuidad, costos y experiencia de aliados.
+[p078] 
+[p079] Carga de atención que ya puede calcularse
+[p080] Las seis clases suman 9 horas. Las quince sesiones individuales de 30 minutos suman 7,5 horas de citas. Son 16,5 horas de atención programada, pero no representan el total de trabajo ni de costos del equipo: faltan preparación, diseño, revisión de tareas, consultas, coordinación y administración. Si ambos impulsores participan en una actividad, las horas-persona aumentan.
+[p081] La duración y el calendario de las tareas, los horarios exactos, la fecha de inicio, la ventana de reserva y el horario o plazo de respuesta del canal todavía deben establecerse. No se ha comprometido soporte ilimitado ni sesiones individuales adicionales.
+[p082] Equipo inicial
+[p083] Christian liderará la dirección del proyecto y las alianzas con empresas y comunas. Su socia asumirá mayor responsabilidad de ejecución. Ambos podrán generar contenidos e impartir los cursos, por lo que el piloto no depende inicialmente de contratar un equipo docente externo.
+[p084] Queda por distribuir la revisión de tareas, las consultas, las sesiones individuales y la coordinación con invitados. Los profesionales de empresas podrán aportar experiencia, pero su participación debe acordarse sin sustituir responsabilidades esenciales del equipo.
+[p085] Certificado propio y futuro respaldo
+[p086] Para obtener el certificado de logro se exigirá una asistencia mínima del 80% y aprobación de las tareas y del trabajo final. Si se registra asistencia por clases completas, el mínimo equivale a cinco de seis. El método de registro, los criterios de aprobación y la posibilidad de corregir entregas siguen por definir.
+[p087] El certificado inicial será emitido por la propia entidad y describirá el aprendizaje evaluado. En paralelo se buscará una institución que contribuya con evaluación, respaldo o certificación. Ese reconocimiento externo solo se ofrecerá cuando exista un acuerdo; no es requisito para comenzar ni se presume como título oficial.
+[p088] 
+[p089] 4 Alianzas y financiamiento
+[p090] Buscar empresa y comuna en paralelo
+[p091] La captación inicial avanzará con ambos tipos de aliado en paralelo. Es necesario explicar el mismo concepto de forma clara y con énfasis distintos: a la empresa, qué financia, cómo puede participar y qué resultados recibirá; a la comuna, cómo beneficia a sus jóvenes, cómo se seleccionan y qué apoyo local se necesita.
+[p092] La propuesta al patrocinador deberá describir los 15 cupos, el curso y el soporte, las responsabilidades, la evaluación y el informe de resultados. A futuro podrían ofrecerse uno, cinco o diez cursos anuales, como en la idea original; no son ventas ni capacidad operativa ya comprometidas.
+[p093] El piloto parte gratuito
+[p094] El piloto no tendrá cobro para los jóvenes ni para la comuna. El financiamiento se buscará en empresas patrocinadoras. La comuna podrá contribuir de manera flexible mediante convocatoria, coordinación, una sala con wifi u otros apoyos que realmente tenga disponibles.
+[p095] El inicio sin cobro municipal busca simplificar la puesta en marcha y evitar depender de una compra del servicio. Esto no demuestra que se eliminen procedimientos, autorizaciones o formalidades: el convenio y la vía aplicable deberán revisarse antes de ejecutar. No se afirma que una RFP sea siempre obligatoria ni que la gratuidad exima de requisitos.
+[p096] Para programas posteriores más largos o complejos se contempla financiamiento adicional de la comuna o aportes de los jóvenes. No están definidos los importes, los porcentajes ni una política de becas o excepciones. Esta posibilidad no modifica la gratuidad del piloto.
+[p097] Acuerdos que cuiden la misión
+[p098] Los aportes monetarios comprometidos, los recibidos y los aportes en especie se registrarán por separado. Un espacio o una conexión disponible puede reducir costos, pero no sustituye el dinero necesario para otras obligaciones. El financiamiento y las condiciones esenciales deberán confirmarse antes de anunciar el inicio como asegurado.
+[p099] La empresa no decidiría las calificaciones. Los cupos para funcionarios o colaboradores de aliados, si se ofrecieran, se acordarían aparte para no desplazar a los 15 jóvenes. Los testimonios, las imágenes y la información identificable requerirán el consentimiento apropiado; no se ceden automáticamente por participar.
+[p100] Una futura institución certificadora se imagina como un aliado que contribuya al proyecto. Su aportación, alcance y eventual costo deberán negociarse. No se presume gratuidad del servicio de certificación ni un convenio existente.
+[p101] 
+[p102] 5 Sostenibilidad e impacto social
+[p103] Cubrir el costo completo
+[p104] El presupuesto deberá incorporar diseño y actualización, clases, coaching, revisión de tareas, consultas, coordinación territorial, herramientas y licencias, evaluación, captación de patrocinadores y administración. La contribución de los impulsores también debe valorarse, aunque una parte se aporte inicialmente sin pago.
+[p105] El precio al patrocinador y los escenarios de operación se definirán en el plan de negocios. No se fijan cifras todavía. La sostenibilidad requerirá distinguir costos por cohorte, costos compartidos, desembolsos efectivos y aportes en especie, además de prever una contingencia y el calendario de caja.
+[p106] Medir aprendizaje y continuidad
+[p107] La capa de impacto complementa los nueve bloques del Canvas. La prioridad sigue siendo autonomía digital y uso práctico y responsable de IA; el CV y las entrevistas constituyen aplicaciones concretas. Los resultados laborales pueden observarse sin prometer empleo ni atribuir automáticamente al curso un cambio de situación.
+[p108] Dimensión
+[p109] Evidencia a recoger
+[p110] Acceso
+[p111] Participantes por perfil, conectividad disponible y barreras detectadas. Validación del uso real desde celular.
+[p112] Continuidad
+[p113] Asistencia, tareas entregadas, finalización y motivos de abandono. Informar el total inicial y el número evaluado.
+[p114] Autonomía e IA
+[p115] Comparar tareas y nivel de ayuda antes y después; observar revisión de resultados, reconocimiento de errores y protección de datos.
+[p116] Preparación laboral
+[p117] Entrega y calidad del CV digital; uso de la sesión individual y necesidades de preparación de entrevistas.
+[p118] Sostenibilidad
+[p119] Costo completo, recursos recibidos, horas reales del equipo y disposición del patrocinador a repetir.
+[p120] 
+[p121] Riesgos y respuestas de diseño
+[p122] Para prevenir abandono, ajustar carga y acompañamiento a las barreras detectadas. Para evitar exclusión tecnológica, probar herramientas y entregas en teléfonos. Para contener sobrecarga, definir horarios del canal y reservas de las sesiones. Para preservar confianza, aplicar criterios de selección y evaluación transparentes.
+[p123] Los informes a aliados deberían ser agregados. Los ejercicios de CV evitarán introducir datos sensibles en herramientas públicas de IA. No se incorporarán menores al piloto definido. Las metas de éxito y la decisión de repetir, ajustar o ampliar deberán fijarse antes de ejecutar, no después de conocer resultados.
+[p124] La expansión por comunas se apoyará en evidencia de calidad, financiamiento y capacidad del equipo. No se compromete una red regional de oficinas ni una plataforma propia como condición del piloto.
+[p125] 
+[p126] 6 Forma jurídica pendiente de validación
+[p127] La decisión está abierta: primero se validará el interés de empresas y comunas y luego se elegirá entre una entidad sin fines de lucro y una empresa con propósito social. La preferencia social inicial no se considera una elección jurídica ya tomada.
+[p128] Criterio
+[p129] Sin fines de lucro
+[p130] Empresa con propósito social
+[p131] Destino económico
+[p132] Rentas destinadas a los fines o al patrimonio de la entidad; sin retorno accionario para los impulsores.
+[p133] Puede reinvertir y distribuir utilidades. Debe explicitar cómo protege el propósito social.
+[p134] Financiamiento
+[p135] Ingresos por servicios relacionados con sus fines y aportes; no ofrece participación accionaria.
+[p136] Puede incorporar accionistas y capital a cambio de participación.
+[p137] Gobernanza
+[p138] Órganos de gobierno y rendición de cuentas orientados a la misión.
+[p139] Control según propiedad y acuerdos; conviene proteger los compromisos sociales.
+[p140] Señal para aliados
+[p141] Puede reforzar coherencia social, pero no acredita por sí sola impacto ni calidad.
+[p142] Puede demostrar impacto mediante resultados y transparencia, sin que el fin comercial lo excluya.
+[p143] 
+[p144] En Chile, el Código Civil distingue corporaciones o asociaciones, basadas en personas, y fundaciones, basadas en bienes destinados a un interés general. Permite actividades económicas relacionadas con sus fines y exige destinar las rentas a esos fines o al patrimonio, junto con obligaciones de rendición de cuentas [7]. La elección dependerá de la misión, el gobierno y la participación deseados.
+[p145] No tener fines de lucro no equivale a trabajar sin remuneración: deben diferenciarse funciones de gobierno y servicios remunerados, con aprobación y transparencia. Tampoco implica una exención tributaria general; deberán revisarse las actividades y el régimen aplicable [8]. Pagar un curso y donar son operaciones distintas.
+[p146] Una SpA permite uno o más accionistas [9]. Puede considerarse si el capital accionario y el retorno a propietarios son esenciales. La opción sin fines de lucro encaja si se busca reinvertir los excedentes sin dividendos ni venta de participación. Estas condiciones orientan la comparación, pero no resuelven todavía la elección.
+[p147] La figura jurídica y la eventual operación como OTEC son decisiones diferentes. Ser una entidad social no supone acreditación, acceso a subsidios, certificación oficial ni beneficios tributarios para patrocinadores [5][6]. La decisión final requiere asesoría jurídica y tributaria en Chile y evidencia de validación comercial.
+[p148] 
+[p149] 7 Pendientes y siguiente etapa
+[p150] Ya están definidos el público, el tamaño del piloto, la gratuidad inicial, el formato de seis semanas, las tareas, el CV final, el soporte, la evaluación y los roles de ambos impulsores. Estos acuerdos reemplazan las alternativas abiertas de la versión anterior.
+[p151] Pendiente
+[p152] Qué debe precisarse
+[p153] Alianzas y territorio
+[p154] Primera comuna, patrocinador, contraparte local, acceso a wifi o sala y condiciones de participación de invitados.
+[p155] Diseño pedagógico
+[p156] Temario de seis clases, adaptación a los dos perfiles, herramientas móviles, carga de tareas y rúbricas de aprobación.
+[p157] Operación
+[p158] Fechas y horas exactas, registro de asistencia, entrega y corrección de tareas, reservas y horario o plazo de respuesta del soporte.
+[p159] Modelo económico
+[p160] Costo completo, precio y propuesta al patrocinador, caja inicial, escenarios de cohortes y dedicación disponible de ambos impulsores.
+[p161] Gobernanza y resultados
+[p162] Figura jurídica, formalidades de convenios, protección de datos, alcance del certificado y metas de éxito del piloto.
+[p163] 
+[p164] La siguiente etapa será elaborar el plan de negocios con supuestos explícitos y escenarios, diferenciando datos confirmados de estimaciones. Debe conectar financiamiento, costos, capacidad real, propuesta para empresas y despliegue por comunas. Antes de comprometer ejecución, habrá que contrastarlo con posibles aliados y participantes.
+[p165] Referencias
+[p166] Las fuentes respaldan el marco y los mecanismos mencionados; no acreditan alianzas con esta iniciativa ni prueban su viabilidad. Los anuncios de formación no se presentan como convocatorias actualmente abiertas.
+[p167] [1] Strategyzer · What is a business model y Business Model Canvas
+[p168] [2] SENCE · Acuerdo con Microsoft para formación digital hacia 2027
+[p169] [3] SENCE · Talento Digital y becas de formación en línea
+[p170] [4] SENCE · Oficinas Municipales de Información Laboral
+[p171] [5] ChileAtiende · Registro de personas jurídicas sin fines de lucro
+[p172] [6] SENCE · Registro de organismos técnicos de capacitación
+[p173] [7] BCN · Código Civil artículos 545 y 557 y siguientes
+[p174] [8] SII · Oficio 549 de 2018 sobre entidades sin fines de lucro
+[p175] [9] Registro de Empresas y Sociedades · Constitución de sociedades

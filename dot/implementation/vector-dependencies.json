@@ -1,0 +1,13 @@
+{
+  "state": "installed",
+  "only_project_venv": true,
+  "global_installs": false,
+  "wheel_hashes": "vector-wheels.lock",
+  "new_wheels": 26,
+  "total_freeze_packages": 92,
+  "pip_check": "passed",
+  "embeddings_weights_downloaded": true,
+  "rag_implemented": false,
+  "application_llm_calls": false,
+  "embedding_manifest": "config/embedding-model.json"
+}

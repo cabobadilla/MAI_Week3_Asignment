@@ -1,0 +1,11 @@
+{
+  "status": "superseded_structure",
+  "authority": "Sentinel_b00bdae4771c819188c03c122a276d91",
+  "previous_variants_not_pending_choice": true,
+  "confirmed_structure": [
+    "publications_register",
+    "directed_context_threads"
+  ],
+  "approved_visual_details": false,
+  "old_artifacts_preserved": true
+}

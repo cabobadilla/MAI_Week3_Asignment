@@ -1,0 +1,16 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "6f2164442259f38a51db9672c82cc3eb203df30448e10a6534b1950ca88b6f5e",
+  "tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-native-guard-round0",
+  "repair_count": 2,
+  "native_executed": false,
+  "scope": "stdlib pre-import guard only; worker wiring and physical OpenMP safety not yet verified",
+  "repair1": "/tmp/gwa-native-guard-repair1",
+  "repair2": "/tmp/gwa-native-guard-repair2",
+  "remaining_repairs": 0
+}

@@ -1,0 +1,38 @@
+{
+  "suite": "ingestion",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-4u99x52q",
+  "input_sha256": {
+    "tests/test_ingestion.py": "867982dfb134bbc70ec5f28b76dfccc68251c6e56df252bbd494b6c8c2834bbb",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/ingestion.py": "f64717115b2cd7656edaf3a8996254efb0fdc7773323d987174b5ac095df6a95"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "12df829039834838c63d5292eebe186c2427f5eb0e4e0ba1ead8c6d99bbbfa90",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-4u99x52q/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-4u99x52q/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-4u99x52q/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-4u99x52q/scratch/junit.xml",
+    "/private/tmp/gwa-validate-4u99x52q/tests/test_ingestion.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

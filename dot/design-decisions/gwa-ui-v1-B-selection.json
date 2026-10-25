@@ -1,0 +1,18 @@
+{
+  "decision_id": "gwa-ui-v1-B-selection",
+  "design_id": "gwa-ui-v1",
+  "option": "B",
+  "version": 1,
+  "name": "Mesa editorial",
+  "selected_by": "user",
+  "decision_date": "2026-10-25",
+  "approval_ref": "Sentinel_c9fa6c87e2708191b6e045cecb058afd",
+  "user_text": "me gusta la opcion B (usemos esta)",
+  "selected_html_sha256": "a1d53fea8d94a4e9800a2ec409c89915224b548cfdc1fd3154a90692b7bd7872",
+  "source_manifest_sha256": "53dc8d6f9498b0035625b1a004b3dcee7bb459ef0753ee112774132cb01c6a9d",
+  "source_bundle_sha256": "f383f2c23cbbe8b0d6219b9359a126410c2417eea2464b5dcb118c1d2b957665",
+  "scope": "existing B v1 screens only",
+  "new_history_screens_approved": false,
+  "implementation_authorized": false,
+  "inference_authorized": false
+}

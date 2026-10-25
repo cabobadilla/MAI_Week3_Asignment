@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "bc2f73026a41dcbdce436f8152fb2a6f9819ecc3db441ac182f7062ebf12ec30",
+  "contract_tests": 1,
+  "browser_checks": 33,
+  "errors": 0,
+  "initial": "/tmp/gwa-ui-directed-note-round0",
+  "repair1": "/tmp/gwa-ui-directed-note-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "manualnote/response only; exact historical campaign; doubleclick and reload checked",
+  "runtime_wiring_pending": true
+}

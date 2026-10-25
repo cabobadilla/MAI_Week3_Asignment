@@ -1,0 +1,35 @@
+{
+  "task": "T-05A",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 0,
+  "tests": {
+    "passed": 16,
+    "failed": 0,
+    "suite_sha256": "867982dfb134bbc70ec5f28b76dfccc68251c6e56df252bbd494b6c8c2834bbb"
+  },
+  "files": {
+    "app/ingestion.py": "f64717115b2cd7656edaf3a8996254efb0fdc7773323d987174b5ac095df6a95"
+  },
+  "response_sha256": "f6ad9a6e9043e0e6643fb5964936964a080907108e5b1e12a64ece3747aa3dcc",
+  "diff_scope": "exact one new product file",
+  "app_llm_calls": false,
+  "sending": false,
+  "native_tools": "all_denied",
+  "server_stopped": true,
+  "limits": "ingestion provenance only; vector retrieval and actual-source snapshot check separate",
+  "actual_sources_check": {
+    "state": "passed",
+    "sources": 2,
+    "content_version": "0.2",
+    "chunks_at_300_overlap_60": 122,
+    "source_fingerprint": "0652ca724596901670b1969227a30b3773363620b47f8f4bcd310cea37e876e2",
+    "academic_handout_indexed": false,
+    "network": "denied",
+    "originals_unchanged": true
+  }
+}

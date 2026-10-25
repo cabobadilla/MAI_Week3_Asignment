@@ -1,0 +1,29 @@
+{
+  "action": "Generate functional organization/contact editor through GO",
+  "target": "app/ui_organizations.py",
+  "outcome": "denied_not_executed",
+  "reason": "AGENTS requires desktop/mobile mockup approval for substantial new UI; new details pending",
+  "safe_next": "Prepare nonfunctional B v3 proposal and validate desktop/mobile before requesting visual approval",
+  "backend_continues": true,
+  "scope_organization_fields_confirmed": true,
+  "no_permission_changes": true,
+  "proposals_ready": true,
+  "proposal_version": "B/v3",
+  "manifest": "dot/design/gwa-ui-v3/design-manifest.json",
+  "desktop_mobile_checks": {
+    "passed": 6,
+    "failed": 0
+  },
+  "approval": "approved B/v3 three views",
+  "denied_operation_retried": true,
+  "denied_run_directory_exists": false,
+  "go_active": 0,
+  "decision": "dot/design/gwa-ui-v3/decision.json",
+  "approved_html_sha256": {
+    "organizations.html": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6",
+    "tracking.html": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc",
+    "directed.html": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+  },
+  "retry_result": "approved execution started; awaiting guard/tests",
+  "retry_run": "/tmp/gwa-ui-organizations-round0"
+}

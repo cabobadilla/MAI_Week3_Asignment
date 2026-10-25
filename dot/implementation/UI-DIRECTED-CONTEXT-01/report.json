@@ -1,0 +1,13 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "38ac9f801e1519251cb44eb8accadf31ac26c55290322667b132df8bac90fe5e",
+  "contract_tests": 1,
+  "browser_checks": 28,
+  "errors": 0,
+  "mobile_visual_qa": "passed",
+  "run": "/tmp/gwa-ui-directed-context-round0",
+  "repair_count": 0,
+  "scope": "recipientprepare action+readonlycontext; directed record/note controls pending",
+  "runtime_wiring_pending": true
+}

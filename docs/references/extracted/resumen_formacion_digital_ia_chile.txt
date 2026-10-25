@@ -1,0 +1,112 @@
+[block001] Formación digital e IA para jóvenes en Chile · Resumen ejecutivo
+[block002] Chile · Iniciativa social en desarrollo
+[block003] Formación digital e IA
+[block004] para jóvenes en las comunas
+[block005] Formación desde el celular, acompañamiento y preparación laboral, conectando empresas patrocinadoras y comunidades.
+[block006] Resumen ejecutivo · Versión 0.2 · 24 de octubre de 2026 · Diseño inicial definido, ejecución por validar
+[block007] Propuesta
+[block008] Programa
+[block009] Alianzas
+[block010] Canvas
+[block011] Forma jurídica
+[block012] Próximo paso
+[block013] 01 / PROPÓSITO Y EXPERIENCIA
+[block014] Autonomía digital con acompañamiento
+[block015] El objetivo principal es desarrollar
+[block016] autonomía digital y uso práctico y responsable de IA
+[block017] . El piloto atenderá a
+[block018] 15 jóvenes de 18 a 29 años
+[block019] : personas sin experiencia ni formación digital y personas con estudios que necesitan reforzar habilidades, con rutas adaptadas a su punto de partida.
+[block020] TRAINING
+[block021] Aprender haciendo
+[block022] Fundamentos digitales, IA y tareas individuales semanales, diseñadas para completarse desde el celular.
+[block023] COACHING
+[block024] Preparación laboral
+[block025] Elaboración del currículum vitae digital y ayuda para preparar entrevistas, con retroalimentación humana.
+[block026] APOYO
+[block027] Continuidad
+[block028] Canal de consultas y una sesión individual reservada por cada participante después del curso.
+[block029] El piloto será gratuito para los jóvenes y para la comuna, con financiamiento buscado en patrocinadores. No se garantiza empleo ni existen convenios confirmados.
+[block030] 02 / PROGRAMA INICIAL
+[block031] Tres semanas de curso y tres de soporte
+[block032] Semanas 1 a 3 · Curso
+[block033] Seis clases de 90 minutos: martes en la tarde-noche y sábados. Son
+[block034] 9 horas de clases
+[block035] , más tareas individuales cada semana, con entrega los domingos. El trabajo final será el
+[block036] currículum vitae en formato digital
+[block037] , sin proyecto adicional obligatorio.
+[block038] Semanas 4 a 6 · Soporte
+[block039] Canal escrito de consultas y ayuda para preparar entrevistas. Cada alumno podrá reservar
+[block040] una sesión individual de 30 minutos
+[block041] . Para 15 participantes supone 7,5 horas de sesiones, además de preparación, revisión y atención del canal.
+[block042] Acceso:
+[block043] el celular será suficiente para clases, ejercicios, tareas, CV y soporte; el computador será opcional. Se usará wifi propio o una sala con conectividad que podría facilitar la comuna. Deben verificarse disponibilidad, horarios y funcionamiento móvil antes del lanzamiento.
+[block044] Selección y certificación:
+[block045] selección compartida con la comuna, equilibrando ambos perfiles. Se comenzará con certificado propio de logro: asistencia mínima del 80% y aprobación de tareas y trabajo final. Si se cuentan clases completas, equivale a cinco de seis; el método de registro sigue por definir. Se buscará posteriormente una institución que aporte respaldo o certificación.
+[block046] 03 / ALIANZAS Y EJECUCIÓN
+[block047] Buscar empresa y comuna en paralelo
+[block048] A la empresa:
+[block049] explicar qué financia, cómo participan sus profesionales invitados y qué resultados agregados recibirá. La visión contempla patrocinar uno, cinco o diez cursos anuales, sin comprometer todavía capacidad ni precios.
+[block050] A la comuna:
+[block051] explicar el beneficio para sus jóvenes y el apoyo esperado, sin cobro inicial. Su contribución podrá ser convocatoria, coordinación o espacios con wifi, según disponibilidad. Las OMIL podrían complementar el apoyo laboral.
+[block052] Equipo impulsor:
+[block053] Christian liderará dirección y alianzas; su socia asumirá mayor responsabilidad de ejecución. Ambos podrán generar contenidos e impartir los cursos. La formación será digital, con vinculación territorial presencial cuando sea útil.
+[block054] Diferenciación a demostrar:
+[block055] aprendizaje accesible desde el celular, grupos pequeños, seguimiento y apoyo laboral concreto. El propósito social debe reflejarse en resultados, no solo en la figura jurídica.
+[block056] Una alianza de dispositivos o datos será opcional, no requisito para empezar. Los posibles cupos de funcionarios se acordarían aparte. La gratuidad municipal no elimina la necesidad de revisar convenios y formalidades.
+[block057] 04 / BUSINESS MODEL CANVAS
+[block058] Los nueve bloques del modelo
+[block059] Marco de Osterwalder y Pigneur. Beneficiario, financiador y aliado territorial cumplen funciones diferentes.
+[block060] 01
+[block061] Segmentos de clientes
+[block062] Jóvenes de ambas rutas; empresas patrocinadoras. Comunas como aliadas sin cobro en el piloto.
+[block063] 02
+[block064] Propuesta de valor
+[block065] Autonomía digital, CV y apoyo para entrevistas; iniciativa social medible y accesible territorialmente.
+[block066] 03
+[block067] Canales
+[block068] Empresas y comunas en paralelo; convocatoria local, acceso asistido y formación desde el celular.
+[block069] 04
+[block070] Relaciones con clientes
+[block071] Clases, tareas, consultas y sesión individual; coordinación comunal e informes a patrocinadores.
+[block072] 05
+[block073] Fuentes de ingresos
+[block074] Patrocinio empresarial inicial; posibles aportes comunales o de alumnos para programas posteriores más complejos.
+[block075] 06
+[block076] Recursos clave
+[block077] Dos impulsores, contenidos, evaluación, herramientas móviles y red de aliados.
+[block078] 07
+[block079] Actividades clave
+[block080] Captar aliados, seleccionar, formar, acompañar, revisar tareas, certificar y medir resultados.
+[block081] 08
+[block082] Asociaciones clave
+[block083] Empresas y comunas; futura institución certificadora y aliados de acceso, aún por confirmar.
+[block084] 09
+[block085] Estructura de costos
+[block086] Diseño, clases, revisión, soporte, sesiones individuales, tecnología, coordinación y administración.
+[block087] 05 / DECISIÓN ABIERTA
+[block088] Validar antes de elegir la forma jurídica
+[block089] Sin fines de lucro
+[block090] Alternativa coherente con reinvertir excedentes y preservar la misión, sin dividendos ni participación accionaria. No implica trabajar sin remuneración.
+[block091] Empresa con propósito social
+[block092] Alternativa que permite inversión accionaria y retorno a propietarios, con compromisos verificables de impacto y gobernanza.
+[block093] Decisión acordada: mantener ambas opciones abiertas hasta validar el interés de empresas y comunas.
+[block094] La elección requiere revisión jurídica y tributaria. Ninguna figura acredita automáticamente calidad, impacto, condición de OTEC o beneficios tributarios. Un curso pagado y una donación no son equivalentes.
+[block095] 06 / SOSTENIBILIDAD Y PRÓXIMO PASO
+[block096] Preparar el plan de negocios
+[block097] Presupuestar el costo completo, incluido el trabajo de ambos impulsores. Las 9 horas de clases y 7,5 de sesiones individuales no representan toda la dedicación ni todas las horas del equipo. Separar dinero recibido y aportes en especie; no anunciar una ejecución financiada antes de confirmarla.
+[block098] Evaluar acceso, continuidad, aprendizaje y costo por participante que demuestra competencias. Proteger datos personales, reportar resultados agregados y definir metas antes del piloto.
+[block099] Acceso real
+[block100] Continuidad
+[block101] Autonomía
+[block102] Uso responsable de IA
+[block103] Sostenibilidad
+[block104] Pendientes:
+[block105] comuna y patrocinadores concretos; presupuesto y financiamiento; temario y herramientas; fechas y horarios exactos; acceso móvil y wifi; rúbricas, registro de asistencia, atención de consultas y metas de impacto. Con esa evidencia se decidirá si ajustar, repetir o ampliar.
+[block106] Documento de referencia:
+[block107] Formación digital e IA para jóvenes en comunas de Chile. Documento base y análisis con el Business Model Canvas, versión 0.2, 24 de octubre de 2026. Diseño acordado para preparar el piloto; no constituye un plan de negocios validado ni acredita alianzas formalizadas.
+[block108] Referencias seleccionadas del documento principal:
+[block109] Canvas · Strategyzer
+[block110] OMIL · SENCE
+[block111] Código Civil · BCN
+[block112] Entidades sin fines de lucro · SII

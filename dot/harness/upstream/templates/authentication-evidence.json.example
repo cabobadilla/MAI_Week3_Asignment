@@ -1,0 +1,7 @@
+{
+  "phase": "independent_final",
+  "candidate_sha": "REPLACE_FULL_CANDIDATE_SHA",
+  "plan_sha256": "REPLACE_FROZEN_PLAN_SHA256",
+  "identity_mode": "fixture-only",
+  "test_results": []
+}

@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "5026f289fd44931466ddf4d3edaeca861a92a1ac1eed3688732a04ad0a3bd390",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-vector-guard-round0",
+  "repair_count": 0,
+  "native_executed": false,
+  "demo_restarted": false,
+  "scope": "pre-import vector role guard and assertion on each operation; fake modules only"
+}

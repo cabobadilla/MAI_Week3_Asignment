@@ -1,0 +1,24 @@
+{
+  "task": "T-05B1-B2",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "policy_family": "T-05B",
+  "policy_attempt": "scoped continuation/repair1 after reconciled timeout; no reset by folder suffix",
+  "tests": {
+    "passed": 16,
+    "failed": 0,
+    "suite_sha256": "770055eb37cee283f71d1fb6e48e3f0e89185868ece4bd2027b59c85a1b0f25c"
+  },
+  "files": {
+    "app/retrieval.py": "d1b8b5014bf9b9a8e7acadc37ca1076c34c5000b19bd8eb723b7b27b6b60fdeb"
+  },
+  "response_sha256": "035e41ad200c29035c52ecfeeb27300e0786e30dbfa9681a81fd7cd419f43673",
+  "server_stopped": true,
+  "native_tools": "all_denied",
+  "scope": "Real FAISS with injected fixture embeddings and bounded JSON persistence; not actual-model quality",
+  "app_llm_calls": false
+}

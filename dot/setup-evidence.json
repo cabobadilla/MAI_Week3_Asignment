@@ -1,0 +1,44 @@
+{
+  "scope": "setup_only",
+  "harness_sha": "2e5d217f55b3a26543d3d52edb39d7204e35c258",
+  "preparation_checker": "passed",
+  "source_hashes": "passed",
+  "retired_instructions_scan": "passed",
+  "python": "3.11.16",
+  "virtualenv": "21.14.13",
+  "venv_packages": {
+    "pip": "26.2.2",
+    "setuptools": "84.2.1"
+  },
+  "pip_check": "passed",
+  "opencode_version": "2.0.32",
+  "isolated_config_check": {
+    "outcome": "blocked",
+    "exit_code": 1,
+    "reason": "Managed service port 49374 on 127.0.0.1 already in use",
+    "global_service_modified": false,
+    "inference_submitted": false
+  },
+  "app_tests": "not_run",
+  "upstream_scripts_executed": false,
+  "shared_harness_modified": false,
+  "source_working_tree_preserved": [
+    "dot/README.md modified",
+    "dot/plan-dos-macs.md untracked"
+  ],
+  "git_branch": "main",
+  "git_base_sha": null,
+  "git_origin_preserved": true,
+  "git_push_or_commit": false,
+  "app_runtime_decision": {
+    "deployment": "local",
+    "storage": "local",
+    "llm_provider": "OpenRouter",
+    "model": null,
+    "model_preference": "cheap",
+    "budget_control": "user_managed_api_key",
+    "secret_entry": "user supplies .env",
+    "inference_in_this_preparation": false
+  },
+  "config_example_checks": "passed: blank key/model, disabled, matching limits, .env ignored, example trackable"
+}

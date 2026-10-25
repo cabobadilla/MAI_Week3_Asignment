@@ -1,0 +1,32 @@
+[
+  {
+    "path": "docs/references/originals/proyecto_formacion_digital_ia_base_v01.docx",
+    "extracted_path": "docs/references/extracted/proyecto_formacion_digital_ia_base_v01.txt",
+    "library_file_id": "libfile_6c37cc40080c8191b552dd3b1d48f25b",
+    "content_version": "0.2",
+    "library_version_materialized": 1,
+    "sha256": "41460fbcf2db043902747cbe081cf55b09581cc150f67e0a18a28026d30a816b",
+    "size_bytes": 46956,
+    "extracted_sha256": "dac390c730f770bd9d6dd801ec1571452ebe20e0d8652c686667858796acd4fb"
+  },
+  {
+    "path": "docs/references/originals/resumen_formacion_digital_ia_chile.html",
+    "extracted_path": "docs/references/extracted/resumen_formacion_digital_ia_chile.txt",
+    "library_file_id": "libfile_53f339c6e3808191aa4d31aa25664829",
+    "content_version": "0.2",
+    "library_version_materialized": 1,
+    "sha256": "028c2b664f03d8032ab940025cc863cda85081ac12b01a2eb1b113f11dd78507",
+    "size_bytes": 14628,
+    "extracted_sha256": "509e78e960fdeeb22ae9f92a1dfc9d6b5b31a0e86d5615779fa064fe80f44fa0"
+  },
+  {
+    "path": "docs/references/originals/Week 3 Project Handout (Oct 2026).md",
+    "extracted_path": "docs/references/extracted/Week 3 Project Handout (Oct 2026).txt",
+    "library_file_id": "libfile_4ced0bc870a88191815184ca416bf8f5",
+    "content_version": "Oct 2026",
+    "library_version_materialized": 0,
+    "sha256": "7112c4b18e7a3b11532054c4ca8f05d6bbbbb104f44848609a37507823d0e817",
+    "size_bytes": 18972,
+    "extracted_sha256": "5894dbc56399e7a2f46c7f663acc7c616d5a174b8d2842ca5ba90e696c4b05fd"
+  }
+]

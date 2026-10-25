@@ -1,0 +1,333 @@
+{
+  "phase": "implementation_backend_authorized",
+  "authorization_refs": [
+    "Sentinel_061a3af9cb5c8191ac7a30e299216841",
+    "Sentinel_2e11a13b89a0819197288a7b64aa8860",
+    "Sentinel_2ddaa539462c8191a87baa8024007bbc"
+  ],
+  "coder_model": "opencode-go/deepseek-v4.1-flash",
+  "app_llm": "qwen/qwen3.8-flash selected/configurable; tests mock only, no app inference",
+  "app_llm_calls": false,
+  "project_tools_permission": "deny",
+  "coder_native_tools": "all_denied_per_invocation",
+  "base_mode": "uncommitted file-map candidate fingerprint; no Git candidate/commit claimed",
+  "sandbox_canaries": {
+    "scratch_write": "pass",
+    "outside_read": "denied",
+    "protected_write": "denied",
+    "network": "denied",
+    "profile_sha256": "18efa6eee65b2977546135a5d8805c839ea36de027cb999c15a46661e7adadc6"
+  },
+  "guard_tests_round0": {
+    "passed": 25,
+    "failed": 2,
+    "historical_only": true,
+    "superseded_by": "guard_current repair1 pass27/27"
+  },
+  "runs": {
+    "real_preflight": {
+      "process_outcome": "preflight_pass",
+      "reason": null,
+      "model_requested": "opencode-go/deepseek-v4.1-flash",
+      "effective_model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "execution_mode": null,
+      "native_tools": "all_denied",
+      "inference_submitted": false,
+      "server_stopped": true,
+      "response_sha256": null,
+      "binary_sha256": "e43ec2df6f36842fd17d1a71a866acb9a84884b489988376c19bf9a7250dabbf"
+    },
+    "fake_success": {
+      "process_outcome": "response_received",
+      "reason": null,
+      "model_requested": "opencode-go/deepseek-v4.1-flash",
+      "effective_model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go"
+      },
+      "execution_mode": "fake-cli",
+      "native_tools": "all_denied",
+      "inference_submitted": false,
+      "server_stopped": true,
+      "response_sha256": "3f206925fb084e4743a9a1b2789a38534607699ab072b43d85e4f62f551444a8",
+      "binary_sha256": "fc63d6df3baa5fd5b6d585c5bd9763fd1f58b7065466e56178b402daec74153f"
+    },
+    "fake_wrong_model": {
+      "process_outcome": "blocked",
+      "reason": "Unexpected effective model",
+      "model_requested": "opencode-go/deepseek-v4.1-flash",
+      "effective_model": null,
+      "execution_mode": "fake-cli",
+      "native_tools": null,
+      "inference_submitted": false,
+      "server_stopped": true,
+      "response_sha256": null,
+      "binary_sha256": "fc63d6df3baa5fd5b6d585c5bd9763fd1f58b7065466e56178b402daec74153f"
+    },
+    "fake_tool_event": {
+      "process_outcome": "blocked",
+      "reason": "Unexpected native tool event",
+      "model_requested": "opencode-go/deepseek-v4.1-flash",
+      "effective_model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go"
+      },
+      "execution_mode": "fake-cli",
+      "native_tools": "all_denied",
+      "inference_submitted": false,
+      "server_stopped": true,
+      "response_sha256": null,
+      "binary_sha256": "fc63d6df3baa5fd5b6d585c5bd9763fd1f58b7065466e56178b402daec74153f"
+    },
+    "guard_round0": {
+      "process_outcome": "response_received",
+      "reason": null,
+      "model_requested": "opencode-go/deepseek-v4.1-flash",
+      "effective_model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "execution_mode": null,
+      "native_tools": "all_denied",
+      "inference_submitted": true,
+      "server_stopped": true,
+      "response_sha256": "7c161fc55f2a27c9cd448d003b7e053d6ee66345c92f3f73e37c58cf159f28ec",
+      "binary_sha256": "e43ec2df6f36842fd17d1a71a866acb9a84884b489988376c19bf9a7250dabbf"
+    }
+  },
+  "dependencies": "92 packages locked; pip check passed; local pinned Safetensors weights verified; CPU embedding smoke passed with network denied",
+  "ui_b_v2": "pending; no UI implementation",
+  "application_status": "Backend integrated: config16,storage18,campaign18,auth13,versions17,export14,distribution25,followup25; no UI, RAG, graph or app LLM yet.",
+  "shared_harness_modified": false,
+  "push_deploy_library_sending": false,
+  "guard_current": {
+    "repair_round": 1,
+    "passed": 27,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/guard-round1-evidence.json"
+  },
+  "config_current": {
+    "task": "T-02A",
+    "round": 0,
+    "passed": 16,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-02A.json"
+  },
+  "current_task": {
+    "id": "RAG-ISO-01",
+    "round": 1,
+    "status": "response_received_pending_validation",
+    "elapsed_seconds": 108,
+    "control_dir": "/tmp/gwa-isolated-embeddings-round1",
+    "go_call_active": false
+  },
+  "observed_at_utc": "2026-10-25T17:46:09.497670+00:00",
+  "storage_current": {
+    "task": "T-03",
+    "passed": 18,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-03.json"
+  },
+  "campaign_current": {
+    "task": "T-04",
+    "passed": 18,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-04.json"
+  },
+  "auth_backend_current": {
+    "passed": 13,
+    "failed": 0,
+    "integrated": true,
+    "full_web_auth": "not_verified",
+    "evidence": "dot/implementation/AUTH-BACKEND.json"
+  },
+  "versions_current": {
+    "task": "T-07A",
+    "passed": 17,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-07A.json"
+  },
+  "export_current": {
+    "task": "T-07B",
+    "passed": 14,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-07B.json"
+  },
+  "regression": {
+    "passed": 205,
+    "failed": 0,
+    "evidence": "dot/implementation/regression-after-T-05B1-B2.json"
+  },
+  "distribution_current": {
+    "task": "T-08A",
+    "passed": 25,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-08A.json"
+  },
+  "followup_current": {
+    "task": "T-09A",
+    "passed": 25,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-09A.json"
+  },
+  "active_work": [],
+  "goal": "Runnable local end-to-end vertical; mock mode explicit until app model chosen",
+  "ingestion_current": {
+    "task": "T-05A",
+    "passed": 16,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-05A.json"
+  },
+  "task_sizing": {
+    "verified": true,
+    "evidence": "dot/implementation/task-sizing-audit.json",
+    "breakdown": "dot/TASK_SIZING.md",
+    "numeric_LOC_token_file_limit_found": false,
+    "timeout_seconds": 600,
+    "max_repairs": 2,
+    "one_active_GO_call_per_host": true
+  },
+  "design_v2": {
+    "status": "pending_user_visual_review",
+    "file": "dot/design/gwa-ui-v2/index.html",
+    "automated_prototype_checks": 34,
+    "errors": 0,
+    "external_requests": 0,
+    "approved": false
+  },
+  "retrieval_current": {
+    "task": "T-05B1-B2",
+    "passed": 16,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-05B1-B2.json"
+  },
+  "local_embeddings_current": {
+    "task": "T-05B3",
+    "passed": 10,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/T-05B3.json"
+  },
+  "scope_revision": "r5 organizations +3 initial contacts, tracking public register + directed context, no CRM",
+  "organization_migration_current": {
+    "task": "ORG-01",
+    "passed": 10,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/ORG-01.json",
+    "user_db_migrated": false
+  },
+  "rag_integration": {
+    "state": "native_tests_suspended",
+    "first_crash_pid": 98703,
+    "first_crash_utc": "2026-10-25T16:54:08Z",
+    "second_crash_pid": 99473,
+    "second_crash_utc": "2026-10-25T16:59:06Z",
+    "evidence": "dot/implementation/RAG-native-crash.json",
+    "mitigation": "process isolation proposed; not yet implemented or tested"
+  },
+  "app_model": {
+    "selected": "qwen/qwen3.8-flash",
+    "configurable": true,
+    "real_calls": false,
+    "real_env_read": false
+  },
+  "organization_forms_current": {
+    "task": "ORG-02",
+    "passed": 17,
+    "failed": 0,
+    "integrated": true,
+    "evidence": "dot/implementation/ORG-02.json",
+    "actual_UI_implemented": false
+  },
+  "latest_checkpoint": {
+    "timestamp": "2026-10-25T23:16:55.295998+00:00",
+    "phase": "real-agent implementation with mock-only validation",
+    "active_go": {
+      "unit": "RUN-BUDGET-RESERVE-01",
+      "run": "/tmp/gwa-run-budget-reserve-round0",
+      "exec_session": 67113,
+      "maximum_round_seconds": 600
+    },
+    "guard_tests": {
+      "native_guard": 18,
+      "worker": 4,
+      "vector": 6
+    },
+    "client_mock_tests": 18,
+    "integrated_receipts": [
+      "NATIVE-GUARD-01",
+      "WORKER-GUARD-01",
+      "VECTOR-GUARD-01",
+      "LLM-CLIENT-01"
+    ],
+    "demo_user_active": true,
+    "demo_restarted": false,
+    "real_agent_complete": false,
+    "native_execution": false,
+    "application_llm_calls": false,
+    "credentials_read": false,
+    "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed.",
+    "next": [
+      "validate atomic call reservation",
+      "history context selection",
+      "persistent generation/review graph with mocks",
+      "bounded real evaluation separately authorized"
+    ]
+  },
+  "active_go": {
+    "unit": "RETRIEVAL-GRAPH-01",
+    "run": "/tmp/gwa-agent-retrieval-graph-round0",
+    "exec_session": 7556,
+    "maximum_round_seconds": 600
+  },
+  "next": [
+    "validate retrieval/checkpoint/human interrupt graph with mocks",
+    "reviewer contract",
+    "durable LLM execution",
+    "connect generator/reviewer and bounded real test"
+  ],
+  "real_agent_complete": false,
+  "demo_end_to_end": true,
+  "reservation_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "trial_authorized_usd_max": "0.10",
+  "application_llm_calls": false,
+  "timestamp": "2026-10-25T23:31:09.994540+00:00",
+  "native_execution": false,
+  "demo_restarted": false,
+  "history_context": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "a03d17708f49855335a9d17f2c6f0f046c9347a1b324c41d06b274284fe526d3",
+    "tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-history-context-round0",
+    "repair1": "/tmp/gwa-history-context-repair1",
+    "repair2": "/tmp/gwa-history-context-repair2",
+    "repair_count": 2,
+    "remaining_repairs": 0,
+    "application_llm_calls": false,
+    "scope": "read-only explicit-campaign history, current corrections, bounded untrusted data; no LLM quality claim"
+  },
+  "generation_contract": "integrated12/12"
+}

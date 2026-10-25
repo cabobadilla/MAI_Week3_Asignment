@@ -1,0 +1,13 @@
+{
+  "task": "NOTE-ID-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "tests": {
+    "passed": 32,
+    "failed": 0
+  },
+  "source_sha256": "e4bd520d2817ea6e001619151979cfcfce4092ce586417c935f5846c9bd515b6",
+  "status": "integrated",
+  "app_llm_calls": false,
+  "real_env_read": false
+}

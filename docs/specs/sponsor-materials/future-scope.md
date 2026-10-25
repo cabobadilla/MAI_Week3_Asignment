@@ -1,0 +1,4 @@
+# Fuera del MVP · reconciliado r5
+Registro compartido de Organizaciones (empresas y beneficiarias como municipalidades) ENTRA al MVP por decisión posterior. Tres contactos iniciales, uno obligatorio, sin tope rígido de tres; ver scope-r5-organizations-tracking.md. No volver a diferir ese registro.
+Fuera: workflows adicionales de beneficiarios, CRM/funnel/oportunidades/tareas/recordatorios, personalización automática individual, envío masivo integrado, inbox/sync, métricas automáticas de aperturas/reacciones, enriquecimiento de contactos, compras de anuncios, publicación o despliegue. CSV/importación/purga/multiusuario requieren definición separada.
+Próximos pasos legacy se preservan solo como notas históricas, sin ejecutar tareas. Seguimiento tiene dos subpantallas confirmadas: registro público y comunicaciones dirigidas para contexto. Las variantes B/v2 anteriores ya no son una elección pendiente.

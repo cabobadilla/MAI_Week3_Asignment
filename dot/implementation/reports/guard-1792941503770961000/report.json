@@ -1,0 +1,36 @@
+{
+  "suite": "guard",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-l7yigtqj",
+  "input_sha256": {
+    "tests/test_guard.py": "9796a477d78ceebd1432211d1c27f6b450f022bdddcb062de15b57d87473dc52",
+    "candidate/scripts/filemap_guard.py": "5f8d5e593a8dc87949357986841a991a1021ff16cba4a1671f87bcf865f81494"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "c82abe86906f679132ab2bb309b3b60fad570a4db47c92b4197a4f4d79ee9a29",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-l7yigtqj/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-l7yigtqj/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-l7yigtqj/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-l7yigtqj/scratch/junit.xml",
+    "/private/tmp/gwa-validate-l7yigtqj/tests/test_guard.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

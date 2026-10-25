@@ -1,0 +1,64 @@
+{
+  "version": "B/v3",
+  "organization_revision": 1,
+  "status": "approved_for_implementation",
+  "user_ref": "Sentinel_2842338b246881918329d22fd2c8cd84",
+  "decision_utc": "2026-10-25T18:32:00Z",
+  "approved_scope": [
+    "organizations",
+    "publications",
+    "directed_context_thread"
+  ],
+  "approved_html_sha256": {
+    "organizations.html": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6",
+    "tracking.html": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc",
+    "directed.html": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+  },
+  "approved_screenshots": [
+    {
+      "screen": "organizations",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-desktop.png",
+      "sha256": "2b0ca87bdc91ef948ecc0dbe23eec2c0c6561b50874c5ba0150e220a645f77ec",
+      "html_sha256": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6"
+    },
+    {
+      "screen": "tracking",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-desktop.png",
+      "sha256": "854fa150e5967da020f14d9017c6a1e292a10abff25cd05b7617856288cf8cd2",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    },
+    {
+      "screen": "directed",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/directed-desktop.png",
+      "sha256": "19f81a4080ad6e789ddeb4131d4ad7ec227985d691e8d0a5f615e2211ec4a855",
+      "html_sha256": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+    },
+    {
+      "screen": "organizations",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-mobile.png",
+      "sha256": "23b825f5fef79570857409c75fcf496a023db3320c631306e27d58b95b236e69",
+      "html_sha256": "f58337aaf0de2aa17889d9178013e5b8654377f8ace1a18aaae73720dccf01b6"
+    },
+    {
+      "screen": "tracking",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-mobile.png",
+      "sha256": "79dbc4f5afceb58541924c9ec13564dd85f434e9088e0ad7e1d23c65cc2c972a",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    },
+    {
+      "screen": "directed",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/directed-mobile.png",
+      "sha256": "cbb1091b8cec04561f32063980f6feb4546517c53f599037f62bf942bb69bc22",
+      "html_sha256": "f2f713a590d5f3c4ba7104898c5088bb4020f2bb1a98a46fb73e89ea00604d98"
+    }
+  ],
+  "sensitive_credentials_included": false,
+  "prior_denied_action": "not_executed; no prior retry; one retry permitted with new approval",
+  "limitations": "No substantive redesign; no sends/publications/inbox/CRM/remoteappcalls/nativeRAGreproduction"
+}

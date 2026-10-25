@@ -1,0 +1,10 @@
+{
+  "qa_id": "7d1978d41a5c4f7abc23665f7a5867c0",
+  "pids": [
+    33067,
+    33075
+  ],
+  "all_stopped": true,
+  "port": 58671,
+  "user_demo_8501_touched": false
+}

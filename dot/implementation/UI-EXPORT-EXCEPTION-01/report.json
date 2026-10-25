@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-25T21:08:38Z",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "0e82ab502d27f579897b036423b89a5f1a9adcfba00e8a5014218d1f1486c6e3",
+  "integrated": true,
+  "contract_tests": 1,
+  "browser_checks": 21,
+  "errors": 0,
+  "run": "/tmp/gwa-ui-export-exception1",
+  "parent_family": "UI-APPROVAL-01",
+  "explicit_exception_user": "Sentinel_e1b47c169e808191a9d4bd8f8aab65eb",
+  "remaining_exception_rounds": 0,
+  "fixture_correction": "QA outputroot resolved to physical /private/tmp; product symlink refusal and frozen browser tests unchanged",
+  "app_llm_calls": false,
+  "native_ml": false
+}

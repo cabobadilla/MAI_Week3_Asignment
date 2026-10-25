@@ -1,0 +1,5 @@
+# Mesa editorial B · base elegida / detalle nuevo en revisión · r4
+B v1 elegida por usuario Sentinel_c9fa6c87e2708191b6e045cecb058afd. Decisión/hash en dot/design-decisions/gwa-ui-v1-B-selection.json; HTML/capturas originales intactos. La elección no cubre pantallas que no vio.
+
+UX normativa nueva en [ux.md](ux.md): Campañas, Empresas/contactos, Seguimiento y editor/revisión, más registro manual por lote/público. No es una reelección de estilo A/B original. T-01 prepara dos variantes acotadas B v2 de disposición del seguimiento, desktop/móvil/estados relevantes, hashes y capturas; usuario elige detalle/versión antes de UI. Wireframes no generados en esta tarea: el harness exige aprobación antes del coder visual, no antes de redactar specs implementables.
+Gate visual pendiente no impide fixtures, modelo/DDL, arquitectura o backlog de specs. No inventar aprobación B v2 ni declarar mockups v1 como evidencia de la ampliación. AC-27/28 y UI-01/UI-GATE01 trazan estados a pruebas futuras. No uso de Library o publicación.

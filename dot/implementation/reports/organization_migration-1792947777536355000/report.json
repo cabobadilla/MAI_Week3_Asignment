@@ -1,0 +1,43 @@
+{
+  "suite": "organization_migration",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-d0na2iew",
+  "input_sha256": {
+    "tests/test_organization_migration.py": "e756473bf40e3dcdd985789d013aba4ff8488ef75c624ac4491f6955f5184dff",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/storage.py": "84314ffa4da0affb144ea6fe0b5578172337a95ec688a84d9eaeff548ed1c1a3",
+    "candidate/app/companies.py": "fac9c73d55362224e102b9910b3e5b2fe371a35efa3ad83e4bbd11de0ef377cb",
+    "candidate/app/campaigns.py": "724f0b8d706e8694a1fd3db53d0659e75696e3e8029ac4ab41427e4bdbab928e",
+    "candidate/app/recipients.py": "844f82182b70f3cf501757179d5cb852d7de1b0cdce634e612fe67f1e76e59fe",
+    "candidate/app/versions.py": "a5b928b882882e5dc4e67a6967b1e20ba37487f4cf1b1ec419f98669f0e161f9",
+    "candidate/app/distribution.py": "2217bd449413cb4f5297fdd284c877432e50d88260794eebbdcada281163f92c"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "e1e18f7036ff1e217bcf1f7d89e742ee32914649157e9cbfa5ac3a66abfc9350",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-d0na2iew/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-d0na2iew/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-d0na2iew/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-d0na2iew/scratch/junit.xml",
+    "/private/tmp/gwa-validate-d0na2iew/tests/test_organization_migration.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

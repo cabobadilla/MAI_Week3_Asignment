@@ -1,0 +1,30 @@
+{
+  "task": "ORG-02",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 1,
+  "initial_tests": {
+    "passed": 15,
+    "failed": 2,
+    "reason": "TEXT IDs wrongly coerced to integers"
+  },
+  "tests": {
+    "passed": 17,
+    "failed": 0,
+    "suite_sha256": "a7e2eea218ddde0dec66e10fb185b5d0d5ada12aaaf9c5fc97285a400a8be465"
+  },
+  "files": {
+    "app/organizations.py": "28ec2d6fb7d45f35fab575cc81361dabc1b7298be8594e0c0d465ffb58075ba3"
+  },
+  "repair_scope": "one ID validator authored by GO; tests unchanged",
+  "server_stopped": true,
+  "native_tools": "all_denied",
+  "rag_native_loaded": false,
+  "user_database_touched": false,
+  "limits": "service and fixture persistence; actual form/UI not yet implemented",
+  "app_llm_calls": false
+}

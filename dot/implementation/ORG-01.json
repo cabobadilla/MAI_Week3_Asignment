@@ -1,0 +1,26 @@
+{
+  "task": "ORG-01",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 0,
+  "tests": {
+    "passed": 10,
+    "failed": 0,
+    "suite_sha256": "e756473bf40e3dcdd985789d013aba4ff8488ef75c624ac4491f6955f5184dff"
+  },
+  "files": {
+    "app/storage.py": "84314ffa4da0affb144ea6fe0b5578172337a95ec688a84d9eaeff548ed1c1a3"
+  },
+  "base_sha256": "d5eb3d678431a82f97dfe7a53c00524fe5e8b1df5a7ecc5599674613c6dec952",
+  "server_stopped": true,
+  "native_tools": "all_denied",
+  "source_DDL001_changed": false,
+  "user_database_migrated": false,
+  "migration_test": "real SQLite synthetic v1->v2; IDs/contact/history snapshots unchanged; authorizer-induced failure rollback",
+  "roles_note": "potential category, not sponsorship assertion",
+  "app_llm_calls": false
+}

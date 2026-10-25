@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "real password setup and HTTP login",
+    "cookie inaccessible to JS",
+    "organization created through real UI/API/SQLite",
+    "reload preserves authenticated saved organization",
+    "real CSRF rejection without data write",
+    "campaign brief created through real UI/API; no automatic generation",
+    "generation failure visible without automatic retry",
+    "explicit demo creates six persisted pieces pending human review",
+    "UI edit saves immutable child version",
+    "discard does not write unsaved text",
+    "human confirmation and clean snapshot required",
+    "approval failure recovers explicitly; exact current bundle approved",
+    "saved editor survives page reload without dirty dialog",
+    "persisted campaign selection opens workspace",
+    "reload preserves edited run without regeneration",
+    "human approval persists across reload",
+    "live mobile layout",
+    "logout failure visible; no false signed-out state",
+    "logout invalidates real session"
+  ],
+  "errors": [],
+  "blocked": [],
+  "real_http": true,
+  "real_sqlite": true,
+  "real_auth": true,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "scope": "approval-only repair1 component; export controls still pending under samefamily"
+}

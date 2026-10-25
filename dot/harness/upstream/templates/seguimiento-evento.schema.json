@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dotharness:tracking-event:1",
+  "title": "dotHarness project observation event v1",
+  "description": "Shape only; publisher/coordinator must enforce trusted actor, privacy, monotonic order, idempotency and acceptance authority. No live project dashboard implemented.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1"
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "task_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "round": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "stage": {
+      "enum": [
+        "discovery",
+        "requirements",
+        "design",
+        "planning",
+        "implementation",
+        "validation",
+        "delivery",
+        "retro"
+      ]
+    },
+    "type": {
+      "enum": [
+        "stage_changed",
+        "task_started",
+        "heartbeat",
+        "agent_session_bound",
+        "candidate_ready",
+        "validation_completed",
+        "decision_pending",
+        "review_completed",
+        "blocked",
+        "outcome_unknown",
+        "handoff",
+        "task_finished"
+      ]
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "enum": [
+            "coordinator",
+            "executor",
+            "coder",
+            "validator",
+            "dot",
+            "user"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+        }
+      },
+      "required": [
+        "role",
+        "id"
+      ]
+    },
+    "state": {
+      "enum": [
+        "draft",
+        "pending",
+        "ready",
+        "prepared",
+        "running",
+        "candidate_ready",
+        "validating",
+        "review_pending",
+        "accepted",
+        "rejected",
+        "blocked",
+        "outcome_unknown",
+        "cancelled"
+      ]
+    },
+    "agent": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "execution_mode": {
+      "enum": [
+        "file-map-no-tools",
+        "executor",
+        "human",
+        "unknown"
+      ]
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requested": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effective": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "unknown",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "requested",
+        "effective",
+        "status"
+      ]
+    },
+    "last_heartbeat_utc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "base_sha": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+    },
+    "candidate_sha": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+    },
+    "contract_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "gate_manifest_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "tests": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "expected": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "executed": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "passed": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "failed": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "skipped": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "not_run": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "phase": {
+          "enum": [
+            "development",
+            "independent_final",
+            null
+          ]
+        }
+      },
+      "required": [
+        "expected",
+        "executed",
+        "passed",
+        "failed",
+        "skipped",
+        "not_run",
+        "phase"
+      ]
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source": {
+          "enum": [
+            "reported",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "reference_metric",
+            "billed",
+            "unknown",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "currency",
+        "source",
+        "kind"
+      ]
+    },
+    "decisions_pending": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+          },
+          "kind": {
+            "enum": [
+              "destination",
+              "design",
+              "budget",
+              "deployment",
+              "other"
+            ]
+          },
+          "reference_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "reference_id"
+        ]
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$"
+          },
+          "kind": {
+            "enum": [
+              "sanitized-log",
+              "test-report",
+              "screenshot",
+              "trace",
+              "contract",
+              "review",
+              "other"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "sha256"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "project_id",
+    "event_id",
+    "seq",
+    "timestamp_utc",
+    "run_id",
+    "task_id",
+    "round",
+    "stage",
+    "type",
+    "actor",
+    "state",
+    "agent",
+    "execution_mode",
+    "model",
+    "last_heartbeat_utc",
+    "base_sha",
+    "candidate_sha",
+    "contract_sha256",
+    "gate_manifest_sha256",
+    "tests",
+    "cost",
+    "decisions_pending",
+    "artifacts"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "cost": {
+            "properties": {
+              "source": {
+                "enum": [
+                  "unknown",
+                  "not_applicable"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "cost": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "currency": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "state": {
+            "const": "accepted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actor": {
+            "properties": {
+              "role": {
+                "const": "dot"
+              }
+            }
+          },
+          "candidate_sha": {
+            "type": "string",
+            "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"
+          },
+          "contract_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "gate_manifest_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  ]
+}

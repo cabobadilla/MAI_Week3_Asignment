@@ -1,0 +1,27 @@
+{
+  "version": "B/v3",
+  "files": [
+    "tracking"
+  ],
+  "results": [
+    {
+      "screen": "tracking",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-desktop.png",
+      "sha256": "854fa150e5967da020f14d9017c6a1e292a10abff25cd05b7617856288cf8cd2",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    },
+    {
+      "screen": "tracking",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/tracking-mobile.png",
+      "sha256": "79dbc4f5afceb58541924c9ec13564dd85f434e9088e0ad7e1d23c65cc2c972a",
+      "html_sha256": "075914af169935a93525771d41fba7adaa42c0b4ea03a29c49a57b14297a90dc"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "visual_approved": false,
+  "app_implemented": false,
+  "mode": "isolated headless only own local HTML, no personal browser, no network or private data"
+}

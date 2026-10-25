@@ -1,0 +1,39 @@
+{
+  "suite": "retrieval",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-kx4aklce",
+  "input_sha256": {
+    "tests/test_retrieval.py": "770055eb37cee283f71d1fb6e48e3f0e89185868ece4bd2027b59c85a1b0f25c",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/ingestion.py": "f64717115b2cd7656edaf3a8996254efb0fdc7773323d987174b5ac095df6a95",
+    "candidate/app/retrieval.py": "d1b8b5014bf9b9a8e7acadc37ca1076c34c5000b19bd8eb723b7b27b6b60fdeb"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "81901e81183cfe75876faf4272bdb2523a6d157e5a866dcaee73c0323a473a40",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-kx4aklce/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-kx4aklce/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-kx4aklce/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-kx4aklce/scratch/junit.xml",
+    "/private/tmp/gwa-validate-kx4aklce/tests/test_retrieval.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

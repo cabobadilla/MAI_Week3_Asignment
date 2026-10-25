@@ -1,0 +1,51 @@
+{
+  "observed_at_utc": "2026-10-25T15:29:24.538537+00:00",
+  "suites": {
+    "guard": {
+      "passed": 27,
+      "failed": 0,
+      "report": "dot/implementation/reports/guard-1792942119489983000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "config": {
+      "passed": 16,
+      "failed": 0,
+      "report": "dot/implementation/reports/config-1792942119817514000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "storage": {
+      "passed": 18,
+      "failed": 0,
+      "report": "dot/implementation/reports/storage-1792942120225387000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "campaign": {
+      "passed": 18,
+      "failed": 0,
+      "report": "dot/implementation/reports/campaign-1792942120659229000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "auth": {
+      "passed": 13,
+      "failed": 0,
+      "report": "dot/implementation/reports/auth-1792942123787172000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "versions": {
+      "passed": 17,
+      "failed": 0,
+      "report": "dot/implementation/reports/versions-1792942124253064000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    },
+    "export": {
+      "passed": 14,
+      "failed": 0,
+      "report": "dot/implementation/reports/export-1792942124752385000/report.json",
+      "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']"
+    }
+  },
+  "total_unit_tests": 123,
+  "no_app_llm_calls": true,
+  "test_assertions_unchanged": true,
+  "scope": "Integrated backend snapshots and guard, not UI/end-to-end/model quality"
+}

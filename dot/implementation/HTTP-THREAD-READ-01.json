@@ -1,0 +1,14 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "b251d7b80a4d9e4719a5e1ae28c2fbbaca38ab5028329ccd71c102cbf4a5cced",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-web-thread-read-round0",
+  "repair1": "/tmp/gwa-web-thread-read-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "readonly organization thread, exact versions, archivedcontacts, correctionhistory, untrustedtexts"
+}

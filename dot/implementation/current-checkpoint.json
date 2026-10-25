@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-25T23:31:09.981237+00:00",
+  "phase": "real-agent implementation with mock-only validation",
+  "active_go": {
+    "unit": "RETRIEVAL-GRAPH-01",
+    "run": "/tmp/gwa-agent-retrieval-graph-round0",
+    "exec_session": 7556,
+    "maximum_round_seconds": 600
+  },
+  "guard_tests": {
+    "native_guard": 18,
+    "worker": 4,
+    "vector": 6
+  },
+  "client_mock_tests": 18,
+  "integrated_receipts": [
+    "NATIVE-GUARD-01",
+    "WORKER-GUARD-01",
+    "VECTOR-GUARD-01",
+    "LLM-CLIENT-01"
+  ],
+  "demo_user_active": true,
+  "demo_restarted": false,
+  "real_agent_complete": false,
+  "native_execution": false,
+  "application_llm_calls": false,
+  "credentials_read": false,
+  "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed.",
+  "next": [
+    "validate retrieval/checkpoint/human interrupt graph with mocks",
+    "reviewer contract",
+    "durable LLM execution",
+    "connect generator/reviewer and bounded real test"
+  ],
+  "reservation_tests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "trial_authorized_usd_max": "0.10",
+  "history_context": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "a03d17708f49855335a9d17f2c6f0f046c9347a1b324c41d06b274284fe526d3",
+    "tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-history-context-round0",
+    "repair1": "/tmp/gwa-history-context-repair1",
+    "repair2": "/tmp/gwa-history-context-repair2",
+    "repair_count": 2,
+    "remaining_repairs": 0,
+    "application_llm_calls": false,
+    "scope": "read-only explicit-campaign history, current corrections, bounded untrusted data; no LLM quality claim"
+  },
+  "generation_contract": "integrated12/12"
+}

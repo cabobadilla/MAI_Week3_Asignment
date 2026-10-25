@@ -1,0 +1,13 @@
+{
+  "task": "BOOT-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "source_sha256": "5e10902938ad189729ce449c91ef523af814578d9dece4ae9b506657d2e75bd3",
+  "real_env_read": false,
+  "demo_skips_dotenv": true,
+  "app_llm_calls": false,
+  "initial_control_failure": "pytest cwd outside sandbox; no candidate test ran until controlled cwd fixed"
+}

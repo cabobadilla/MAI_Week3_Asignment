@@ -1,0 +1,152 @@
+[
+  {
+    "source_run": "survey-codegen-round0b",
+    "cwd": "/fixture/coder",
+    "ready_agent": {
+      "mode": "primary",
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go"
+      },
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "read",
+          "resource": "*.env",
+          "effect": "ask"
+        },
+        {
+          "action": "read",
+          "resource": "*.env.*",
+          "effect": "ask"
+        },
+        {
+          "action": "read",
+          "resource": "*.env.example",
+          "effect": "allow"
+        },
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "provider.use",
+          "resource": "opencode-go",
+          "effect": "allow"
+        },
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "provider.use",
+          "resource": "opencode-go",
+          "effect": "allow"
+        },
+        {
+          "action": "tool.*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "browser",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "created_session": {
+      "id": "ses_recorded0",
+      "location": {
+        "directory": "/fixture/coder"
+      },
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "agent": "survey-coder"
+    }
+  },
+  {
+    "source_run": "survey-codegen-repair1",
+    "cwd": "/fixture/coder",
+    "ready_agent": {
+      "mode": "primary",
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go"
+      },
+      "permissions": [
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "read",
+          "resource": "*.env",
+          "effect": "ask"
+        },
+        {
+          "action": "read",
+          "resource": "*.env.*",
+          "effect": "ask"
+        },
+        {
+          "action": "read",
+          "resource": "*.env.example",
+          "effect": "allow"
+        },
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "provider.use",
+          "resource": "opencode-go",
+          "effect": "allow"
+        },
+        {
+          "action": "*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "provider.use",
+          "resource": "opencode-go",
+          "effect": "allow"
+        },
+        {
+          "action": "tool.*",
+          "resource": "*",
+          "effect": "deny"
+        },
+        {
+          "action": "browser",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "created_session": {
+      "id": "ses_recorded1",
+      "location": {
+        "directory": "/fixture/coder"
+      },
+      "model": {
+        "id": "deepseek-v4.1-flash",
+        "providerID": "opencode-go",
+        "variant": "default"
+      },
+      "agent": "survey-coder"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "suite": "distribution",
+  "exit_code": 0,
+  "phase": "protected_backend_snapshot",
+  "control_root": "/private/tmp/gwa-validate-fikewqs0",
+  "input_sha256": {
+    "tests/test_distribution.py": "9c062d5014b8355074d12380290c5fd52fa3e79f80ec347468116abca896e9f9",
+    "candidate/app/__init__.py": "8a6fd4c94d80399b4708355532762a8d1a89cb904bd63e6cd3e63d599de07d78",
+    "candidate/app/config.py": "686f4ae7bf0638d83ce5e2695a1ee1d3454e61fa1aed195812bccbf502ba7cd7",
+    "candidate/app/storage.py": "d5eb3d678431a82f97dfe7a53c00524fe5e8b1df5a7ecc5599674613c6dec952",
+    "candidate/app/companies.py": "fac9c73d55362224e102b9910b3e5b2fe371a35efa3ad83e4bbd11de0ef377cb",
+    "candidate/app/campaigns.py": "724f0b8d706e8694a1fd3db53d0659e75696e3e8029ac4ab41427e4bdbab928e",
+    "candidate/app/recipients.py": "844f82182b70f3cf501757179d5cb852d7de1b0cdce634e612fe67f1e76e59fe",
+    "candidate/app/versions.py": "a5b928b882882e5dc4e67a6967b1e20ba37487f4cf1b1ec419f98669f0e161f9",
+    "candidate/app/distribution.py": "2217bd449413cb4f5297fdd284c877432e50d88260794eebbdcada281163f92c"
+  },
+  "inputs_unchanged": true,
+  "canaries": "PASS canaries ['outside', 'home', 'controlwrite', 'network']",
+  "profile_sha256": "e106aa0b59abded9b3452a204528125efb66d04a056d6ac216ae3457ad0ef34c",
+  "model_calls": false,
+  "env_real_read": false,
+  "network": "denied",
+  "base_kind": "file_sha256_snapshot_no_git_candidate",
+  "argv": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/private/tmp/gwa-validate-fikewqs0/profile.sb",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-I",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-c",
+    "/private/tmp/gwa-validate-fikewqs0/pytest.ini",
+    "--basetemp=/private/tmp/gwa-validate-fikewqs0/scratch/pytest",
+    "--junitxml=/private/tmp/gwa-validate-fikewqs0/scratch/junit.xml",
+    "/private/tmp/gwa-validate-fikewqs0/tests/test_distribution.py"
+  ],
+  "limits": "fixed backend suites, not proof of UI/app LLM quality or general sandbox portability"
+}

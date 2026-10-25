@@ -1,0 +1,216 @@
+{
+  "phase": "B-v2-local-design-prototype",
+  "design_approved": false,
+  "app_implemented": false,
+  "html_sha256": "84b3839446505d7ae28c0c6a223a87bfbe3dbfbb76e1b93bffd1e524aef61b27",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "browser_binary_sha256": "77d8278b1ac9d0687fad4e817ea83023ede09b1deef36e1864b49ba194ac9634",
+  "results": [
+    {
+      "id": "VIS-campaign-companies-normal-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-normal-desktop.png",
+      "sha256": "781605892a076da1564ff1bea5988b0b1c9a7ccd5fff8ad7f5e84d3c567488dd"
+    },
+    {
+      "id": "VIS-campaign-companies-empty-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-empty-desktop.png",
+      "sha256": "553c04c990016792594cd57673ea607628643789fcd8c7b3aa5ccbf3bd74ac98"
+    },
+    {
+      "id": "VIS-campaign-companies-error-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-error-desktop.png",
+      "sha256": "5062ddc7c4811de73ea1cbdd2fa6d900f104276508aa0bf80c018f54347d2400"
+    },
+    {
+      "id": "VIS-campaign-companies-loading-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-loading-desktop.png",
+      "sha256": "73bec8b7c52f757dfb6ff48b85d95b0815bbcf73fc311a52649c79130f2544f8"
+    },
+    {
+      "id": "VIS-campaign-tracking-normal-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-normal-desktop.png",
+      "sha256": "6fb46794bb7dfeda1bbf04092fa63884da8b13ba8b47b931a3084324ba25b8ba"
+    },
+    {
+      "id": "VIS-campaign-tracking-empty-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-empty-desktop.png",
+      "sha256": "7b56aed97ed4723dab5254854331e156a59f8bb8a50251428ea33b78c17d2428"
+    },
+    {
+      "id": "VIS-campaign-tracking-error-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-error-desktop.png",
+      "sha256": "294a4ccc7c93c396687a877fbb679cd19493d603024b8a00fce11cf6ee00d781"
+    },
+    {
+      "id": "VIS-campaign-tracking-loading-desktop",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-loading-desktop.png",
+      "sha256": "ba2b5622b4173a31445a6ee63a69d9e9384606931b9585a59fec83e67cd252d5"
+    },
+    {
+      "id": "VIS-central-companies-normal-desktop",
+      "status": "pass",
+      "file": "screenshots/central-companies-normal-desktop.png",
+      "sha256": "08db428400a848281cdf99659af0de8988fbb22aadd7992b8872acb5a5670b84"
+    },
+    {
+      "id": "VIS-central-companies-empty-desktop",
+      "status": "pass",
+      "file": "screenshots/central-companies-empty-desktop.png",
+      "sha256": "50a243aad71ba21c5501cff5c81609dbe93c4dbae81233d7cfc69d917b1ea853"
+    },
+    {
+      "id": "VIS-central-companies-error-desktop",
+      "status": "pass",
+      "file": "screenshots/central-companies-error-desktop.png",
+      "sha256": "d1c39d254d797ee4070e7c7f8e30395bfde0f190e848a5cb4708f0c42c196a57"
+    },
+    {
+      "id": "VIS-central-companies-loading-desktop",
+      "status": "pass",
+      "file": "screenshots/central-companies-loading-desktop.png",
+      "sha256": "d3b3a9906f99b2bf009723c4eddc70f4bd43795771d185b8dfa1a6fc454ae236"
+    },
+    {
+      "id": "VIS-central-tracking-normal-desktop",
+      "status": "pass",
+      "file": "screenshots/central-tracking-normal-desktop.png",
+      "sha256": "1c256fe1e93d3e6e4ba2eeb1e38d3e40d0d9fa6b766b7ec121e93a17b9c2283c"
+    },
+    {
+      "id": "VIS-central-tracking-empty-desktop",
+      "status": "pass",
+      "file": "screenshots/central-tracking-empty-desktop.png",
+      "sha256": "245ce43b169b4f721beff902d425c558fbc614f67c086acd3319c1e15a17017f"
+    },
+    {
+      "id": "VIS-central-tracking-error-desktop",
+      "status": "pass",
+      "file": "screenshots/central-tracking-error-desktop.png",
+      "sha256": "0f53db81e13bded6f0a47f405a66d02f5b8de362cfdf7429930f802f3a84de06"
+    },
+    {
+      "id": "VIS-central-tracking-loading-desktop",
+      "status": "pass",
+      "file": "screenshots/central-tracking-loading-desktop.png",
+      "sha256": "6d806152284a924df99b88067e448a985ecb1409a659efffaae284cc4142d7c1"
+    },
+    {
+      "id": "INTERACTION-desktop",
+      "status": "pass",
+      "scope": "mock only; checkbox,toast,correction,company form,variant reload,keyboard focus"
+    },
+    {
+      "id": "VIS-campaign-companies-normal-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-normal-mobile.png",
+      "sha256": "80984a1d02eb070e590f680eae95f336d47c0d3e4ec4668b2891cf7f282cd727"
+    },
+    {
+      "id": "VIS-campaign-companies-empty-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-empty-mobile.png",
+      "sha256": "1cd00f3bc973288ad5fa593ed4c018637f0434817d05819fa8fe44a42f2cef66"
+    },
+    {
+      "id": "VIS-campaign-companies-error-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-error-mobile.png",
+      "sha256": "c3ca5694cab56760d337ffd516030172fce9b8bbff97002e084b1b26a7038245"
+    },
+    {
+      "id": "VIS-campaign-companies-loading-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-companies-loading-mobile.png",
+      "sha256": "f939b9e046fa3763e20b529ef9770a4808bbca59614c3e158aa5dbe3481bf108"
+    },
+    {
+      "id": "VIS-campaign-tracking-normal-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-normal-mobile.png",
+      "sha256": "58665688cb6c0c977abd1254ffa2dd694d09605f3ad8db608991ef95cae5493c"
+    },
+    {
+      "id": "VIS-campaign-tracking-empty-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-empty-mobile.png",
+      "sha256": "e486055450568fa94deab96d8c3b710f597e1e2c1ec852832684e086c8d37371"
+    },
+    {
+      "id": "VIS-campaign-tracking-error-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-error-mobile.png",
+      "sha256": "03fe80ccc5894817f3371aa55b3c049a53e3e17fedd991335fb3d52e5c0186f8"
+    },
+    {
+      "id": "VIS-campaign-tracking-loading-mobile",
+      "status": "pass",
+      "file": "screenshots/campaign-tracking-loading-mobile.png",
+      "sha256": "3c6c56637b2344f23b542212e4b040904177d0953b28215893f120ef4e4b4ff0"
+    },
+    {
+      "id": "VIS-central-companies-normal-mobile",
+      "status": "pass",
+      "file": "screenshots/central-companies-normal-mobile.png",
+      "sha256": "0c45a6297713366dc60cd14d179fc6a7cb666f0a752e69eec6ccb25698ee5786"
+    },
+    {
+      "id": "VIS-central-companies-empty-mobile",
+      "status": "pass",
+      "file": "screenshots/central-companies-empty-mobile.png",
+      "sha256": "89f43777a6645fba977228f89581a20474e602512fcba3efae0b4d02fde31f91"
+    },
+    {
+      "id": "VIS-central-companies-error-mobile",
+      "status": "pass",
+      "file": "screenshots/central-companies-error-mobile.png",
+      "sha256": "c5450f670a7f019349f645d27dd9b39c54eaf2fb7634e91658433d57130beb37"
+    },
+    {
+      "id": "VIS-central-companies-loading-mobile",
+      "status": "pass",
+      "file": "screenshots/central-companies-loading-mobile.png",
+      "sha256": "ab41f9e6fc8d8eb2a2cf02c7ad30f231054f779535df55b18538054c503c2f71"
+    },
+    {
+      "id": "VIS-central-tracking-normal-mobile",
+      "status": "pass",
+      "file": "screenshots/central-tracking-normal-mobile.png",
+      "sha256": "91f44c6d11a6470b6ad02ce3fe97e97c31427cec334e6f170ec1db307fa81c77"
+    },
+    {
+      "id": "VIS-central-tracking-empty-mobile",
+      "status": "pass",
+      "file": "screenshots/central-tracking-empty-mobile.png",
+      "sha256": "819c5e57f2646657661c912cded705dbd8f6aff3f2bb7a00bd3480423bcaec34"
+    },
+    {
+      "id": "VIS-central-tracking-error-mobile",
+      "status": "pass",
+      "file": "screenshots/central-tracking-error-mobile.png",
+      "sha256": "beeb9e24875cfb22c3a82f3b39a0d25fd62facdca0c9274cdad50fea12789045"
+    },
+    {
+      "id": "VIS-central-tracking-loading-mobile",
+      "status": "pass",
+      "file": "screenshots/central-tracking-loading-mobile.png",
+      "sha256": "f83664a3fc790063a33c9eba15aed15c9bfebaf2236bedf54353c89c10e943fc"
+    },
+    {
+      "id": "INTERACTION-mobile",
+      "status": "pass",
+      "scope": "mock only; checkbox,toast,correction,company form,variant reload,keyboard focus"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "mode": "headless isolated contexts, temporary HOME, no personal browser, only own HTML request allowed",
+  "limits": "prototype display/interaction only; no backend/UI app acceptance, no real communications or data"
+}

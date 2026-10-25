@@ -1,0 +1,15 @@
+{
+  "task": "UI-WORK-01",
+  "coder": "opencode-go/deepseek-v4.1-flash",
+  "round": 0,
+  "source_sha256": "c6102a21e7982803b9015dc5acca4d0f674a2806708d097f192569eae71def40",
+  "go_duration_seconds": 593.21,
+  "contract_tests": 1,
+  "live_browser_checks": 16,
+  "real_http_sqlite_auth": true,
+  "fixture_stopped": true,
+  "status": "integrated",
+  "app_llm_calls": false,
+  "native_ml": false,
+  "limits": "approval/export UI and manual registers still pending"
+}

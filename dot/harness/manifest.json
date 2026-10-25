@@ -1,0 +1,475 @@
+{
+  "manifest_version": "1",
+  "status": "definition_only_not_ready_for_inference",
+  "source_mode": "git-commit",
+  "source_url": "https://github.com/cabobadilla/dotHarness.git",
+  "source_version": "0.9.0-pilot",
+  "source_git_sha": "2e5d217f55b3a26543d3d52edb39d7204e35c258",
+  "source_package_sha256": "f48e0bee454751d5085a09a13ad3c76841a5e30f7b38f412b6d5b7f0cfb507a8",
+  "source_package_inventory": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "69bf575eefa9b48e598aa7e0920c800b751db3dc918f86b46a802c4e0db22e87"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7139535872face64e9a1a2b97486af7f1a20b999f23a03246cd010ab0d3ff4bf"
+    },
+    {
+      "path": "VERSION",
+      "sha256": "876f28ea33930fe2e8f59bc129a2fb7a7c2635ff820f758fd1113b2dcbac40cc"
+    },
+    {
+      "path": "docs/aprendizaje.md",
+      "sha256": "1a3d39b30d03e0c5f5742cf2e4b6cc1170be911ddcd1cdd45c9fc6c1a7b25cf9"
+    },
+    {
+      "path": "docs/arranque.md",
+      "sha256": "c2cc2f3840f0b7aaee50c61a8bdeaaaf7cb72d229faf10943f1c45088682b495"
+    },
+    {
+      "path": "docs/autenticacion.md",
+      "sha256": "3a675796735b859e5098ef334b19da04d56313944bf2b3685c92ad4b4778f9cb"
+    },
+    {
+      "path": "docs/compatibilidad.md",
+      "sha256": "605fd4177376e25ee6b9335bfd295bd899d95ef4d4746b2ceda3c64374ec9a1f"
+    },
+    {
+      "path": "docs/definicion.md",
+      "sha256": "4a9714ad241c4dbd9af0b5bc8359dc94959620ea2e88638eedce2ba8c94b7a41"
+    },
+    {
+      "path": "docs/despliegue.md",
+      "sha256": "2d6930d586ee32ea3003e7395cf5f90ceb749b94a72ee64d80cbdd147fcda9d1"
+    },
+    {
+      "path": "docs/diseno-ui.md",
+      "sha256": "f1473496616cca5373dbce6229400e46561cf64cc5f57a9a86cc8182c986f2f5"
+    },
+    {
+      "path": "docs/frontend.md",
+      "sha256": "f7e446a47cada5c1a47ce9accc758fe4158718506c9fdee6dfd0a459876c135f"
+    },
+    {
+      "path": "docs/presentacion-harness.html",
+      "sha256": "7503b134e385877aeb7f25c9643e3fcb55ad041e9c69d65bd53e838cf40220e5"
+    },
+    {
+      "path": "docs/proyectos.md",
+      "sha256": "60135f4a04b6bc42c196b1bae0c5d7cd0e7d96aba969f4851bc71b926111cf88"
+    },
+    {
+      "path": "docs/seguimiento.md",
+      "sha256": "d6a65b533ee0e466f6ed8b2201b5df2d7a1891a6408157b70aabf5f8040e24bb"
+    },
+    {
+      "path": "docs/verificacion.md",
+      "sha256": "271a75e13d301dce6d91d54ad2f4ce01df6133e712fa5d43d1b20916ac28f7cd"
+    },
+    {
+      "path": "docs/workflow.md",
+      "sha256": "d5034a83a6c2f712c0a359c116b0432a68bfd7353e8922160cbc3c6cd4018f5c"
+    },
+    {
+      "path": "dot/README.md",
+      "sha256": "3d26ba40fa2d7be8c9c173fa7e35b964cfc00dcf73859ac7103f255895570043"
+    },
+    {
+      "path": "dot/STATUS.md",
+      "sha256": "459b7ebffb277fad277ddbc5fa53c73c6c6a9d61056a1606fabb3f4f7220eaf9"
+    },
+    {
+      "path": "dot/auth-default-07.md",
+      "sha256": "9eb0ead8a36e4863d3ff7256f5da53de318dc285ee37d5afd1be615bc25ccb7a"
+    },
+    {
+      "path": "dot/backlog/ACCEL-01.md",
+      "sha256": "c2d9203d2f3932b5db99f613740ea535a54c75f880bbc4bae2075c2ed4999f4b"
+    },
+    {
+      "path": "dot/consolidacion-local-20261019.md",
+      "sha256": "bf49610ecf96bab61c0823070e2fe955b6f910dc7247082e92f6330814fafc80"
+    },
+    {
+      "path": "dot/password-08.md",
+      "sha256": "19512715a223270f7e545339c3a980ea9532760c2e7844da4d2203fe60579cfe"
+    },
+    {
+      "path": "dot/repair-policy-06.md",
+      "sha256": "c7c44fcee4f0ebc7b30bf5ce8f920d7a12c2ec5ad6c8c397c00af55322944640"
+    },
+    {
+      "path": "dot/swfactory-deployment-retro-20261020.md",
+      "sha256": "4c0c2c9108d9ba37c3c64e9fef4ee331cae03a71563a590a4b522ec6742775af"
+    },
+    {
+      "path": "scripts/check_delivery.py",
+      "sha256": "a927462991c3101069ad3cc0f8d5c06af8ceaf82ed37bbbda4c349e1e57672e4"
+    },
+    {
+      "path": "scripts/check_plan.py",
+      "sha256": "061e6e33563e1ac0bba9de56eb5ac87fc24c396619018cbca18f643f01a02d98"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "sha256": "516703f6d21f1459dcff4e135011ea860e3fbc3f595b472df31825f746d8b883"
+    },
+    {
+      "path": "scripts/run_opencode.py",
+      "sha256": "ffaf5a8ec6fb7d23a5b6d918107575c4eacbb00441b0b23b9b3a815f351e996d"
+    },
+    {
+      "path": "scripts/verify_frontend.py",
+      "sha256": "339537747eee5e554bcfc8b25e6a09a87e285488201a04e9d9869a0821470a7b"
+    },
+    {
+      "path": "templates/aceptacion.md",
+      "sha256": "6de55e439730a5fdcca04433a440e688a511c3b1ae26d408a9f8b4eff2fc542f"
+    },
+    {
+      "path": "templates/authentication-evidence.json.example",
+      "sha256": "a97f3dffdeff8f6a6c877212533c35d7ad926c9cd3fd435a8750bf1737076dde"
+    },
+    {
+      "path": "templates/contrato.schema.json",
+      "sha256": "da065dabc235242b5b79570470fcc9ecc50aaa06476d27b39e703a3aa401ac7a"
+    },
+    {
+      "path": "templates/diseno-ui.md",
+      "sha256": "a7d20716e7eb546b21694f9f6dd976dfb49f0784fe2b8d8ba9102bc8d4929d55"
+    },
+    {
+      "path": "templates/manifiesto.json.example",
+      "sha256": "4e9b6f181e587c6d7c4af26943e36e45c9be82da4a54b4a048d793ae014b22ba"
+    },
+    {
+      "path": "templates/opencode.json.example",
+      "sha256": "60040202dd0a84f495a6125d01c11213dfd71dce2615b01fa16b21536ce59fbe"
+    },
+    {
+      "path": "templates/password-policy.json.example",
+      "sha256": "adc121114fbbcd9e3170c0b5746676ab0c4615fe1920c7044e9cdaef34b5d179"
+    },
+    {
+      "path": "templates/plan.json.example",
+      "sha256": "9c97dd1a1e4e6fde01d352afd4a4f374bb5afc1b1e0c93101b80cbb66fd3c1ef"
+    },
+    {
+      "path": "templates/playwright.config.ts.example",
+      "sha256": "e5e0c1a33862547962ccf44b753f88a65332edcc46031817c73568d52494e1a2"
+    },
+    {
+      "path": "templates/proyecto.md",
+      "sha256": "3ad1a3bfda79d9085829781707f48c23053cafbf5e0c4e4400fbcb89c8c1abd4"
+    },
+    {
+      "path": "templates/release-policy.json.example",
+      "sha256": "006afe08bb5706eb8fb687aad8f0253c95cfd6c6f3e72eab00c124ef311834ed"
+    },
+    {
+      "path": "templates/release-receipt.json.example",
+      "sha256": "566f4ccd1611a51b94204f5fd2c47a286343339978279ef6c69e25eb94ce2d4e"
+    },
+    {
+      "path": "templates/release-verification.schema.json",
+      "sha256": "91b0544824eb46c012b0a82421289aa28f8f6dd9af604447ce0e9ca00318ce05"
+    },
+    {
+      "path": "templates/resultado.md",
+      "sha256": "7404d6211c8142638b2e4f9723aaca28dec685a9274ab8d68c748478399e313f"
+    },
+    {
+      "path": "templates/retro.md",
+      "sha256": "258125686baede68345edc7fc2c6c9a4f99ca4febd1cc9743135ab9ac3d18559"
+    },
+    {
+      "path": "templates/seguimiento-evento.json.example",
+      "sha256": "78b1868b8c5a9ffc562f34c2f47ca6d6a3850db0b57e279d76ef216ade56d30a"
+    },
+    {
+      "path": "templates/seguimiento-evento.schema.json",
+      "sha256": "f7be5a38e7fb9ac94e1a36e51c58272fa64e82c32543e94799e7323b78c296bc"
+    },
+    {
+      "path": "templates/spec.md",
+      "sha256": "acff7c80cbe824bd0ca15aa88daea41a844162e871af0381791d883ec7923343"
+    },
+    {
+      "path": "templates/tarea.md",
+      "sha256": "2f41cf2b6cf3ee3b7ef5ce2647860fa1d6e768464538e4688d29db59dd3784bf"
+    },
+    {
+      "path": "tests/fake_opencode.py",
+      "sha256": "870e13b1487ff86df0c88e18f93d2de9e9e5eb85762b81aa29b4e95a78cd9b8c"
+    },
+    {
+      "path": "tests/recorded_adapter.json",
+      "sha256": "93ac1b33ed86ea044ea438e3d7a8bd8f99c24276fbb413869cbca8c0cdf47c68"
+    },
+    {
+      "path": "tests/release-assets.cjs",
+      "sha256": "7d0bb455e737fd7b2694dca0cd2d9c6b5c9a31f2bd633d58d4c7c87cf5e079eb"
+    },
+    {
+      "path": "tests/test_controls.py",
+      "sha256": "d8d1fe544df1fce244684213dff104fec811d5f27367096722b27dc52d688d25"
+    },
+    {
+      "path": "tests/test_release.py",
+      "sha256": "689629154536d811a4c60d93e196250b5b3ba043a4de0e00064cf64e41a58ca2"
+    }
+  ],
+  "copies": [
+    {
+      "source": "README.md",
+      "destination": "dot/harness/upstream/README.md",
+      "sha256": "7139535872face64e9a1a2b97486af7f1a20b999f23a03246cd010ab0d3ff4bf"
+    },
+    {
+      "source": "VERSION",
+      "destination": "dot/harness/upstream/VERSION",
+      "sha256": "876f28ea33930fe2e8f59bc129a2fb7a7c2635ff820f758fd1113b2dcbac40cc"
+    },
+    {
+      "source": "docs/aprendizaje.md",
+      "destination": "dot/harness/upstream/docs/aprendizaje.md",
+      "sha256": "1a3d39b30d03e0c5f5742cf2e4b6cc1170be911ddcd1cdd45c9fc6c1a7b25cf9"
+    },
+    {
+      "source": "docs/arranque.md",
+      "destination": "dot/harness/upstream/docs/arranque.md",
+      "sha256": "c2cc2f3840f0b7aaee50c61a8bdeaaaf7cb72d229faf10943f1c45088682b495"
+    },
+    {
+      "source": "docs/autenticacion.md",
+      "destination": "dot/harness/upstream/docs/autenticacion.md",
+      "sha256": "3a675796735b859e5098ef334b19da04d56313944bf2b3685c92ad4b4778f9cb"
+    },
+    {
+      "source": "docs/compatibilidad.md",
+      "destination": "dot/harness/upstream/docs/compatibilidad.md",
+      "sha256": "605fd4177376e25ee6b9335bfd295bd899d95ef4d4746b2ceda3c64374ec9a1f"
+    },
+    {
+      "source": "docs/definicion.md",
+      "destination": "dot/harness/upstream/docs/definicion.md",
+      "sha256": "4a9714ad241c4dbd9af0b5bc8359dc94959620ea2e88638eedce2ba8c94b7a41"
+    },
+    {
+      "source": "docs/despliegue.md",
+      "destination": "dot/harness/upstream/docs/despliegue.md",
+      "sha256": "2d6930d586ee32ea3003e7395cf5f90ceb749b94a72ee64d80cbdd147fcda9d1"
+    },
+    {
+      "source": "docs/diseno-ui.md",
+      "destination": "dot/harness/upstream/docs/diseno-ui.md",
+      "sha256": "f1473496616cca5373dbce6229400e46561cf64cc5f57a9a86cc8182c986f2f5"
+    },
+    {
+      "source": "docs/frontend.md",
+      "destination": "dot/harness/upstream/docs/frontend.md",
+      "sha256": "f7e446a47cada5c1a47ce9accc758fe4158718506c9fdee6dfd0a459876c135f"
+    },
+    {
+      "source": "docs/presentacion-harness.html",
+      "destination": "dot/harness/upstream/docs/presentacion-harness.html",
+      "sha256": "7503b134e385877aeb7f25c9643e3fcb55ad041e9c69d65bd53e838cf40220e5"
+    },
+    {
+      "source": "docs/proyectos.md",
+      "destination": "dot/harness/upstream/docs/proyectos.md",
+      "sha256": "60135f4a04b6bc42c196b1bae0c5d7cd0e7d96aba969f4851bc71b926111cf88"
+    },
+    {
+      "source": "docs/seguimiento.md",
+      "destination": "dot/harness/upstream/docs/seguimiento.md",
+      "sha256": "d6a65b533ee0e466f6ed8b2201b5df2d7a1891a6408157b70aabf5f8040e24bb"
+    },
+    {
+      "source": "docs/verificacion.md",
+      "destination": "dot/harness/upstream/docs/verificacion.md",
+      "sha256": "271a75e13d301dce6d91d54ad2f4ce01df6133e712fa5d43d1b20916ac28f7cd"
+    },
+    {
+      "source": "docs/workflow.md",
+      "destination": "dot/harness/upstream/docs/workflow.md",
+      "sha256": "d5034a83a6c2f712c0a359c116b0432a68bfd7353e8922160cbc3c6cd4018f5c"
+    },
+    {
+      "source": "scripts/check_delivery.py",
+      "destination": "dot/harness/upstream/scripts/check_delivery.py",
+      "sha256": "a927462991c3101069ad3cc0f8d5c06af8ceaf82ed37bbbda4c349e1e57672e4"
+    },
+    {
+      "source": "scripts/check_plan.py",
+      "destination": "dot/harness/upstream/scripts/check_plan.py",
+      "sha256": "061e6e33563e1ac0bba9de56eb5ac87fc24c396619018cbca18f643f01a02d98"
+    },
+    {
+      "source": "scripts/check_release.py",
+      "destination": "dot/harness/upstream/scripts/check_release.py",
+      "sha256": "516703f6d21f1459dcff4e135011ea860e3fbc3f595b472df31825f746d8b883"
+    },
+    {
+      "source": "scripts/run_opencode.py",
+      "destination": "dot/harness/upstream/scripts/run_opencode.py",
+      "sha256": "ffaf5a8ec6fb7d23a5b6d918107575c4eacbb00441b0b23b9b3a815f351e996d"
+    },
+    {
+      "source": "scripts/verify_frontend.py",
+      "destination": "dot/harness/upstream/scripts/verify_frontend.py",
+      "sha256": "339537747eee5e554bcfc8b25e6a09a87e285488201a04e9d9869a0821470a7b"
+    },
+    {
+      "source": "templates/aceptacion.md",
+      "destination": "dot/harness/upstream/templates/aceptacion.md",
+      "sha256": "6de55e439730a5fdcca04433a440e688a511c3b1ae26d408a9f8b4eff2fc542f"
+    },
+    {
+      "source": "templates/authentication-evidence.json.example",
+      "destination": "dot/harness/upstream/templates/authentication-evidence.json.example",
+      "sha256": "a97f3dffdeff8f6a6c877212533c35d7ad926c9cd3fd435a8750bf1737076dde"
+    },
+    {
+      "source": "templates/contrato.schema.json",
+      "destination": "dot/harness/upstream/templates/contrato.schema.json",
+      "sha256": "da065dabc235242b5b79570470fcc9ecc50aaa06476d27b39e703a3aa401ac7a"
+    },
+    {
+      "source": "templates/diseno-ui.md",
+      "destination": "dot/harness/upstream/templates/diseno-ui.md",
+      "sha256": "a7d20716e7eb546b21694f9f6dd976dfb49f0784fe2b8d8ba9102bc8d4929d55"
+    },
+    {
+      "source": "templates/manifiesto.json.example",
+      "destination": "dot/harness/upstream/templates/manifiesto.json.example",
+      "sha256": "4e9b6f181e587c6d7c4af26943e36e45c9be82da4a54b4a048d793ae014b22ba"
+    },
+    {
+      "source": "templates/opencode.json.example",
+      "destination": "dot/harness/upstream/templates/opencode.json.example",
+      "sha256": "60040202dd0a84f495a6125d01c11213dfd71dce2615b01fa16b21536ce59fbe"
+    },
+    {
+      "source": "templates/password-policy.json.example",
+      "destination": "dot/harness/upstream/templates/password-policy.json.example",
+      "sha256": "adc121114fbbcd9e3170c0b5746676ab0c4615fe1920c7044e9cdaef34b5d179"
+    },
+    {
+      "source": "templates/plan.json.example",
+      "destination": "dot/harness/upstream/templates/plan.json.example",
+      "sha256": "9c97dd1a1e4e6fde01d352afd4a4f374bb5afc1b1e0c93101b80cbb66fd3c1ef"
+    },
+    {
+      "source": "templates/playwright.config.ts.example",
+      "destination": "dot/harness/upstream/templates/playwright.config.ts.example",
+      "sha256": "e5e0c1a33862547962ccf44b753f88a65332edcc46031817c73568d52494e1a2"
+    },
+    {
+      "source": "templates/proyecto.md",
+      "destination": "dot/harness/upstream/templates/proyecto.md",
+      "sha256": "3ad1a3bfda79d9085829781707f48c23053cafbf5e0c4e4400fbcb89c8c1abd4"
+    },
+    {
+      "source": "templates/release-policy.json.example",
+      "destination": "dot/harness/upstream/templates/release-policy.json.example",
+      "sha256": "006afe08bb5706eb8fb687aad8f0253c95cfd6c6f3e72eab00c124ef311834ed"
+    },
+    {
+      "source": "templates/release-receipt.json.example",
+      "destination": "dot/harness/upstream/templates/release-receipt.json.example",
+      "sha256": "566f4ccd1611a51b94204f5fd2c47a286343339978279ef6c69e25eb94ce2d4e"
+    },
+    {
+      "source": "templates/release-verification.schema.json",
+      "destination": "dot/harness/upstream/templates/release-verification.schema.json",
+      "sha256": "91b0544824eb46c012b0a82421289aa28f8f6dd9af604447ce0e9ca00318ce05"
+    },
+    {
+      "source": "templates/resultado.md",
+      "destination": "dot/harness/upstream/templates/resultado.md",
+      "sha256": "7404d6211c8142638b2e4f9723aaca28dec685a9274ab8d68c748478399e313f"
+    },
+    {
+      "source": "templates/retro.md",
+      "destination": "dot/harness/upstream/templates/retro.md",
+      "sha256": "258125686baede68345edc7fc2c6c9a4f99ca4febd1cc9743135ab9ac3d18559"
+    },
+    {
+      "source": "templates/seguimiento-evento.json.example",
+      "destination": "dot/harness/upstream/templates/seguimiento-evento.json.example",
+      "sha256": "78b1868b8c5a9ffc562f34c2f47ca6d6a3850db0b57e279d76ef216ade56d30a"
+    },
+    {
+      "source": "templates/seguimiento-evento.schema.json",
+      "destination": "dot/harness/upstream/templates/seguimiento-evento.schema.json",
+      "sha256": "f7be5a38e7fb9ac94e1a36e51c58272fa64e82c32543e94799e7323b78c296bc"
+    },
+    {
+      "source": "templates/spec.md",
+      "destination": "dot/harness/upstream/templates/spec.md",
+      "sha256": "acff7c80cbe824bd0ca15aa88daea41a844162e871af0381791d883ec7923343"
+    },
+    {
+      "source": "templates/tarea.md",
+      "destination": "dot/harness/upstream/templates/tarea.md",
+      "sha256": "2f41cf2b6cf3ee3b7ef5ce2647860fa1d6e768464538e4688d29db59dd3784bf"
+    },
+    {
+      "source": "tests/fake_opencode.py",
+      "destination": "dot/harness/upstream/tests/fake_opencode.py",
+      "sha256": "870e13b1487ff86df0c88e18f93d2de9e9e5eb85762b81aa29b4e95a78cd9b8c"
+    },
+    {
+      "source": "tests/recorded_adapter.json",
+      "destination": "dot/harness/upstream/tests/recorded_adapter.json",
+      "sha256": "93ac1b33ed86ea044ea438e3d7a8bd8f99c24276fbb413869cbca8c0cdf47c68"
+    },
+    {
+      "source": "tests/release-assets.cjs",
+      "destination": "dot/harness/upstream/tests/release-assets.cjs",
+      "sha256": "7d0bb455e737fd7b2694dca0cd2d9c6b5c9a31f2bd633d58d4c7c87cf5e079eb"
+    },
+    {
+      "source": "tests/test_controls.py",
+      "destination": "dot/harness/upstream/tests/test_controls.py",
+      "sha256": "d8d1fe544df1fce244684213dff104fec811d5f27367096722b27dc52d688d25"
+    },
+    {
+      "source": "tests/test_release.py",
+      "destination": "dot/harness/upstream/tests/test_release.py",
+      "sha256": "689629154536d811a4c60d93e196250b5b3ba043a4de0e00064cf64e41a58ca2"
+    }
+  ],
+  "consumer_project": "growwithai-week3",
+  "spend_authorized": false,
+  "authorization_ref": "user: correct local setup to dotHarness; no inference",
+  "overrides": [
+    {
+      "key": "destination/stack",
+      "value": "local_simple; Python 3.11 virtualenv LangChain/LangGraph proposal",
+      "authority": "explicit user requirements; no Cloudflare deployment; no new implementation"
+    },
+    {
+      "key": "app_ai_runtime",
+      "value": "app/data local; LLM via OpenRouter; model pending; user controls budget in API key",
+      "authority": "explicit user decision; no inference in setup; key supplied privately by user in .env"
+    },
+    {
+      "key": "coder",
+      "value": "deny-all; no active model contract",
+      "authority": "do not inherit survey-coder/GO model or spending permissions from another pilot"
+    },
+    {
+      "key": "dashboard",
+      "value": "DASH-01 central portal metadata/tracking required; minimal metadata registration authorized, pending login/audience/mechanism verification; app stays local",
+      "authority": "user Sentinel_a90194c6c15c81919b2bb003de894a47: tracking only; no private files/contacts/credentials or wider public access; no portal mutation executed"
+    },
+    {
+      "key": "commits",
+      "value": "no automatic commits; base_sha pending",
+      "authority": "preserve existing uncommitted repository"
+    }
+  ]
+}

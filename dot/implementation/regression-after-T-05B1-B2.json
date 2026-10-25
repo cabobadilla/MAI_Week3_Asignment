@@ -1,0 +1,64 @@
+{
+  "suites": {
+    "guard": {
+      "passed": 27,
+      "failed": 0,
+      "report": "dot/implementation/reports/guard-1792945261137744000/report.json"
+    },
+    "config": {
+      "passed": 16,
+      "failed": 0,
+      "report": "dot/implementation/reports/config-1792945261503127000/report.json"
+    },
+    "storage": {
+      "passed": 18,
+      "failed": 0,
+      "report": "dot/implementation/reports/storage-1792945262002062000/report.json"
+    },
+    "campaign": {
+      "passed": 18,
+      "failed": 0,
+      "report": "dot/implementation/reports/campaign-1792945262514852000/report.json"
+    },
+    "auth": {
+      "passed": 13,
+      "failed": 0,
+      "report": "dot/implementation/reports/auth-1792945265873777000/report.json"
+    },
+    "versions": {
+      "passed": 17,
+      "failed": 0,
+      "report": "dot/implementation/reports/versions-1792945266403939000/report.json"
+    },
+    "export": {
+      "passed": 14,
+      "failed": 0,
+      "report": "dot/implementation/reports/export-1792945266887765000/report.json"
+    },
+    "distribution": {
+      "passed": 25,
+      "failed": 0,
+      "report": "dot/implementation/reports/distribution-1792945267604057000/report.json"
+    },
+    "followup": {
+      "passed": 25,
+      "failed": 0,
+      "report": "dot/implementation/reports/followup-1792945268345348000/report.json"
+    },
+    "ingestion": {
+      "passed": 16,
+      "failed": 0,
+      "report": "dot/implementation/reports/ingestion-1792945268886057000/report.json"
+    },
+    "retrieval": {
+      "passed": 16,
+      "failed": 0,
+      "report": "dot/implementation/reports/retrieval-1792945269402563000/report.json"
+    }
+  },
+  "passed": 205,
+  "failed": 0,
+  "observed_at_utc": "2026-10-25T16:21:09.432290+00:00",
+  "scope": "11 protected unit suites, not end-to-end UI or real app LLM",
+  "app_llm_calls": false
+}

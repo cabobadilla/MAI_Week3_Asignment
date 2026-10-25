@@ -1,0 +1,31 @@
+{
+  "task": "T-07A",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 1,
+  "initial_tests": {
+    "passed": 14,
+    "failed": 3,
+    "reason": "Prompt shorthand used nonexistent hash64 column names; repaired against exact approved DDL"
+  },
+  "tests": {
+    "passed": 17,
+    "failed": 0,
+    "suite_sha256": "4dc42987571004b07aafc68b3dae3abf23318b93c50b6d9adc6aa9bcfb491d00"
+  },
+  "files": {
+    "app/versions.py": "a5b928b882882e5dc4e67a6967b1e20ba37487f4cf1b1ec419f98669f0e161f9",
+    "app/approval.py": "338024a0fad036b96e7836e1ca3ca4f5804957ebd989199611fbf561f7c3dd77"
+  },
+  "repair_response_sha256": "72e16b01ec82296c562abe3a98b05b327e05049afe7336bdf3259d0106478dba",
+  "diff_scope": "exact two new product files; approval repair only",
+  "app_llm_calls": false,
+  "sending": false,
+  "native_tools": "all_denied",
+  "server_stopped": true,
+  "validation_note": "First repair test invocation had wrong fixture schema path; corrected invocation only, same candidate/tests, 17 passed"
+}

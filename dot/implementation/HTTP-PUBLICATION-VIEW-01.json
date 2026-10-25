@@ -1,0 +1,12 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "28a467c0e298a83c5213e70baab7e46ff8702b30dc96dccde80bb35945ca4984",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "scope": "readonly publicregister with exact history and notes; no writes",
+  "run": "/tmp/gwa-web-publication-view-round0",
+  "repair_count": 0
+}

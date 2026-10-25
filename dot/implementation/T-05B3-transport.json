@@ -1,0 +1,8 @@
+{
+  "process_outcome": "transport_interrupted_reconciliation_pending",
+  "reason": "Supervisor/client absent after exec transport disconnect; verified own orphan server stopped",
+  "server_pid": 94905,
+  "server_stopped": true,
+  "cwd_verified": "/private/tmp/gwa-local-embeddings-round0/coder",
+  "new_inference_started": false
+}

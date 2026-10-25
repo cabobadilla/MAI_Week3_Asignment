@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-25T21:58:01Z",
+  "integrated": true,
+  "model_coder": "opencode-go/deepseek-v4.1-flash",
+  "runtime_sha256": "87052175d8e900adbdc08670307286b54532aaaa903d1eaa8f181ab551e0cdc3",
+  "protected_runtime_tests": 2,
+  "browser_checks": 33,
+  "owned_restart_checks": 3,
+  "errors": 0,
+  "app_llm_calls": false,
+  "native_ml": false,
+  "user_demo_data_used_for_QA": false,
+  "scope": "functional DEMO organization/campaign/editor/approval/export/manualpublic/email/thread/notes",
+  "limitations": [
+    "simulated generation and fixture source/context, not real RAG/Qwen quality validation",
+    "manual record correction UI not implemented; backend append-only correction services tested separately",
+    "user demo8501 update pending controlled restart after notice"
+  ],
+  "runtime_run": "/tmp/gwa-runtime-directed-round0"
+}

@@ -1,0 +1,103 @@
+{
+  "payload_status": "local_preview_not_api_schema_not_published",
+  "project_name": "GrowWithAI",
+  "summary": "Asistente local para preparar campañas generales con fuentes e historial, revisión/aprobación/exportación, empresas/contactos y seguimiento manual de envíos externos; sin envío o publicación desde la app.",
+  "phase": "specification",
+  "tasks": [
+    {
+      "task_id": "T-01",
+      "title": "Detalle visual B v2",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-02",
+      "title": "Entorno, configuración y lock",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-03",
+      "title": "SQLite, empresas y contactos",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-04",
+      "title": "Campañas y destinatarios",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-05",
+      "title": "Fuentes RAG e historia pertinente",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-06",
+      "title": "Grafo, generación y revisión",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-07",
+      "title": "Versiones, aprobación y export",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-08",
+      "title": "Distribución externa registrada manualmente",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-09",
+      "title": "Seguimiento, duplicados y correcciones",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-10",
+      "title": "Mesa editorial y rutas protegidas",
+      "status": "pending"
+    },
+    {
+      "task_id": "T-11",
+      "title": "Evaluación y demo",
+      "status": "pending"
+    },
+    {
+      "task_id": "AUTH-01",
+      "title": "Password/sesión local",
+      "status": "pending"
+    },
+    {
+      "task_id": "HARNESS-PY-01",
+      "title": "Preparación de driver Python offline",
+      "status": "pending"
+    },
+    {
+      "task_id": "DASH-01",
+      "title": "Registro/tracking del proyecto en portal",
+      "status": "pending"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Alcance MVP confirmado por usuario",
+      "status": "completed"
+    },
+    {
+      "title": "Mesa editorial B v1 elegida como base",
+      "status": "completed"
+    },
+    {
+      "title": "Specs r4 redactadas y revisión documental/DDL de referencia",
+      "status": "completed"
+    }
+  ],
+  "blockers": [
+    "Modelo LLM de app pendiente",
+    "Detalles visuales nuevos por revisar",
+    "Preparación del driver Python y controles antes de implementar",
+    "Login/audiencia/mecanismo del portal sin verificar"
+  ],
+  "application_implemented": false,
+  "application_tests": "not_run",
+  "portal_registration": "pending_authentication",
+  "audience": "unverified",
+  "outbound_authorization": "minimal project metadata and tracking only; no private files/contacts/sources/credentials"
+}

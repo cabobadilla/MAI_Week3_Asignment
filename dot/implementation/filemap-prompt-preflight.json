@@ -1,0 +1,17 @@
+{
+  "change": "per-invocation namedagent systemprompt only; previoussupervisor preserved",
+  "source": "https://opencode.ai/docs/agents/#prompt",
+  "effective_system_recognized": true,
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "native_tools": "all_denied",
+  "persistent_permissions_changed": false,
+  "shared_harness_modified": false,
+  "AGENTS_modified": false,
+  "inference_in_preflight": false,
+  "old_control_sha256": "43397f6ce17c974ae9ac54c5a663a3d7b147064830d2b3fea69c84a6abed9c57",
+  "new_control_sha256": "50dc85a0d898f8ff2e74b200ba9c0a90beb438ee576a795e3dceb99d99ba2970"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "cbe42e0691a677bb25b9e5bed14f0270bf111b093cf864d6bda12d17893b61f9",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-web-recipient-write-round0",
+  "repair1": "/tmp/gwa-web-recipient-write-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "explicit contact selection only; preserve frozen sent snapshots and atomic rollback"
+}

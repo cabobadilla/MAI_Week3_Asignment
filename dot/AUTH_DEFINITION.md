@@ -1,0 +1,3 @@
+# Acceso local especificado · r4
+Usuario eligió contraseña propia/simple. Especificación canónica: ../docs/specs/sponsor-materials/technical-design.md (Auth/local); aceptación AC-01/02 y AUTH-P01/S01. Contraseña mínimo8, permite más sin truncado, hash salado Argon2id propuesta de implementación; nunca API key como contraseña. Operador único, sesiones servidor, localhost/CSRF/host/origin, logout/expiry y protección de páginas/APIs/exports. Todo aún sin implementar/probar.
+No solicitar contraseña real por chat ni crear credenciales en specs; mockups solo campo ilustrativo readonly. Cambiar parámetros/instalar librerías se hace en tarea futura con lock/benchmark, no aquí.

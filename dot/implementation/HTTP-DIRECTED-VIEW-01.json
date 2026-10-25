@@ -1,0 +1,13 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "056c959627fb2638d5dacf3e5a73bd03a367bfb2fd84f0dd1d1b2e8404d33e04",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-web-directed-view-round0",
+  "repair1": "/tmp/gwa-web-directed-view-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1
+}

@@ -1,0 +1,16 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "5e9d089aa4b88e4c12a33729b6d5ac51e214efe637cd1bd3334a64a74f433784",
+  "contract_tests": 1,
+  "browser_checks": 33,
+  "errors": 0,
+  "initial": "/tmp/gwa-ui-directed-record-round0",
+  "repair1": "/tmp/gwa-ui-directed-record-repair1",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "scope": "manualexternalemail record only; duplicate and doubleclick checked",
+  "runtime_wiring_pending": true,
+  "repair2": "/tmp/gwa-ui-directed-record-repair2",
+  "context_isolation": "new campaign resets date/checkbox/errors; changed recipients/version requires new confirmation"
+}

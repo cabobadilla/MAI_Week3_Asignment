@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-25T20:58:01Z",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "run": "/tmp/gwa-web-publication-write-round0",
+  "scope": "POST manual publication record only; no read/reaction/correction/send",
+  "source_sha256": "c92a2d183e4ebd4c91e5254282ca5fa750c43df8f20bcdc4d4396291a5fd7079",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "guard": "passed",
+  "integrated": true,
+  "repair_count": 0,
+  "server_stopped": true
+}

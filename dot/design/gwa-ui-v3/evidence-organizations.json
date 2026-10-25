@@ -1,0 +1,27 @@
+{
+  "version": "B/v3",
+  "files": [
+    "organizations"
+  ],
+  "results": [
+    {
+      "screen": "organizations",
+      "viewport": "desktop",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-desktop.png",
+      "sha256": "a41e9f4b5782c9c64fdc2d1256d32fe463f69c146d6ebe5f8046ab0572a630f6",
+      "html_sha256": "72e43517fa7592ff4d156f6b71615439b16d61722497eceeabfe9a2aaecc38e7"
+    },
+    {
+      "screen": "organizations",
+      "viewport": "mobile",
+      "path": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/design/gwa-ui-v3/screenshots/organizations-mobile.png",
+      "sha256": "2a1d1600822a4e0b0af99c95e553984e141da2df17e4cb1d8dacd20e104d7571",
+      "html_sha256": "72e43517fa7592ff4d156f6b71615439b16d61722497eceeabfe9a2aaecc38e7"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "visual_approved": false,
+  "app_implemented": false,
+  "mode": "isolated headless only own local HTML, no personal browser, no network or private data"
+}

@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-10-25T17:37:58.223360+00:00",
+  "engineering_estimate_percent_range": [
+    40,
+    50
+  ],
+  "estimate_basis": "Most persistence/content services implemented; larger workflow/HTTP/UI/e2e work remains. Not a testcount ratio or accepted product completion.",
+  "umbrella_backlog": {
+    "total": 14,
+    "some_progress_or_partial": 10,
+    "pending": 4,
+    "pending_ids": [
+      "T-06",
+      "T-10",
+      "T-11",
+      "DASH-01"
+    ],
+    "DASH_nonblocking": true
+  },
+  "r5_organization_subunits": {
+    "ORG-01": {
+      "passed": 10,
+      "integrated": true
+    },
+    "ORG-02": {
+      "passed": 17,
+      "integrated": true
+    }
+  },
+  "e2e_runnable": false,
+  "generation_real": false,
+  "selected_app_model": "qwen/qwen3.8-flash",
+  "active_unit": "RAG-ISO-01",
+  "go_elapsed_seconds": 329,
+  "go_limit_seconds": 600,
+  "go_completed": false,
+  "native_reproductions": "suspended",
+  "critical_path": [
+    "isolated embedding transport mocks",
+    "history/run/graph and mock generation",
+    "bootstrap HTTP/auth",
+    "organization/review/two tracking screens",
+    "integrated demo/startup validation"
+  ]
+}

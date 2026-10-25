@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "status": "PREPARED_NOT_READY_NOT_EXECUTED",
+  "purpose": "One bounded synthetic isolation smoke, not semantic RAG/LLM quality evaluation",
+  "execution_authorized_now": false,
+  "preconditions": [
+    {
+      "id": "guard-before-native-import",
+      "satisfied": true,
+      "requirement": "Prevent opposing stack imports before any native load, in both import orders; prove with stubs without native imports",
+      "qualification": "Guarded worker/vector entrypoints proven with fake modules; direct loader remains to guard"
+    },
+    {
+      "id": "openmp-transitive-audit",
+      "satisfied": false,
+      "requirement": "Review Torch/sentence_transformers/sklearn native dependencies and refuse second distinct OpenMP runtime before load; no KMP_DUPLICATE_LIB_OK/system patches"
+    },
+    {
+      "id": "source-guard-review",
+      "satisfied": false,
+      "requirement": "Review exact GO-generated guard changes, process boundary and output capture bounds; retain tested model pin"
+    },
+    {
+      "id": "one-explicit-reviewed-attempt",
+      "satisfied": false,
+      "requirement": "Report conditions/results of mock guard tests before approving/executing a single native attempt; no automatic retries"
+    }
+  ],
+  "fixture": {
+    "texts": [
+      "Synthetic community AI workshop for young adults.",
+      "Synthetic maintenance schedule for a public library."
+    ],
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "model_directory": "data/models/multilingual-minilm",
+    "manifest": "config/embedding-model.json",
+    "expected_vectors": 2,
+    "dimension": 384,
+    "business_documents": false,
+    "contacts": false,
+    "api_keys": false
+  },
+  "isolation": {
+    "parent": "stdlib only; no Torch/FAISS/sklearn imports; OS network denied",
+    "embedding_child": "fresh Python -I -B, offline/clean env without keys, no FAISS allowed; model files read-only; only own temp output",
+    "vector_child": "separate fresh process after embedding child exits; FAISS only, no Torch/sentence_transformers/sklearn; consume precomputed vectors and same-vector query",
+    "production_server": "do not touch localhost8501, user SQLite or password"
+  },
+  "limits_for_this_test_only": {
+    "embedding_attempts": 1,
+    "embedding_timeout_seconds": 20,
+    "vector_attempts": 1,
+    "vector_timeout_seconds": 5,
+    "overall_timeout_seconds": 35,
+    "max_input_bytes": 8192,
+    "max_output_bytes": 1048576,
+    "automatic_retries": 0
+  },
+  "pass_criteria": [
+    "child PIDs distinct from parent and each other",
+    "two finite nonzero384dim vectors and exact pinned identity",
+    "no opposing Python stack or duplicate OpenMP images in either child",
+    "FAISS nearest-self match from frozen vector fixture, not semantic quality claim",
+    "owned children stopped; no network/secret/user-data access"
+  ],
+  "failure_handling": "Abort once on timeout/nonzero/signal/invalid JSON/runtime collision, capture sanitized PID/exit/signal metadata, no retry or hidden crash. Keep DEMO independent.",
+  "guard_mock_evidence": {
+    "native": 18,
+    "worker": 4,
+    "vector": 6
+  },
+  "blocker": "ST/Transformers sklearn import paths would be rejected; direct loader and physical-runtime/output-capture review incomplete"
+}

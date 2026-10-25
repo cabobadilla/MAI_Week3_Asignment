@@ -1,0 +1,13 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "73bc519e07c1804fb1f0142213d3b46af6b2eb4299b15ba38360918b4c36cb7b",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-web-interaction-write-round0",
+  "repair_count": 0,
+  "scope": "manual note/response append only; no CRM, no delivery, no correction/readscreen",
+  "server_stopped": true
+}

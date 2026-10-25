@@ -1,0 +1,17 @@
+{
+  "status": "superseded_by_explicit_user_selection",
+  "candidate_id": "deepseek/deepseek-v4.1-flash",
+  "provider": "OpenRouter, separate from coder GO",
+  "official_url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+  "catalog_observed_at": "2026-10-25T16:02:01.633072+00:00",
+  "headline_usd_per_million_tokens": {
+    "input": 0.02,
+    "output": 1.0
+  },
+  "price_note": "provider-specific actual pricing varies; user controls economic limit in API key",
+  "inference_performed": false,
+  "config_model_changed": false,
+  "question_submitted": true,
+  "selected_model": "qwen/qwen3.8-flash",
+  "decision_ref": "Sentinel_998e1fefe2248191b30a4466a676b7a6"
+}

@@ -1,0 +1,15 @@
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "source_sha256": "f7397114b56009a73cd67086d909e526db4f7f58a5c25048a4d036b687ca0dc7",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-web-directed-write-round0",
+  "repair1": "/tmp/gwa-web-directed-write-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "POST manual email-batch record only; no email transmission/readscreen/notes",
+  "server_stopped": true
+}

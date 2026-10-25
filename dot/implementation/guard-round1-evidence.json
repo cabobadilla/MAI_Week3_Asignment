@@ -1,0 +1,29 @@
+{
+  "coder": "OpenCode",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "guard_source": "round1 response",
+  "guard_sha256": "5f8d5e593a8dc87949357986841a991a1021ff16cba4a1671f87bcf865f81494",
+  "tests_passed": 27,
+  "tests_failed": 0,
+  "test_sha256": "760cf9b19897a8c7b127000355d0f455334f6f14883359f2b9a3068ae9b81335",
+  "profile_sha256": "18efa6eee65b2977546135a5d8805c839ea36de027cb999c15a46661e7adadc6",
+  "round0_tests": {
+    "passed": 25,
+    "failed": 2
+  },
+  "round1_tests": {
+    "passed": 27,
+    "failed": 0
+  },
+  "fake_cli_checks": [
+    "valid file-map response",
+    "wrong model blocked before request",
+    "tool event blocked"
+  ],
+  "scope": "minimal supervisor+filemap guard; no-tools coder; sandboxed candidate tests",
+  "native_tools": "all_denied",
+  "persistent_project_permissions": "deny",
+  "base_identity": "file hashes only; no Git commit/candidate acceptance claimed",
+  "app_llm_calls": false,
+  "control_supervisor_provenance": "coordinator adaptation of pinned harness orchestration; guard/product code authored by OpenCode"
+}

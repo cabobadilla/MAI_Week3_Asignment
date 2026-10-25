@@ -1,0 +1,24 @@
+{
+  "task": "T-04",
+  "coder": "OpenCode",
+  "model": {
+    "id": "deepseek-v4.1-flash",
+    "providerID": "opencode-go",
+    "variant": "default"
+  },
+  "round": 0,
+  "tests": {
+    "passed": 18,
+    "failed": 0,
+    "suite_sha256": "7cc84d2e6333a87839d0d5d7971b26e0e6ba9fe91a546a5949d7c8585d120b74"
+  },
+  "files": {
+    "app/campaigns.py": "724f0b8d706e8694a1fd3db53d0659e75696e3e8029ac4ab41427e4bdbab928e",
+    "app/recipients.py": "844f82182b70f3cf501757179d5cb852d7de1b0cdce634e612fe67f1e76e59fe"
+  },
+  "diff_scope": "exact two new files",
+  "app_llm_calls": false,
+  "sending": false,
+  "native_tools": "all_denied",
+  "server_stopped": true
+}
