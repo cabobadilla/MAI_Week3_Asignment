@@ -1,0 +1,37 @@
+{
+  "unit": "RUNTIME-REAL-01",
+  "initial": "/tmp/gwa-runtime-real-round0",
+  "status": "accepted_integrated",
+  "scope": "Local real runtime factory/CLI wiring and honest mode labels, same database/auth; no inference at boot",
+  "allowlist": [
+    "app/runtime.py",
+    "app/web_auth.py",
+    "app/ui_shell.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/runtime.py": "87052175d8e900adbdc08670307286b54532aaaa903d1eaa8f181ab551e0cdc3",
+    "app/web_auth.py": "3950d0d89538ff14f98dd8ee10aec6e647b00cdc9c1f6140bc9abc2babb199c7",
+    "app/ui_shell.py": "06a90cf61b4b2b82104551d47bd3319ea36cbce4f0d63860c1e721b5e6887c21"
+  },
+  "timestamp": "2026-10-26T03:20:52.500155+00:00",
+  "tests": {
+    "runtime_tests_passed": 5,
+    "canonical_http_tests_passed": 80,
+    "failed": 0,
+    "auth_AST_unchanged_outside_health": true,
+    "fixture_note": "Original unauth POST omitted Origin so existing boundary correctly403; corrected test supplied legitimateOrigin and then asserted401. Initial fixture preserved. No auth policy change.",
+    "legacy_scratch_collection": "8failed88passed obsolete combined-route scratchfixtures; not used to modify product; canonical current tests80passed; both receipts retained",
+    "canonical_receipt": "/tmp/gwa-sandbox-control/scratch/final-canonical-http-regression/receipt.json",
+    "protected_guard_passed": 27
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/runtime.py": "15954a2db8fa0196ef69fcf61dd406a3730adf908b01aa6a1363adb846766cab",
+    "app/web_auth.py": "53201f2159759a5f4170700b2f2af582692d3463a2b03dc2a48e5a7ba51625d6",
+    "app/ui_shell.py": "14a05c9cbeeaa2cb97c0e6af4edf77c427246541c855a0236b48a7e784b31a7b"
+  }
+}

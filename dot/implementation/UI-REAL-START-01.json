@@ -1,0 +1,30 @@
+{
+  "unit": "UI-REAL-START-01",
+  "initial": "/tmp/gwa-ui-real-start-round0",
+  "status": "accepted_integrated",
+  "scope": "Explicit real start/status control reusing accepted workspace busy/run hooks",
+  "allowlist": [
+    "app/ui_real_start.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/ui_real_start.py": null
+  },
+  "timestamp": "2026-10-26T03:03:06.141748+00:00",
+  "tests": {
+    "browser_checks": 13,
+    "errors": 0,
+    "real_http": true,
+    "real_auth": true,
+    "real_sqlite": true,
+    "client": "explicit synthetic; no app remote inference",
+    "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-42535617ce464373b6ae76585096b081/browser-real-start-report.json"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/ui_real_start.py": "b5ce184c2c7b148d9e874b19755d75dc604e0c24468bb9f78c932ed447a60787"
+  }
+}

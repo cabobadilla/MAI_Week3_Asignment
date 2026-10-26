@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-26T02:18:30.506188+00:00",
+  "active_go": {
+    "unit": "REAL-RESULTS-01",
+    "run": "/tmp/gwa-real-results-repair1",
+    "exec_session": 13357,
+    "round": "repair1",
+    "remaining_repairs": 1,
+    "status": "in_flight_reconcile_before_retry"
+  },
+  "completed": {
+    "worker": "WORKER-COMPONENT-01 repair1 accepted7/7+nativesmoke11.337s",
+    "proxy": "PROXY-OS-01 repair1 accepted12/12+nativesmoke25.816s+OScanaries; cwd scratch",
+    "retrieval": "LOCAL-RETRIEVAL-01 accepted4/4; real87chunks2sources4hits; index reopen;12.44s",
+    "tokenizer_pooling_equivalence": "/tmp/gwa-component-native-probe/equivalence-result.json; maxdiff1.49e-8, oneOpenMP; noSTbitwiseclaim",
+    "prompt": "GENERATION-GROUNDING-01 accepted12/12; ASTonlySYSTEM_PROMPT;reviewerunchanged",
+    "no_new_OpenRouter_calls": true,
+    "new_real_results": "repair1 in flight; initial3pass3fail notintegrated",
+    "caffeinate": {
+      "pid": 59559,
+      "argv": [
+        "/usr/bin/caffeinate",
+        "-i",
+        "-t",
+        "7200"
+      ],
+      "purpose": "GrowWithAI real UI integration",
+      "temporary": true,
+      "display_assertion_requested": false,
+      "persistent_settings_changed": false,
+      "started_utc": "2026-10-26T02:09:32.007811+00:00",
+      "maximum_seconds": 7200,
+      "cleanup_required": true
+    }
+  },
+  "next": [
+    "Reconcile REAL-RESULTS-01 repair1 from durable run directory before any coder retry. Initial candidate not integrated; frozen tests /tmp/gwa-sandbox-control/test_real_results.py (now8tests).",
+    "After results acceptance: REAL-EXECUTION-01 prompt and5offline tests already prepared at /tmp/gwa-real-execution-prompt.txt and /tmp/gwa-sandbox-control/test_real_execution.py; register once (not yet registered/launched).",
+    "Then real HTTP starter/status with durable run_id, mixed real/demo reader binding, existing workspace real labels/evidence, real runtime switch; each small GO unit. No new OpenRouter calls yet.",
+    "QA real full UI once using permitted2docs+syntheticcampaign, durable call metrics; no autoapproval. Preserve previous failed trials/totalunknown.",
+    "Notify parent/user and allow saving edits before stopping demo PID34861 port8501. No user DB/password touched.",
+    "Cleanup owned caffeinate PID59559 at completion/cancellation, verify PID command before signalling; max7200s expires independently."
+  ]
+}

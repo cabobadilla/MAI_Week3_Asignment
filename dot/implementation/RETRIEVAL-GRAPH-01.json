@@ -1,0 +1,17 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "add74396c1854347592e4af10645f0f10cb862ebcba6054c2bbebaa9d80e7634",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-agent-retrieval-graph-round0",
+  "initial_result": "4pass1fail versionstring mismatch",
+  "repair1": "/tmp/gwa-agent-retrieval-graph-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "LangGraph+SQLite real checkpoint, bounded mock reader, persistent human interrupt; generator/reviewer not wired",
+  "native_imports": "blocked before loading by test tripwire",
+  "application_llm_calls": false
+}

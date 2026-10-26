@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-25T23:16:55.295998+00:00",
-  "status": "NOT_READY_FOR_NATIVE_EXECUTION",
-  "native_imports_executed": false,
+  "timestamp": "2026-10-26T00:36:22.181671+00:00",
+  "status": "GUARD_CLEANLY_BLOCKED_MODEL_DEPENDENCY; NOT_READY_FOR_EMBEDDINGS",
+  "native_imports_executed": true,
   "llm_calls": false,
   "credentials_read": false,
   "source_sha256": {
@@ -72,5 +72,9 @@
     "WORKER-GUARD-01",
     "VECTOR-GUARD-01"
   ],
-  "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed."
+  "native_blocker": "SentenceTransformer6.2.0 eagerly imports sklearn.metrics through util/similarity.py:8. Current guard prohibits sklearn to avoid its second libomp; physical safe stop verified. Do not remove guard or repeat unchanged load.",
+  "native_probe": "dot/diagnostics/native-guarded-smoke.json",
+  "no_crash_signal": true,
+  "physical_openmp_images_count": 1,
+  "vector_phase_executed": false
 }

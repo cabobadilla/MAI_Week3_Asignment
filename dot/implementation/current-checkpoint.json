@@ -1,12 +1,7 @@
 {
-  "timestamp": "2026-10-25T23:31:09.981237+00:00",
+  "timestamp": "2026-10-26T01:32:59.544626+00:00",
   "phase": "real-agent implementation with mock-only validation",
-  "active_go": {
-    "unit": "RETRIEVAL-GRAPH-01",
-    "run": "/tmp/gwa-agent-retrieval-graph-round0",
-    "exec_session": 7556,
-    "maximum_round_seconds": 600
-  },
+  "active_go": null,
   "guard_tests": {
     "native_guard": 18,
     "worker": 4,
@@ -27,16 +22,18 @@
   "credentials_read": false,
   "native_blocker": "SentenceTransformer/transitive Transformers may import sklearn, which carries a distinct libomp. Guard refuses it. No native smoke until safe dependency path reviewed.",
   "next": [
-    "validate retrieval/checkpoint/human interrupt graph with mocks",
-    "reviewer contract",
-    "durable LLM execution",
-    "connect generator/reviewer and bounded real test"
+    "Read this transfer_checkpoint first; older nested fields may be superseded. Do not repeat completed GO or any previous API request.",
+    "Connect accepted ComponentEmbeddings to an OS-sandboxed production worker/proxy in one small GO unit at a time. Existing isolated_embeddings.py/embedding_worker.py still use old SentenceTransformer path; DO NOT run it expecting the fixed loader. Preserve exact pin and forbid FAISS/sklearn/ST in embedding process; FAISS stays in separate parent/process.",
+    "Build actual retrieval using both validated v0.2 sources, not the handout. Choose chunks fitting128-token guard; existing900char curated fixture is not semantic retrieval evidence. Verify tokenizer/pooling equivalence and fresh index provenance with independent tests.",
+    "Inspect saved graph output/final review. Current real trial reached the configured one-revision limit with unapproved content. Do not label it passed or silently approve. If continuing necessary evaluation, preserve call ledger and document allowed bounded cycle; no blind replay or counter reset.",
+    "Materialize only genuinely validated final graph drafts as immutable UNAPPROVED versions, then wire real HTTP/run reader and existing approved editor UI with correct real-vs-demo labels. These integration functions/routes are NOT implemented yet.",
+    "Before changing user server8501 notify/coordinate; preserve demo password/data and possible edits. User has authorized app API trials with key-managed budget; no new credential/budget question needed."
   ],
   "reservation_tests": {
     "passed": 11,
     "failed": 0
   },
-  "trial_authorized_usd_max": "0.10",
+  "trial_authorized_usd_max": null,
   "history_context": {
     "integrated": true,
     "model": "opencode-go/deepseek-v4.1-flash",
@@ -53,5 +50,365 @@
     "application_llm_calls": false,
     "scope": "read-only explicit-campaign history, current corrections, bounded untrusted data; no LLM quality claim"
   },
-  "generation_contract": "integrated12/12"
+  "generation_contract": "integrated12/12",
+  "retrieval_graph": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "add74396c1854347592e4af10645f0f10cb862ebcba6054c2bbebaa9d80e7634",
+    "tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-agent-retrieval-graph-round0",
+    "initial_result": "4pass1fail versionstring mismatch",
+    "repair1": "/tmp/gwa-agent-retrieval-graph-repair1",
+    "repair_count": 1,
+    "remaining_repairs": 1,
+    "scope": "LangGraph+SQLite real checkpoint, bounded mock reader, persistent human interrupt; generator/reviewer not wired",
+    "native_imports": "blocked before loading by test tripwire",
+    "application_llm_calls": false
+  },
+  "budget_control": "API key; no additional numerical budget",
+  "review_contract": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524",
+    "tests": {
+      "passed": 13,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-review-contract-round0",
+    "repair1": "/tmp/gwa-review-contract-repair1",
+    "repair_count": 1,
+    "remaining_repairs": 1,
+    "application_llm_calls": false,
+    "scope": "reviewer messages+strict findings schema, explicit piece/source IDs; not real review evaluation"
+  },
+  "llm_metadata": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "7d387013a789494a728a8d52f6cc506e4b5a91871e5f034931dfeac9f3fab2be",
+    "tests": {
+      "passed": 22,
+      "failed": 0
+    },
+    "run": "/tmp/gwa-llm-metadata-round0",
+    "repair_count": 0,
+    "remaining_repairs": 2,
+    "application_llm_calls": false,
+    "scope": "provider-reported cost/provider/response ID only; no numerical budget restriction; 18originaltests retained"
+  },
+  "generation_node": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "b4f764d9567bfb8abab2b9fcf51ffb37e3c2fb1a8ecc4e63d94c964b5dcafaa0",
+    "tests": {
+      "passed": 6,
+      "failed": 0
+    },
+    "run": "/tmp/gwa-generation-node-round0",
+    "repair_count": 0,
+    "remaining_repairs": 2,
+    "scope": "generator node with real contracts/injected call, mock acceptance only",
+    "application_llm_calls": false
+  },
+  "llm_execution": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "da16a6d36b315d086fe278a1dd4f60a702f1e6365b64741510ae51a7f7424a51",
+    "tests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-llm-execution-round0",
+    "repair1": "/tmp/gwa-llm-execution-repair1",
+    "repair_count": 2,
+    "remaining_repairs": 0,
+    "application_llm_calls": false,
+    "scope": "durable reservation, completed replay, unknown/crash stop and reported usage/provider metadata retained",
+    "repair2": "/tmp/gwa-llm-execution-repair2"
+  },
+  "review_node": {
+    "integrated": false,
+    "tests_passed": 0,
+    "tests_failed": 5,
+    "cause": "rejects empty variant for email/article/linkedin; exact contract correction prepared",
+    "repair1_prompt": "/tmp/gwa-review-node-repair1-prompt.txt"
+  },
+  "go_active_calls": 0,
+  "agent_pipeline": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "236901af0629b6c2ed43de386501e121acdfa8ad49ff80361ac480e89b7eaa44",
+    "tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "initial": "/tmp/gwa-agent-pipeline-round0",
+    "initial_result": "4pass1fail revision-limit error shape",
+    "repair1": "/tmp/gwa-agent-pipeline-repair1",
+    "repair_count": 1,
+    "remaining_repairs": 1,
+    "scope": "connected LangGraph retrieval/generation/review, revision cycle, SQLite persistence, human gates; mock provider only",
+    "application_llm_calls": false
+  },
+  "llm_tls": {
+    "integrated": true,
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "source_sha256": "870e0be3658f8da23cdec486f3540dd34c6a961a14048b1b65ef319d951ebf76",
+    "tests": {
+      "passed": 24,
+      "failed": 0
+    },
+    "run": "/tmp/gwa-llm-tls-round0",
+    "repair_count": 0,
+    "remaining_repairs": 2,
+    "scope": "explicit native OS TLS context for remote path; mock path unchanged",
+    "verification_disabled": false,
+    "global_trust_modified": false,
+    "new_packages_installed": false
+  },
+  "application_llm_trial": {
+    "original_run": {
+      "id": "e5041e8d-7a14-4b29-a1b4-b733f1a6472b",
+      "attempts": 3,
+      "completed_responses": 1,
+      "last_reported_cost": "0.00139514",
+      "earlier_cost_unknown": true,
+      "diagnosis": "initial TLS repaired; accepted response malformed JSON at body key; strict parser correctly rejected"
+    },
+    "schema_dialect_run": {
+      "id": "7b6518da-efb7-413f-83ec-1e309ae9d4af",
+      "attempts": 3,
+      "completed_responses": 0,
+      "http_status": 400,
+      "provider": "Alibaba",
+      "exact_reason": "uniqueItems unsupported on array schemas",
+      "reported_cost": null,
+      "not_claimed_zero_cost": true
+    },
+    "current": {
+      "id": "91b49a14-462b-483f-b4a9-ed478b9ac33c",
+      "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-schema2-real-p825mt2i",
+      "calls_completed": 4,
+      "all_http_status": 200,
+      "provider": "Alibaba",
+      "model": "qwen/qwen3.8-flash",
+      "reported_cost": "0.003816624",
+      "status": "failed",
+      "error": "revision_limit",
+      "configured_max_revisions": 1,
+      "drafts": 2,
+      "reviews": 2,
+      "human_approved": false,
+      "receipt": "dot/implementation/QWEN-STRUCTURED-EVAL-02.json"
+    },
+    "known_reported_subtotal": "0.005211764",
+    "overall_total_unknown": true,
+    "source_selection": "curated verified excerpts, NOT semantic RAG"
+  },
+  "native_probe": {
+    "embedding": {
+      "role": "embedding",
+      "pid": 46844,
+      "exit_code": 2,
+      "signal": null,
+      "elapsed_seconds": 17.424,
+      "bounded_stop_reason": null,
+      "stderr_bytes": 0,
+      "owned_child_stopped": true,
+      "result": {
+        "ok": false,
+        "pid": 46844,
+        "exception_types": [
+          "builtins.ValueError",
+          "_gwa_embedding_runtime_guard.NativeRuntimeConflict"
+        ],
+        "guard_conflict": true,
+        "modules": {
+          "torch": true,
+          "faiss": false,
+          "sklearn": false,
+          "sentence_transformers": true
+        },
+        "openmp_images": [
+          "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/lib/python3.11/site-packages/torch/lib/libomp.dylib"
+        ]
+      }
+    },
+    "vector": null,
+    "network": "denied",
+    "business_documents": "denied",
+    "credentials": "absent and read denied",
+    "user_server_restarted": false,
+    "automatic_retries": 0,
+    "model_changed": false,
+    "library_patches": false,
+    "status": "not_passed",
+    "timestamp": "2026-10-26T00:36:22.181671+00:00",
+    "scope": "single corrected native isolation probe; no semantic RAG success",
+    "probe_parent": "/tmp/gwa-native-guarded-probe/parent.py",
+    "probe_child": "/tmp/gwa-native-guarded-probe/child.py",
+    "probe_source_sha256": {
+      "parent.py": "46def50db81bc8222ddc8a8e5070adf49f34b5a189619d54c694f78af7cb8108",
+      "child.py": "007b0cac44abd3488484be19f8f30d72bfbb692f4fde11f2fa5ecf76943ebcb3"
+    },
+    "first_forbidden_import_name_recorded": false,
+    "static_dependency_evidence": [
+      {
+        "file": ".venv/lib/python3.11/site-packages/sentence_transformers/util/__init__.py",
+        "line": 39,
+        "fact": "eagerly imports similarity module"
+      },
+      {
+        "file": ".venv/lib/python3.11/site-packages/sentence_transformers/util/similarity.py",
+        "line": 8,
+        "fact": "unconditional from sklearn.metrics import pairwise_distances"
+      }
+    ],
+    "no_repetition_until_material_dependency_fix": true
+  },
+  "owned_go_servers_stopped": true,
+  "video_ready": false,
+  "canonical_reasoning_candidate": {
+    "unit": "LLM-CANONICAL-01",
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "repair_count": 2,
+    "remaining_repairs": 0,
+    "integrated": true,
+    "tests": {
+      "passed": 34,
+      "failed": 0
+    },
+    "source_sha256": "18857dab81f2dfb613b1a8c5600d2b9fdcd1314ad339b3b9ee4de1fdfe603c04",
+    "run": "/tmp/gwa-llm-canonical-repair2",
+    "scope": "explicit reasoning control; one-line module helper correction",
+    "timestamp": "2026-10-26T01:03:03.274116+00:00"
+  },
+  "component_loader_proposal": "dot/diagnostics/component-loader-proposal.json",
+  "transfer_checkpoint": {
+    "timestamp": "2026-10-26T01:32:59.544626+00:00",
+    "active_go": null,
+    "go_processes_verified_stopped": true,
+    "app_api_process_active": false,
+    "no_new_rounds_after_transfer_request": true,
+    "video_ready": false,
+    "demo_restarted": false,
+    "user_database_touched": false,
+    "files_integrated": {
+      "app/llm_client.py": "111b8d51e0912a2d3f12f85eb754c597b3f0562aa5817e672f0fd6a0f3492d92",
+      "app/component_embeddings.py": "07fedc4af09d0592f4849dc14d8182321b8ce4066d4c8033e7f3c818a908d162",
+      "app/response_schemas.py": "3240a3a3722a5a74165a91672a8e3f6b5b92451832b7dcc094e311642ee3ef69"
+    },
+    "tests": {
+      "canonical_reasoning_final": {
+        "passed": 34,
+        "failed": 0
+      },
+      "json_object_initial": {
+        "passed": 35,
+        "failed": 0
+      },
+      "strict_json_schema_client": {
+        "passed": 42,
+        "failed": 0
+      },
+      "provider_response_schemas": {
+        "passed": 16,
+        "failed": 0
+      },
+      "component_loader_final": {
+        "passed": 17,
+        "failed": 0
+      }
+    },
+    "native": {
+      "passed": true,
+      "seconds": 14.351,
+      "embedding_pid": 53684,
+      "vector_pid": 53891,
+      "vector_seconds": 0.42,
+      "separate_processes": true,
+      "same_pinned_model": true,
+      "embedding_torch_only": true,
+      "vector_faiss_only": true,
+      "production_proxy_integrated": false,
+      "bitwise_equivalence_to_sentence_transformers_tested": false
+    },
+    "real_trials": {
+      "original_run": {
+        "id": "e5041e8d-7a14-4b29-a1b4-b733f1a6472b",
+        "attempts": 3,
+        "completed_responses": 1,
+        "last_reported_cost": "0.00139514",
+        "earlier_cost_unknown": true,
+        "diagnosis": "initial TLS repaired; accepted response malformed JSON at body key; strict parser correctly rejected"
+      },
+      "schema_dialect_run": {
+        "id": "7b6518da-efb7-413f-83ec-1e309ae9d4af",
+        "attempts": 3,
+        "completed_responses": 0,
+        "http_status": 400,
+        "provider": "Alibaba",
+        "exact_reason": "uniqueItems unsupported on array schemas",
+        "reported_cost": null,
+        "not_claimed_zero_cost": true
+      },
+      "current": {
+        "id": "91b49a14-462b-483f-b4a9-ed478b9ac33c",
+        "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-schema2-real-p825mt2i",
+        "calls_completed": 4,
+        "all_http_status": 200,
+        "provider": "Alibaba",
+        "model": "qwen/qwen3.8-flash",
+        "reported_cost": "0.003816624",
+        "status": "failed",
+        "error": "revision_limit",
+        "configured_max_revisions": 1,
+        "drafts": 2,
+        "reviews": 2,
+        "human_approved": false,
+        "receipt": "dot/implementation/QWEN-STRUCTURED-EVAL-02.json"
+      },
+      "known_reported_subtotal": "0.005211764",
+      "overall_total_unknown": true,
+      "source_selection": "curated verified excerpts, NOT semantic RAG"
+    },
+    "denials_not_to_retry": [
+      {
+        "path": "scripts/run_protected_tests.py",
+        "reason": "automatic approval review rejected modification of protected runner; no write executed; do not copy or alter to bypass",
+        "receipt": "dot/implementation/RUNNER-SUITE-REGISTRATION-BLOCKED.json"
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "previous write denied; no retry authorized; user approval evidence remains in independent receipts"
+      }
+    ],
+    "next": [
+      "Read this transfer_checkpoint first; older nested fields may be superseded. Do not repeat completed GO or any previous API request.",
+      "Connect accepted ComponentEmbeddings to an OS-sandboxed production worker/proxy in one small GO unit at a time. Existing isolated_embeddings.py/embedding_worker.py still use old SentenceTransformer path; DO NOT run it expecting the fixed loader. Preserve exact pin and forbid FAISS/sklearn/ST in embedding process; FAISS stays in separate parent/process.",
+      "Build actual retrieval using both validated v0.2 sources, not the handout. Choose chunks fitting128-token guard; existing900char curated fixture is not semantic retrieval evidence. Verify tokenizer/pooling equivalence and fresh index provenance with independent tests.",
+      "Inspect saved graph output/final review. Current real trial reached the configured one-revision limit with unapproved content. Do not label it passed or silently approve. If continuing necessary evaluation, preserve call ledger and document allowed bounded cycle; no blind replay or counter reset.",
+      "Materialize only genuinely validated final graph drafts as immutable UNAPPROVED versions, then wire real HTTP/run reader and existing approved editor UI with correct real-vs-demo labels. These integration functions/routes are NOT implemented yet.",
+      "Before changing user server8501 notify/coordinate; preserve demo password/data and possible edits. User has authorized app API trials with key-managed budget; no new credential/budget question needed."
+    ],
+    "qa_paths": {
+      "source_fixture": "/tmp/gwa-trial-source-fixture.json",
+      "latest_real_scenario": "/tmp/gwa-run-structured2-eval.py",
+      "latest_real_state": "/tmp/gwa-authorized-qwen-structured2-state.json",
+      "native_final_parent": "/tmp/gwa-component-native-probe/direct-parent.py",
+      "native_final_child": "/tmp/gwa-component-native-probe/direct-child.py",
+      "native_final_receipt": "/tmp/gwa-component-native-probe/direct-final-receipt.json",
+      "vector_receipt": "/tmp/gwa-component-native-probe/vector-receipt.json",
+      "component_frozen_tests": "/tmp/gwa-sandbox-control/test_component_loader_direct.py",
+      "schema_frozen_tests": "/tmp/gwa-sandbox-control/test_response_schemas_dialect.py",
+      "client_frozen_tests": "/tmp/gwa-sandbox-control/test_llm_schema.py"
+    }
+  },
+  "native_RAG_paused": true,
+  "native_RAG_production_integrated": false,
+  "app_full_e2e": false,
+  "old_sentence_transformer_stack_paused": true,
+  "new_component_native_smoke_passed": true
 }

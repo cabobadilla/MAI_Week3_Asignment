@@ -1,0 +1,62 @@
+{
+  "status": "failed",
+  "completed_calls": [
+    {
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "input_tokens": 1806,
+      "output_tokens": 2392,
+      "reported_cost": "0.00139514",
+      "response_id": "gen-1792976692-zrcFT51QELlHW5ebiafz"
+    }
+  ],
+  "http_observations": [
+    {
+      "status": 200,
+      "content_type": "application/json",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "response_id": "gen-1792976692-zrcFT51QELlHW5ebiafz",
+      "finish_reason": "stop",
+      "role": "assistant",
+      "content_type_json": "str",
+      "content_characters": 7080,
+      "usage": {
+        "prompt_tokens": 1806,
+        "completion_tokens": 2392,
+        "total_tokens": 4198,
+        "cost": 0.00139514
+      },
+      "top_keys": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "provider",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "private_reasoning_saved": false
+    }
+  ],
+  "reserved_attempts_total": 3,
+  "prior_cost_unknown": true,
+  "source_selection": "curated verified excerpts; NOT semantic RAG",
+  "human_approved": false,
+  "user_demo_touched": false,
+  "error": {
+    "code": "invalid_generation",
+    "retryable": false,
+    "outcome_unknown": false
+  },
+  "timestamp": "2026-10-26T01:05:35.717592+00:00",
+  "diagnosis": {
+    "http_client_accepted": true,
+    "generator_json_error": "expected colon at char6555; body key followed by comma; closing delimiters incomplete",
+    "parser_relaxed": false,
+    "body_repaired": false,
+    "new_inference_repeated": false
+  }
+}

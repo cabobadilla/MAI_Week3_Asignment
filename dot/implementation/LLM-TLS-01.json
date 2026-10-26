@@ -1,0 +1,16 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "870e0be3658f8da23cdec486f3540dd34c6a961a14048b1b65ef319d951ebf76",
+  "tests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-llm-tls-round0",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "scope": "explicit native OS TLS context for remote path; mock path unchanged",
+  "verification_disabled": false,
+  "global_trust_modified": false,
+  "new_packages_installed": false
+}

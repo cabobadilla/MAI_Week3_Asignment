@@ -1,0 +1,18 @@
+{
+  "all_existing_table_rows_identical_to_backup": {
+    "company": true,
+    "contact": true,
+    "campaign": true,
+    "campaign_recipient": true,
+    "generation_run": true,
+    "content_version": true,
+    "approval": true,
+    "export_record": true,
+    "distribution_record": true,
+    "followup_event": true,
+    "operator_credentials": true
+  },
+  "password_row_identical": true,
+  "database_integrity": "ok",
+  "values_not_exposed": true
+}

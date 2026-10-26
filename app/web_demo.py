@@ -8,7 +8,7 @@ from typing import Any
 from fastapi import APIRouter, Depends, Request
 from fastapi.responses import JSONResponse
 
-from . import campaigns, demo_generation, runs, storage
+from . import campaigns, demo_generation, real_results, runs, storage
 from .web_auth import _read_json_object
 
 _BAD_REQUEST = 'Solicitud no válida'
@@ -77,7 +77,7 @@ def mount_demo(app: Any, db_path: Path) -> None:
         conn = None
         try:
             conn = storage.connect(db_path)
-            return demo_generation.get_demo_bundle(conn, run_id)
+            return real_results.get_bundle(conn, run_id)
         except sqlite3.Error:
             return _unavailable()
         except Exception as exc:

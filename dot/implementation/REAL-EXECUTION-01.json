@@ -1,0 +1,32 @@
+{
+  "unit": "REAL-EXECUTION-01",
+  "initial": "/tmp/gwa-real-execution-round0",
+  "status": "accepted_integrated",
+  "scope": "Execute one prepared graph with real retrieval, durable calls and terminal result; no API or UI",
+  "allowlist": [
+    "app/real_execution.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/real_execution.py": null
+  },
+  "timestamp": "2026-10-26T02:36:50.174027+00:00",
+  "repair1": "/tmp/gwa-real-execution-repair1",
+  "initial_results": "1passed4failed zero calls; invented fallback module resolver rejected",
+  "repair2": "/tmp/gwa-real-execution-repair2",
+  "repair1_results": "4pass1fail nestedinterruptquestions missing,0native/API",
+  "tests": {
+    "passed": 5,
+    "failed": 0,
+    "native": false,
+    "real_api": false,
+    "scope": "SQLite+LangGraph+mockclient; persistent calls, pass6pieces, revision_limit4calls, missing-source questions, uncertain call no retry, running CAS"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/real_execution.py": "74eb6c8a8650fb7124602741106fb1fd50701df0dfc8612c02ee8285025a3bdf"
+  }
+}

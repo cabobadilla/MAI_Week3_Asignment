@@ -1,0 +1,52 @@
+{
+  "mode": "real OpenRouter",
+  "status": "failed",
+  "model": "qwen/qwen3.8-flash",
+  "calls": [],
+  "reported_cost_total": null,
+  "source_count": 2,
+  "source_selection": "curated verified excerpt fixture; NOT semantic/vector retrieval",
+  "source_fingerprint": "231e4d7e610b84030a92d817c768c14a637cd4ecd48a2adbaf901b2da21b94ee",
+  "source_evidence": [
+    {
+      "source_id": "libfile_6c37cc40080c8191b552dd3b1d48f25b",
+      "chunk_id": "libfile_6c37cc40080c8191b552dd3b1d48f25b:0.2:dac390c730f770bd9d6dd801ec1571452ebe20e0d8652c686667858796acd4fb:0:900",
+      "source_hash": "41460fbcf2db043902747cbe081cf55b09581cc150f67e0a18a28026d30a816b",
+      "text_hash": "c1b2e34b578b41da96ca6c7ea369e4998272989c182396eaa5dc62984de0cc58",
+      "content_version": "0.2",
+      "line_start": 1,
+      "line_end": 6
+    },
+    {
+      "source_id": "libfile_53f339c6e3808191aa4d31aa25664829",
+      "chunk_id": "libfile_53f339c6e3808191aa4d31aa25664829:0.2:509e78e960fdeeb22ae9f92a1dfc9d6b5b31a0e86d5615779fa064fe80f44fa0:0:900",
+      "source_hash": "028c2b664f03d8032ab940025cc863cda85081ac12b01a2eb1b113f11dd78507",
+      "text_hash": "4b6777e9b7f5a327e7ed5385cd20a2cefed2e5b5e861ed91f6242979f58399d4",
+      "content_version": "0.2",
+      "line_start": 1,
+      "line_end": 19
+    }
+  ],
+  "native_ml_imports": false,
+  "request_timeout_seconds": 60,
+  "human_approved": false,
+  "user_database_touched": false,
+  "user_server_restarted": false,
+  "sent_or_published": false,
+  "credentials_in_artifacts": false,
+  "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-real-jmzthu4m",
+  "completed_calls": 0,
+  "reserved_attempts": 1,
+  "possible_provider_submissions": 1,
+  "cost_reported_for_uncertain_attempt": null,
+  "transport_failure": {
+    "code": "provider_transport",
+    "outcome_unknown": true,
+    "durable_status": "uncertain"
+  },
+  "diagnosis": {
+    "public_no_auth_default_tls": "CERTIFICATE_VERIFY_FAILED local issuer",
+    "public_no_auth_native_os_tls": 200,
+    "first_call_outcome_not_reclassified": true
+  }
+}

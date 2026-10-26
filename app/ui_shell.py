@@ -683,5 +683,19 @@ _SHELL = '''<!doctype html>
 '''
 
 
-def render_shell(panels: list[str]) -> str:
-    return _SHELL.replace('<!--GWA_PANELS-->', ''.join(panels))
+def render_shell(panels: list[str], *, real: bool = False) -> str:
+    html = _SHELL
+    if real:
+        html = html.replace(
+            'DEMO · generación simulada · sin llamadas LLM',
+            'IA real · Qwen vía OpenRouter · aprobación humana',
+        )
+        html = html.replace(
+            "aria-label='Aviso de demo local'",
+            "aria-label='Aviso de app local'",
+        )
+        html = html.replace(
+            '<strong>Demo local con SQLite persistente.</strong>',
+            '<strong>App local con SQLite persistente.</strong>',
+        )
+    return html.replace('<!--GWA_PANELS-->', ''.join(panels))

@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 14.351,
+  "stop_reason": null,
+  "signal": null,
+  "canaries": {
+    "env_denied": true,
+    "documents_denied": true,
+    "network_denied": true
+  },
+  "result": {
+    "ok": true,
+    "pid": 53684,
+    "identity": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "modules": {
+      "torch": true,
+      "faiss": false,
+      "sklearn": false,
+      "sentence_transformers": false
+    },
+    "openmp_images": [
+      "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/lib/python3.11/site-packages/torch/lib/libomp.dylib"
+    ],
+    "vector_count": 2,
+    "dimension": 384,
+    "vectors_sha256": "bbf365792a90e8b184547741c88cc738464e88283c43728cd2a2eabaa03a2467"
+  },
+  "stderr_bytes": 11750,
+  "automatic_retries": 0,
+  "demo_touched": false
+}

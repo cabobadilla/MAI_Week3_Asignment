@@ -1,0 +1,18 @@
+{
+  "approved_for_synthetic_QA": true,
+  "scope": "Independent coordinator source inspection for isolated test only; no user approval or externalpublication",
+  "agent_hash": "91d8a59a9270ee728dc0b9dfe027763897f6d12f446657c93db2bdc033659c34",
+  "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "source_claim_checks": [
+    "15participants and18to29 supported in currentHTMLchunk",
+    "Chile andcompany/communityconnection is statedprojectpurpose inDOCX",
+    "digitalautonomy/responsibleIA are statedpurposes inboth",
+    "learningbydoing/adaptedroutes supportedHTML",
+    "CV/interview/humanfeedback/coaching supportedDOCX",
+    "Noemploymentpromise explicitlysupportedDOCX"
+  ],
+  "issues_requiring_block": [],
+  "length_observation": "Article1066 exceeds requested1000promptguidance; structural parser max4000 and total2400promptbudget respected. No claim of hard per-format prompt enforcement.",
+  "planned_editor_change": "LinkedIn final invitation only: \u00bfTe gustar\u00eda conversar sobre esta exploraci\u00f3n? -> \u00bfConversamos sobre este piloto? No factualaddition.",
+  "time": "2026-10-26T03:56:13.921468+00:00"
+}

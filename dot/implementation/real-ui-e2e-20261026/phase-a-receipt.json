@@ -1,0 +1,33 @@
+{
+  "phase": "terminal_unapproved",
+  "status": "needs_review",
+  "campaign_id": "af8908ec-63d0-4664-8f02-a4b87f522065",
+  "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "versions": 6,
+  "review_verdict": "pass",
+  "checks": [
+    "opening campaign performs no model request",
+    "editor blocked during actual generation",
+    "one explicit UI start only",
+    "exact durable run ID",
+    "real bundle accurately labelled",
+    "no automatic human approval or export",
+    "actual retrieval includes both authorized documents",
+    "current untrusted source version tracked",
+    "native retrieval matches validated current index",
+    "agent evidence visible",
+    "no browser errors",
+    "actual real results fit mobile"
+  ],
+  "errors": [],
+  "real_provider": true,
+  "approved": false,
+  "exported": false,
+  "posts": [
+    {
+      "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+      "query": "GrowWithAI propósito del piloto y formación digital en inteligencia artificial",
+      "confirmed_data": true
+    }
+  ]
+}

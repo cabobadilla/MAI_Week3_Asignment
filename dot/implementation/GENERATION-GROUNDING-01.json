@@ -1,0 +1,56 @@
+{
+  "unit": "GENERATION-GROUNDING-01",
+  "initial": "/tmp/gwa-generation-grounding-round0",
+  "status": "accepted_integrated",
+  "scope": "Runtime generator prompt grounding and response-to-review instructions only; reviewer unchanged",
+  "allowlist": [
+    "app/generation_contract.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/generation_contract.py": "5b43db6f9a102c1e2b753a9285a972603327a42d13c287b62a064a7db9c1824a"
+  },
+  "timestamp": "2026-10-26T03:53:12.758359+00:00",
+  "tests": {
+    "passed": 14,
+    "failed": 0,
+    "AST_unchanged_outside_SYSTEM_PROMPT": true,
+    "reviewer_sha256_unchanged": "441d490fb17c8792ab289827a703d347daeb8fe1c33579abee7fc9635fa87fa9"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/generation_contract.py": "b0cea59347658d2bdbcb4f2c4d2cb3d5e7beffab530c1c885fcd37911b469fd2"
+  },
+  "prior_accepted_receipt": {
+    "unit": "GENERATION-GROUNDING-01",
+    "initial": "/tmp/gwa-generation-grounding-round0",
+    "status": "accepted_integrated",
+    "scope": "Runtime generator prompt grounding and response-to-review instructions only; reviewer unchanged",
+    "allowlist": [
+      "app/generation_contract.py"
+    ],
+    "model": "opencode-go/deepseek-v4.1-flash",
+    "repair_count": 0,
+    "remaining_repairs": 2,
+    "max_round_seconds": 600,
+    "base_hashes": {
+      "app/generation_contract.py": "6a2172f13cedece95af15b51ef2b3287b7a5881f32e6878e8a320308a201abf0"
+    },
+    "timestamp": "2026-10-26T02:10:45.910764+00:00",
+    "tests": {
+      "passed": 12,
+      "failed": 0,
+      "AST_unchanged_outside_SYSTEM_PROMPT": true,
+      "reviewer_source_hash_unchanged": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524",
+      "real_model_quality_not_yet_evaluated": true
+    },
+    "integrated": true,
+    "source_hashes": {
+      "app/generation_contract.py": "5b43db6f9a102c1e2b753a9285a972603327a42d13c287b62a064a7db9c1824a"
+    }
+  },
+  "repair1": "/tmp/gwa-generation-grounding-repair1"
+}

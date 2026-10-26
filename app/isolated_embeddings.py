@@ -5,6 +5,7 @@ import math
 import os
 import subprocess
 import sys
+import sysconfig
 import tempfile
 from pathlib import Path
 
@@ -109,6 +110,115 @@ def _validate_texts(texts: list[str]) -> list[str]:
 def _worker_command() -> list[str]:
     worker_path = Path(__file__).resolve().with_name('embedding_worker.py')
     return [sys.executable, '-I', '-B', str(worker_path)]
+
+
+def _reject_unsafe_path(path: Path) -> None:
+    try:
+        text = os.fspath(path)
+    except TypeError:
+        raise ValueError('invalid embedding configuration') from None
+    if not isinstance(text, str):
+        raise ValueError('invalid embedding configuration')
+    if '\x00' in text or '\n' in text or '\r' in text:
+        raise ValueError('invalid embedding configuration')
+
+
+def _resolve_manifest_path(path: Path) -> Path:
+    try:
+        resolved = path.resolve(strict=True)
+    except (OSError, RuntimeError, ValueError):
+        raise ValueError('invalid embedding manifest') from None
+    _validate_manifest(resolved)
+    return resolved
+
+
+def _validate_model_directory(model_dir: Path, manifest_path: Path) -> Path:
+    try:
+        resolved = model_dir.resolve(strict=True)
+    except (OSError, RuntimeError, ValueError):
+        raise ValueError('invalid embedding configuration') from None
+    try:
+        if not resolved.is_dir():
+            raise ValueError('invalid embedding configuration')
+    except OSError:
+        raise ValueError('invalid embedding configuration') from None
+    protected_paths = [
+        Path('/'),
+        Path(__file__).resolve().parent,
+        Path(__file__).resolve().parent.parent,
+        Path(sys.prefix).resolve(),
+        manifest_path,
+        Path('/Users'),
+        Path('/private/tmp'),
+        Path('/private/var'),
+        Path('/Volumes'),
+        Path('/Library/Keychains'),
+        Path('/Library/Application Support'),
+        Path('/opt/homebrew/etc'),
+        Path('/opt/homebrew/var'),
+    ]
+    try:
+        protected_paths.append(Path.home().resolve())
+    except (OSError, RuntimeError):
+        pass
+    for protected_path in protected_paths:
+        if resolved == protected_path or resolved in protected_path.parents:
+            raise ValueError('invalid embedding configuration')
+    return resolved
+
+
+def _sandbox_literal(path: Path) -> str:
+    try:
+        text = str(path.resolve())
+    except (OSError, RuntimeError, ValueError):
+        raise ValueError('invalid sandbox path') from None
+    if '\x00' in text or '\n' in text or '\r' in text:
+        raise ValueError('invalid sandbox path')
+    return json.dumps(text)
+
+
+def _sandbox_profile(
+    model_dir: Path,
+    manifest_path: Path,
+    scratch: Path,
+) -> str:
+    app_dir = Path(__file__).resolve().parent
+    venv_dir = Path(sys.prefix).resolve()
+    purelib_dir = Path(sysconfig.get_paths()['purelib']).resolve()
+    model_path = Path(model_dir).resolve()
+    manifest_file = Path(manifest_path).resolve()
+    scratch_path = Path(scratch).resolve()
+
+    denied_read_roots = (
+        Path('/Users'),
+        Path('/private/tmp'),
+        Path('/private/var'),
+        Path('/Volumes'),
+        Path('/Library/Keychains'),
+        Path('/Library/Application Support'),
+        Path('/opt/homebrew/etc'),
+        Path('/opt/homebrew/var'),
+    )
+    denied_read_line = '(deny file-read-data ' + ' '.join(
+        '(subpath ' + _sandbox_literal(path) + ')' for path in denied_read_roots
+    ) + ')'
+    lines = [
+        '(version 1)',
+        '(allow default)',
+        '(deny network*)',
+        '(deny file-write*)',
+        '(allow file-write* (literal ' + _sandbox_literal(Path('/dev/null')) + ') (subpath ' + _sandbox_literal(scratch_path) + '))',
+        denied_read_line,
+        '(allow file-read-data (subpath ' + _sandbox_literal(venv_dir) + '))',
+        '(allow file-read-data (subpath ' + _sandbox_literal(app_dir) + '))',
+        '(allow file-read-data (subpath ' + _sandbox_literal(model_path) + '))',
+        '(allow file-read-data (subpath ' + _sandbox_literal(scratch_path) + '))',
+        '(allow file-read-data (literal ' + _sandbox_literal(manifest_file) + ') (subpath ' + _sandbox_literal(Path('/private/var/db/dyld')) + '))',
+        '(deny mach-lookup (global-name "com.apple.securityd") (global-name "com.apple.securityd.xpc") (global-name "com.apple.accountsd.accountmanager"))',
+        '(deny file-read* (subpath ' + _sandbox_literal(purelib_dir / 'sklearn') + '))',
+        '(deny file-read* (subpath ' + _sandbox_literal(purelib_dir / 'faiss') + '))',
+    ]
+    return '\n'.join(lines) + '\n'
 
 
 def _minimal_environment(temporary_directory: str) -> dict[str, str]:
@@ -225,12 +335,15 @@ class IsolatedEmbeddings:
         timeout_seconds: int = 30,
     ) -> None:
         try:
-            self.model_dir = Path(model_dir)
-            self.manifest_path = Path(manifest_path)
+            model_path = Path(model_dir)
+            manifest_path_value = Path(manifest_path)
         except (TypeError, ValueError):
             raise ValueError('invalid embedding configuration') from None
         self.timeout_seconds = _normalize_timeout(timeout_seconds)
-        _validate_manifest(self.manifest_path)
+        _reject_unsafe_path(model_path)
+        _reject_unsafe_path(manifest_path_value)
+        self.manifest_path = _resolve_manifest_path(manifest_path_value)
+        self.model_dir = _validate_model_directory(model_path, self.manifest_path)
 
     def encode(self, texts: list[str]) -> list[list[float]]:
         checked_texts = _validate_texts(texts)
@@ -255,6 +368,36 @@ class IsolatedEmbeddings:
 
         command = _worker_command()
         with tempfile.TemporaryDirectory(prefix='isolated-embeddings-') as temporary_directory:
+            try:
+                scratch = Path(temporary_directory).resolve(strict=True)
+                if not scratch.is_dir():
+                    raise ValueError('invalid sandbox scratch')
+                profile_path = scratch / 'worker.sb'
+                profile_text = _sandbox_profile(
+                    self.model_dir,
+                    self.manifest_path,
+                    scratch,
+                )
+                profile_path.write_text(profile_text, encoding='utf-8')
+            except Exception:
+                raise EmbeddingWorkerError() from None
+
+            try:
+                sandbox_available = (
+                    Path('/usr/bin/sandbox-exec').is_file()
+                    and os.access(Path('/usr/bin/sandbox-exec'), os.X_OK)
+                )
+            except Exception:
+                raise EmbeddingWorkerError() from None
+            if not sandbox_available:
+                raise EmbeddingWorkerError()
+
+            command = [
+                '/usr/bin/sandbox-exec',
+                '-f',
+                str(profile_path),
+            ] + command
+
             environment = _minimal_environment(temporary_directory)
             try:
                 process = subprocess.Popen(
@@ -264,7 +407,8 @@ class IsolatedEmbeddings:
                     stderr=subprocess.PIPE,
                     text=True,
                     env=environment,
-                    close_fds=False,
+                    close_fds=True,
+                    cwd=str(scratch),
                 )
             except Exception:
                 raise EmbeddingWorkerError() from None

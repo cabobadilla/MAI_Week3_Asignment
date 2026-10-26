@@ -1,0 +1,36 @@
+{
+  "status": "STATIC_AND_OS_VISIBILITY_VERIFIED_ONLY",
+  "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "no_new_packages_or_weights": true,
+  "no_system_library_changes": true,
+  "metadata_probe": {
+    "profile": "/tmp/gwa-native-guarded-probe/component-visibility.sb",
+    "script": "/tmp/gwa-native-guarded-probe/visibility.py",
+    "result": {
+      "sklearn": false,
+      "faiss": false,
+      "torch": true,
+      "transformers": true,
+      "tokenizers": true,
+      "safetensors": true,
+      "numpy": true
+    },
+    "ml_modules_loaded": []
+  },
+  "equivalent_component_plan": {
+    "tokenizer": "AutoTokenizer.from_pretrained(local_path,local_files_only=True,trust_remote_code=False), retain pinned tokenizer normalizer; no guessed tokenization",
+    "model": "AutoModel.from_pretrained same local safetensors, CPU eval/inference mode, no remote code",
+    "pool": "attention-mask weighted mean, dimension384; CLS/max/sqrt pooling disabled in fixed JSON",
+    "length": "128 from sentence_bert_config.json, tokenizer default512 must be explicitly overridden",
+    "normalization": "verify app local_embeddings.encode normalize setting before reproducing; do not infer from absence of Normalize module",
+    "safety": "per-child OS denies file-read* for installed sklearn/faiss so optional find_spec returns unavailable; add actual-import audit guard and assert no opposing/native OpenMP images before/after; do not use old unconditional meta finder for absent-package metadata",
+    "still_unverified": [
+      "direct model loading",
+      "actual tokenization/pooling/norm equivalence",
+      "synthetic native embeddings and FAISS search",
+      "production parent proxy/profile integration"
+    ]
+  },
+  "not_a_runtime_change_yet": true
+}

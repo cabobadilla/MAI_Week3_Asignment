@@ -1,0 +1,16 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "da16a6d36b315d086fe278a1dd4f60a702f1e6365b64741510ae51a7f7424a51",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-llm-execution-round0",
+  "repair1": "/tmp/gwa-llm-execution-repair1",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "application_llm_calls": false,
+  "scope": "durable reservation, completed replay, unknown/crash stop and reported usage/provider metadata retained",
+  "repair2": "/tmp/gwa-llm-execution-repair2"
+}

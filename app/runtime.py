@@ -18,6 +18,8 @@ from . import (
     ui_export_controls,
     ui_organizations,
     ui_publications,
+    ui_real_evidence,
+    ui_real_start,
     ui_shell,
     ui_work,
     web_auth,
@@ -32,6 +34,7 @@ from . import (
     web_organizations,
     web_publication_view,
     web_publications,
+    web_real,
     web_review,
 )
 from .auth import AuthService
@@ -80,17 +83,40 @@ def create_demo_app(project_root: Path, *, data_dir: Path | None = None, port: i
 
     @app.get('/', response_class=HTMLResponse)
     def root_page() -> HTMLResponse:
-        html = ui_shell.render_shell([
+        real = app.state.mode == 'real'
+        workspace = ui_work.workspace_panel()
+        if real:
+            workspace = workspace.replace(
+                'Todavía no hay una demo',
+                'Todavía no hay borradores',
+            )
+            workspace = workspace.replace(
+                'Genera una demo de forma explícita para preparar las piezas de esta campaña.',
+                'Genera con IA real para preparar los borradores de esta campaña.',
+            )
+            workspace = workspace.replace(
+                'No hay una pieza demo para este formato.',
+                'No hay una pieza disponible para este formato.',
+            )
+            workspace = workspace.replace(
+                'Sin variantes demo.',
+                'Sin variantes disponibles.',
+            )
+        panels = [
             ui_organizations.organization_panel(),
             ui_campaigns.campaigns_panel(),
-            ui_work.workspace_panel(),
+            workspace,
             ui_approval.approval_controls(),
             ui_export_controls.export_controls(),
             ui_publications.publication_panel(),
             ui_directed.directed_panel(),
             ui_directed_record.directed_record_controls(),
             ui_directed_note.directed_note_controls(),
-        ])
+        ]
+        if real:
+            panels.append(ui_real_start.real_start_controls())
+            panels.append(ui_real_evidence.real_evidence_controls())
+        html = ui_shell.render_shell(panels, real=real)
         return HTMLResponse(html)
 
     @app.get('/favicon.ico', include_in_schema=False)
@@ -113,15 +139,37 @@ def create_demo_app(project_root: Path, *, data_dir: Path | None = None, port: i
     return app
 
 
+def create_real_app(
+    project_root: Path,
+    *,
+    data_dir: Path | None = None,
+    port: int = 8501,
+    executor=None,
+) -> FastAPI:
+    app = create_demo_app(project_root, data_dir=data_dir, port=port)
+    app.state.mode = 'real'
+    web_real.mount_real(
+        app,
+        app.state.db_path,
+        Path(project_root).resolve(),
+        app.state.data_dir / 'real-agent',
+        executor=executor,
+    )
+    return app
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument('--demo', action='store_true', required=True)
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--demo', action='store_true')
+    mode.add_argument('--real', action='store_true')
     parser.add_argument('--port', type=int, default=8501)
     parser.add_argument('--project-root', type=Path, default=Path(__file__).resolve().parents[1])
     args = parser.parse_args()
-    if not args.demo:
-        parser.error('--demo is required')
-    app = create_demo_app(args.project_root, port=args.port)
+    if args.real:
+        app = create_real_app(args.project_root, port=args.port)
+    else:
+        app = create_demo_app(args.project_root, port=args.port)
     uvicorn.run(
         app,
         host='127.0.0.1',

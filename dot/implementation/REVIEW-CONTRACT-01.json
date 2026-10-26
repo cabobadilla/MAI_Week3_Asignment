@@ -1,0 +1,27 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524",
+  "tests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-review-contract-round0",
+  "repair1": "/tmp/gwa-review-contract-repair1",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "application_llm_calls": false,
+  "scope": "reviewer messages+strict findings schema, explicit piece/source IDs; not real review evaluation",
+  "status": "accepted_integrated",
+  "repair2": "/tmp/gwa-review-contract-repair2",
+  "base_hashes": {
+    "app/review_contract.py": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524"
+  },
+  "source_hashes": {
+    "app/review_contract.py": "441d490fb17c8792ab289827a703d347daeb8fe1c33579abee7fc9635fa87fa9"
+  },
+  "timestamp": "2026-10-26T03:48:59.610125+00:00",
+  "actual_request_bound_before": 14178,
+  "actual_request_bound_after": 11008,
+  "reviewer_criteria_preserved": true
+}

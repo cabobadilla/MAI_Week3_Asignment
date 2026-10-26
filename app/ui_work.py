@@ -1035,6 +1035,36 @@ WORKSPACE_HTML = r'''<section id='work' class='work-view' hidden aria-labelledby
         els.body.focus();
       });
 
+      window.gwaSetRealWorkBusy = function (value) {
+        if (typeof value !== 'boolean') return false;
+        if (value) {
+          if (state.loading || state.saving || state.generating || externalBusy() || state.dirty || !state.pageCampaignId) return false;
+          state.generating = true;
+          renderState();
+          updateControls();
+          publish();
+          return true;
+        }
+        state.generating = false;
+        renderState();
+        updateControls();
+        publish();
+        return true;
+      };
+
+      window.gwaLoadWorkRun = function (runId) {
+        if (typeof runId !== 'string' || !runId.trim()) return Promise.resolve(false);
+        if (externalBusy() || state.loading || state.saving || state.generating || state.dirty || !state.pageCampaignId) {
+          return Promise.resolve(false);
+        }
+        return refreshReview({
+          campaignId: String(state.pageCampaignId),
+          runId: String(runId),
+          preserveSelection: false,
+          clearDirty: false,
+        });
+      };
+
       window.gwaReloadWork = function () {
         if (state.loading || state.saving || state.generating || externalBusy()) return Promise.resolve(false);
         if (state.dirty) {

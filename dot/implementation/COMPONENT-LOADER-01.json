@@ -1,0 +1,32 @@
+{
+  "unit": "COMPONENT-LOADER-01",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "activated_in_user_demo": false,
+  "tests": {
+    "passed": 17,
+    "failed": 0,
+    "native_runtime_loaded": false
+  },
+  "source_sha256": "07fedc4af09d0592f4849dc14d8182321b8ce4066d4c8033e7f3c818a908d162",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "initial": "/tmp/gwa-component-loader-round0",
+  "repair1": "/tmp/gwa-component-loader-repair1",
+  "timestamp": "2026-10-26T01:10:57.764635+00:00",
+  "repair2": "/tmp/gwa-component-loader-repair2",
+  "scope": "exact BertModel+PreTrainedTokenizerFast pin; no Auto factory; sameweights",
+  "native_smoke": {
+    "passed": true,
+    "seconds": 14.351,
+    "embedding_pid": 53684,
+    "vector_pid": 53891,
+    "vector_seconds": 0.42,
+    "separate_processes": true,
+    "same_pinned_model": true,
+    "embedding_torch_only": true,
+    "vector_faiss_only": true,
+    "production_proxy_integrated": false,
+    "bitwise_equivalence_to_sentence_transformers_tested": false
+  }
+}

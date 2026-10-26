@@ -1,0 +1,15 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "c762cc8b1f8ceb9ab5a3e1df2d7d692eed3392a9e1990f8d322364b4e27798f4",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-review-node-round0",
+  "initial_result": "0pass5fail empty variant incorrectly rejected",
+  "repair1": "/tmp/gwa-review-node-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "application_llm_calls": false
+}

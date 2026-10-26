@@ -9,7 +9,7 @@ from typing import Any, Iterator
 from fastapi import APIRouter, Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
 
-from . import approval, campaigns, demo_generation, runs, storage, versions
+from . import approval, campaigns, demo_generation, real_results, runs, storage, versions
 from .web_auth import _read_json_object
 
 _BAD = 'Solicitud no válida'
@@ -213,7 +213,7 @@ def get_campaign_review(
                 'exports': [],
             }
 
-        bundle_raw = demo_generation.get_demo_bundle(conn, selected_run_id)
+        bundle_raw = real_results.get_bundle(conn, selected_run_id)
         bundle = _jsonable(bundle_raw)
         if not isinstance(bundle, dict):
             return _error(404, _NOT_FOUND)
@@ -271,7 +271,7 @@ async def put_version(version_id: str, request: Request) -> Any:
             run_id = version.get('run_id')
             if run_id is None:
                 return _bad()
-            bundle_raw = demo_generation.get_demo_bundle(conn, run_id)
+            bundle_raw = real_results.get_bundle(conn, run_id)
             bundle = _jsonable(bundle_raw)
             if not isinstance(bundle, dict):
                 return _bad()
@@ -326,7 +326,7 @@ async def post_campaign_approval(campaign_id: str, request: Request) -> Any:
             if not isinstance(campaign, dict):
                 return _error(404, _NOT_FOUND)
 
-            bundle_raw = demo_generation.get_demo_bundle(conn, run_id)
+            bundle_raw = real_results.get_bundle(conn, run_id)
             bundle = _jsonable(bundle_raw)
             if not isinstance(bundle, dict):
                 return _error(404, _NOT_FOUND)

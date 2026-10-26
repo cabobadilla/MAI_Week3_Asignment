@@ -1,0 +1,15 @@
+{
+  "unit": "RESPONSE-SCHEMAS-01",
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "tests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "run": "/tmp/gwa-response-schemas-round0",
+  "source_sha256": "3240a3a3722a5a74165a91672a8e3f6b5b92451832b7dcc094e311642ee3ef69",
+  "scope": "provider dialect omits unsupported uniqueItems; local parsers retain duplicate rejection",
+  "repair1": "/tmp/gwa-response-schemas-repair1"
+}

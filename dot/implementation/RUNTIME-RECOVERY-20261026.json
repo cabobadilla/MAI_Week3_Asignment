@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-26T10:20:13.273206+00:00",
+  "pid": 11561,
+  "launcher_pid": 11551,
+  "argv": [
+    "/usr/bin/nohup",
+    "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/bin/python",
+    "-B",
+    "-m",
+    "app.runtime",
+    "--real",
+    "--port",
+    "8501"
+  ],
+  "cwd": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment",
+  "stdin": "DEVNULL",
+  "stdout_stderr": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/data/runtime/growwithai-real.log",
+  "start_new_session": true,
+  "close_fds": true,
+  "url": "http://127.0.0.1:8501",
+  "user_database_counts_before": {
+    "company": 2,
+    "contact": 2,
+    "campaign": 1,
+    "campaign_recipient": 0,
+    "generation_run": 1,
+    "content_version": 6,
+    "approval": 0,
+    "export_record": 0,
+    "distribution_record": 0,
+    "followup_event": 0,
+    "operator_credentials": 1
+  },
+  "integrity_before": "ok",
+  "app_sources_changed": false,
+  "key_read_by_launcher": false,
+  "new_login_service": false,
+  "persistent_settings_changed": false,
+  "health": {
+    "status": "ok",
+    "mode": "real",
+    "generation": "llm"
+  },
+  "launcher_exited_confirmed": true,
+  "process_after_launcher_exit": "11561     1 11561 /opt/homebrew/Cellar/python@3.11/3.11.16/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -B -m app.runtime --real --port 8501",
+  "counts_preserved": true,
+  "log_bytes": 0,
+  "browser": {
+    "url": "http://127.0.0.1:8501",
+    "health": {
+      "status": "ok",
+      "mode": "real",
+      "generation": "llm"
+    },
+    "existing_password_required": true,
+    "setup_required": false,
+    "no_posts_or_inference": true,
+    "browser_errors": [],
+    "mobile_no_overflow": true,
+    "user_password_not_entered_or_read": true
+  },
+  "verified_at": "2026-10-26T10:21:06.641301+00:00",
+  "previous_pid": 72685,
+  "previous_listener_absent": true,
+  "prior_session": "93163 no longer accessible",
+  "cause_confirmed": false,
+  "cause_assessment": "Previous foreground tool-managed process is absent; no persistent prior log exists. Session-lifetime termination is plausible, but exit signal/time/cause cannot be established from available evidence.",
+  "limitations": [
+    "nohup/new-session survives launcher exit and terminal hangup; does not auto-start after reboot or recover from application crash",
+    "Mac sleep/network/lid behavior unchanged"
+  ],
+  "app_code_changed": false,
+  "paid_calls": 0,
+  "existing_password_preserved": true
+}

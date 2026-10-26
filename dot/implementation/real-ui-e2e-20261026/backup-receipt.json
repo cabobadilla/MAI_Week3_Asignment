@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-26T03:57:45.035454+00:00",
+  "backup": "/tmp/gwa-user-backup-before-real-20261026T0357.sqlite",
+  "backup_sha256": "c98bd23107ccbb63c3d473808806263c50c63c9944e4de6b6df558e4a79c1239",
+  "source": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/data/demo/app.sqlite",
+  "counts": {
+    "company": 2,
+    "contact": 2,
+    "campaign": 1,
+    "campaign_recipient": 0,
+    "generation_run": 1,
+    "content_version": 6,
+    "approval": 0,
+    "export_record": 0,
+    "distribution_record": 0,
+    "followup_event": 0,
+    "operator_credentials": 1
+  },
+  "prior_server_absent_before_activation": true,
+  "prior_save_notice_provided": true,
+  "credentials_not_read_or_modified": true,
+  "qa_complete": true
+}

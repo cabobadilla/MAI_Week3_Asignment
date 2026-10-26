@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-26T03:59:26.684713+00:00",
+  "outcome": "REAL_UI_E2E_PASSED_AND_LOCAL_RUNTIME_ACTIVATED",
+  "url": "http://127.0.0.1:8501",
+  "pid": 72685,
+  "exec_session": 93163,
+  "health": {
+    "status": "ok",
+    "mode": "real",
+    "generation": "llm"
+  },
+  "user_data_preserved": true,
+  "user_password_preserved": true,
+  "user_runtime_no_inference_on_boot": true,
+  "qa_real_run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "qa_campaign_id": "af8908ec-63d0-4664-8f02-a4b87f522065",
+  "qa_model": "qwen/qwen3.8-flash",
+  "effective_provider": "Alibaba",
+  "calls_completed": 2,
+  "generator_tokens": {
+    "input": 2818,
+    "output": 2319
+  },
+  "reviewer_tokens": {
+    "input": 2565,
+    "output": 24
+  },
+  "successful_run_reported_cost": "0.001840052",
+  "three_current_ui_trials_known_reported_subtotal": "0.005223462",
+  "historical_overall_total_unknown": true,
+  "source_documents": 2,
+  "sources_retrieved": 4,
+  "formats": 4,
+  "immutable_generated_versions": 6,
+  "explicit_synthetic_QA_edit_versions": 1,
+  "automated_review": "pass",
+  "approval": "Explicit QA-only confirmation after independent source inspection; user content not approved",
+  "export_downloads_verified_sha256": 6,
+  "restart_UI_checks": 8,
+  "phase_a_browser_checks": 12,
+  "phase_b_browser_checks": 17,
+  "canonical_HTTP_regression": 80,
+  "runtime_tests": 5,
+  "panel_browser_checks": 22,
+  "review_contract_final_tests": 19,
+  "generator_prompt_repair_tests": 14,
+  "max_revisions": 1,
+  "effective_max_input_tokens": 12000,
+  "no_key_read_or_changed_by_coordinator": true,
+  "no_model_fallback": true,
+  "no_external_send_or_publication": true,
+  "qa_server_stopped_pid": 72366,
+  "temporary_caffeinate_stopped_pid": 72025,
+  "source_hashes": {
+    "app/review_contract.py": "441d490fb17c8792ab289827a703d347daeb8fe1c33579abee7fc9635fa87fa9",
+    "app/generation_contract.py": "b0cea59347658d2bdbcb4f2c4d2cb3d5e7beffab530c1c885fcd37911b469fd2",
+    "app/real_execution.py": "74eb6c8a8650fb7124602741106fb1fd50701df0dfc8612c02ee8285025a3bdf",
+    "app/web_real.py": "dba34b7f376e70278cd00dc5f441e094ca3cc903742b24b6aa193a1c2bd738a7",
+    "app/ui_real_start.py": "b5ce184c2c7b148d9e874b19755d75dc604e0c24468bb9f78c932ed447a60787",
+    "app/ui_real_evidence.py": "e88c2f16874034d61e522117c8151cb4b87ce535a2e9eed054e47c6bd90237e5",
+    "app/runtime.py": "15954a2db8fa0196ef69fcf61dd406a3730adf908b01aa6a1363adb846766cab",
+    "app/isolated_embeddings.py": "51cd1cdafc9fc49ae065cdf6ce22eb03022274b2a9102f1a7d9c07b8ea3ad50d",
+    "app/live_retrieval.py": "dcbab114205e862cd32f7455bec7c73849e939051ba6b40448a314cd3615ff64"
+  },
+  "evidence_directory": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/dot/implementation/real-ui-e2e-20261026",
+  "full_synthetic_trial_evidence": "/tmp/gwa-real-ui-complete-20261026",
+  "remaining_limitations": [
+    "Historical cost total unknown; only reported subtotals recorded",
+    "Model output remains subject to human review; prompt length guidance is not a strict parser bound",
+    "Future missing-source/failed/revision_limit runs remain unapproved and visible",
+    "No automatic external publishing or sending; service currently local CLI process"
+  ]
+}

@@ -1,11 +1,14 @@
 '''Standalone worker process for local embedding generation.'''
 
+import contextlib
+import importlib
 import importlib.util
 import json
 import math
 import os
 import signal
 import sys
+import types
 from pathlib import Path
 
 
@@ -17,8 +20,10 @@ _EMBEDDING_DIM = 384
 _MAX_TEXTS = 10_000
 _MAX_TEXT_CHARS = 2_000
 _MAX_INPUT_BYTES = 32 * 1024 * 1024
-_LOCAL_MODULE_NAME = '_isolated_local_embeddings'
-_LOCAL_EMBEDDINGS_PATH = Path(__file__).resolve().with_name('local_embeddings.py')
+_COMPONENT_PACKAGE_NAME = '_gwa_component_worker_app'
+_COMPONENT_MODULE_NAME = _COMPONENT_PACKAGE_NAME + '.component_embeddings'
+_COMPONENT_PACKAGE_DIR = Path(__file__).resolve().parent
+_COMPONENT_PACKAGE_INIT_PATH = _COMPONENT_PACKAGE_DIR / '__init__.py'
 
 
 def _reject_constant(_value: str) -> None:
@@ -117,20 +122,66 @@ def _validate_request(
 
 
 def _load_local_embeddings() -> object:
-    spec = importlib.util.spec_from_file_location(
-        _LOCAL_MODULE_NAME,
-        _LOCAL_EMBEDDINGS_PATH,
-    )
-    if spec is None or spec.loader is None:
-        raise RuntimeError('local embeddings unavailable')
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[_LOCAL_MODULE_NAME] = module
-    try:
-        spec.loader.exec_module(module)
-    except BaseException:
-        sys.modules.pop(_LOCAL_MODULE_NAME, None)
-        raise
-    return module
+    package_name = _COMPONENT_PACKAGE_NAME
+    package_dir = _COMPONENT_PACKAGE_DIR
+    package_init_path = _COMPONENT_PACKAGE_INIT_PATH
+    cached_package = sys.modules.get(package_name)
+    if cached_package is not None:
+        cached_file = getattr(cached_package, '__file__', None)
+        if cached_file is None or Path(cached_file).resolve() != package_init_path:
+            raise RuntimeError('local embeddings unavailable')
+    else:
+        spec = importlib.util.spec_from_file_location(
+            package_name,
+            package_init_path,
+            submodule_search_locations=[str(package_dir)],
+        )
+        if spec is None or spec.loader is None:
+            raise RuntimeError('local embeddings unavailable')
+        package = importlib.util.module_from_spec(spec)
+        sys.modules[package_name] = package
+        try:
+            spec.loader.exec_module(package)
+        except BaseException:
+            sys.modules.pop(package_name, None)
+            raise
+    component = importlib.import_module(_COMPONENT_MODULE_NAME)
+
+    @contextlib.contextmanager
+    def _component_call():
+        install_audit_hook = getattr(component, '_install_audit_hook', None)
+        if callable(install_audit_hook):
+            install_audit_hook()
+        guard = _embedding_runtime_guard()
+        guard.assert_compatible('embedding')
+        finder = getattr(guard, '_FINDER', None)
+        finder_index = None
+        if finder is not None:
+            for index, candidate in enumerate(sys.meta_path):
+                if candidate is finder:
+                    finder_index = index
+                    break
+        if finder_index is not None:
+            del sys.meta_path[finder_index]
+        try:
+            yield
+        finally:
+            if finder_index is not None:
+                sys.meta_path.insert(finder_index, finder)
+            guard.assert_compatible('embedding')
+
+    class _LocalEmbeddings(component.ComponentEmbeddings):
+        def __init__(self, model_dir, manifest_path):
+            with _component_call():
+                component.ComponentEmbeddings.__init__(
+                    self, model_dir, manifest_path
+                )
+
+        def encode(self, texts):
+            with _component_call():
+                return component.ComponentEmbeddings.encode(self, texts)
+
+    return types.SimpleNamespace(LocalEmbeddings=_LocalEmbeddings)
 
 
 def _validated_vectors(encoded: object, expected_count: int) -> list[list[float]]:

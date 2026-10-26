@@ -1,0 +1,19 @@
+{
+  "exit_code": -15,
+  "elapsed_seconds": 20.034,
+  "stop_reason": "timeout",
+  "signal": 15,
+  "canaries": {
+    "env_denied": true,
+    "documents_denied": true,
+    "network_denied": true
+  },
+  "result": null,
+  "stderr_bytes": 0,
+  "automatic_retries": 0,
+  "demo_touched": false,
+  "status": "timeout_not_native_success",
+  "prior_bootstrap_attempt": "/tmp/gwa-component-native-probe/bootstrap-failure-receipt.json",
+  "loaded_runtime_state_at_timeout": "not recorded; cannot assert complete separation from this receipt",
+  "automatic_retry_prohibited_until_diagnosis": true
+}

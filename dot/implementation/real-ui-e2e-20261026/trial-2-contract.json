@@ -1,0 +1,1 @@
+{"parent_failed_run": "cc50bd54-c805-4429-ae27-33c4d7bf47ec", "material_fix": "review transport now11008 below existing12000 for actualcase; no criteria/budget changes", "maximum_revisions": 1, "fresh_run_required": true, "model": "qwen/qwen3.8-flash", "real_contacts": false, "approved_sources_only": true, "time": "2026-10-26T03:48:59.818275+00:00"}

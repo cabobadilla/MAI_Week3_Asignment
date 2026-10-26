@@ -162,12 +162,13 @@ def create_auth_app(auth: Any, *, port: int = 8501) -> FastAPI:
 
     @app.get('/api/health')
     async def health() -> Response:
+        mode = getattr(app.state, 'mode', 'demo')
         return _secure(
             JSONResponse(
                 {
                     'status': 'ok',
-                    'mode': 'demo',
-                    'generation': 'simulated',
+                    'mode': mode,
+                    'generation': 'llm' if mode == 'real' else 'simulated',
                 }
             )
         )

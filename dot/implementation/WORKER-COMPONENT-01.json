@@ -1,0 +1,39 @@
+{
+  "unit": "WORKER-COMPONENT-01",
+  "status": "accepted_integrated",
+  "scope": "Connect accepted component loader to standalone worker only; no loader/proxy/UI changes",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "initial": "/tmp/gwa-worker-component-round0",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "max_round_seconds": 600,
+  "allowlist": [
+    "app/embedding_worker.py"
+  ],
+  "base": {
+    "path": "app/embedding_worker.py",
+    "sha256": "51b6e1c67d9d79836685a373b7dd2d9268fb2b0870804b74830f25237769193c",
+    "git_base": "11f926b9c0d77836f98ac63ffbd4fac53e601bad",
+    "family": "WORKER-COMPONENT-01",
+    "round": 0,
+    "max_repairs": 2,
+    "timeout_seconds": 600
+  },
+  "timestamp": "2026-10-26T01:44:59.284836+00:00",
+  "repair1": "/tmp/gwa-worker-component-repair1",
+  "initial_test_results": "7mockpass; nativefail pretorch component isolation find_spec conflict",
+  "tests": {
+    "passed": 7,
+    "failed": 0,
+    "native_worker": {
+      "passed": true,
+      "seconds": 11.337,
+      "receipt": "/tmp/gwa-component-native-probe/worker-candidate-r1-result.json"
+    },
+    "note": "Native probe uses synthetic text, OS sandbox; no API. Initial exact class assertion adjusted before repair result to accept subclass adapter; raw initial fixture preserved."
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/embedding_worker.py": "c254e50eefc2baf5fbd59860d4cf4aebe64f2eecbd87aecbd9cef0316c908056"
+  }
+}

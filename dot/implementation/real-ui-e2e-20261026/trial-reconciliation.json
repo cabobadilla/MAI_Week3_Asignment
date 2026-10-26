@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-10-26T03:54:43.176232+00:00",
+  "trials": [
+    {
+      "run_id": "cc50bd54-c805-4429-ae27-33c4d7bf47ec",
+      "status": "failed",
+      "calls": [
+        {
+          "stage": "generator",
+          "status": "completed",
+          "provider": "Alibaba",
+          "reported_cost": "0.00184749",
+          "input_tokens": 2738,
+          "output_tokens": 3057,
+          "model": "qwen/qwen3.8-flash"
+        }
+      ],
+      "review_request_submitted": false,
+      "failure_proved_offline": "review conservative bytebound14178 exceeds12000",
+      "approved": false,
+      "exported": false,
+      "folder": "/tmp/gwa-real-ui-complete-20261026/trial-1"
+    },
+    {
+      "run_id": "aa55ac9e-df0a-40e9-91e8-e9861e3b0cca",
+      "status": "failed",
+      "calls": [
+        {
+          "stage": "generator",
+          "status": "completed",
+          "provider": "Alibaba",
+          "reported_cost": "0.00153592",
+          "input_tokens": 2741,
+          "output_tokens": 3123,
+          "model": "qwen/qwen3.8-flash"
+        }
+      ],
+      "review_request_submitted": false,
+      "failure_proved_offline": "review conservative bytebound12179 exceeds12000",
+      "approved": false,
+      "exported": false,
+      "folder": "/tmp/gwa-real-ui-complete-20261026/trial-2"
+    }
+  ],
+  "prior_trials_preserved": true,
+  "third_trial_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "third_trial_state": "active_actual_UI",
+  "total_historical_cost_unknown": true,
+  "no_model_fallback": true
+}

@@ -1,0 +1,16 @@
+{
+  "unit": "LLM-JSON-OUTPUT-01",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "integrated": true,
+  "tests": {
+    "passed": 42,
+    "failed": 0
+  },
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "source_sha256": "111b8d51e0912a2d3f12f85eb754c597b3f0562aa5817e672f0fd6a0f3492d92",
+  "run": "/tmp/gwa-json-output-round0",
+  "scope": "strict explicit JSON Schema plus provider.require_parameters; no parser relaxation/fallback",
+  "timestamp": "2026-10-26T01:12:17.942730+00:00",
+  "repair1": "/tmp/gwa-json-schema-repair1"
+}

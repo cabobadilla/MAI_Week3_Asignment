@@ -1,0 +1,30 @@
+{
+  "unit": "UI-REAL-EVIDENCE-01",
+  "initial": "/tmp/gwa-ui-real-evidence-round0",
+  "status": "accepted_integrated",
+  "scope": "Readonly public agent evidence: sources, generated drafts, reviewer findings and reported usage; no actions",
+  "allowlist": [
+    "app/ui_real_evidence.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/ui_real_evidence.py": null
+  },
+  "timestamp": "2026-10-26T03:12:18.937219+00:00",
+  "tests": {
+    "browser_checks": 22,
+    "errors": 0,
+    "real_http": true,
+    "real_auth": true,
+    "real_sqlite": true,
+    "client": "explicit synthetic",
+    "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-0cf9e62c52914ef1957d50dd39b655df/browser-real-evidence-report.json"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/ui_real_evidence.py": "e88c2f16874034d61e522117c8151cb4b87ce535a2e9eed054e47c6bd90237e5"
+  }
+}

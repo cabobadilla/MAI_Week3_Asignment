@@ -1,0 +1,21 @@
+{
+  "unit": "ANSWER-MESSAGES-01",
+  "initial": "/tmp/gwa-answer-messages-round0",
+  "status": "accepted_integrated",
+  "scope": "New scoped human-answer transport and unique per-round request identity; no graph/execution changes",
+  "allowlist": [
+    "app/answer_messages.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/answer_messages.py": null
+  },
+  "timestamp": "2026-10-26T11:12:14.524515+00:00",
+  "integrated": true,
+  "source_hashes": {
+    "app/answer_messages.py": "bc1edb09f9b7b4d81417a728a1576db1a21907af8948c2f1fd6ba4d45c707a60"
+  }
+}

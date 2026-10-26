@@ -1,0 +1,40 @@
+{
+  "unit": "PROXY-OS-01",
+  "initial": "/tmp/gwa-proxy-os-round0",
+  "status": "accepted_integrated",
+  "scope": "OS sandbox on existing component proxy launch only",
+  "allowlist": [
+    "app/isolated_embeddings.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "max_round_seconds": 600,
+  "base_sha256": "ba740b24e3acb6c03910824de0397993a98a6c0c350f0aafbe2812c412322caa",
+  "timestamp": "2026-10-26T01:54:42.007118+00:00",
+  "repair1": "/tmp/gwa-proxy-os-repair1",
+  "initial_tests": "12passed1historicaldirectlaunchsuperseded; nativecwd failure; cwd-only coordinator experiment passed",
+  "tests": {
+    "passed": 12,
+    "failed": 0,
+    "historical_directlaunch_assertion_superseded": 1,
+    "native_proxy": {
+      "passed": true,
+      "seconds": 25.816,
+      "vectors_count": 2,
+      "dimension": 384,
+      "canaries": [
+        {
+          "env_denied": true,
+          "docs_denied": true,
+          "network_denied": true
+        }
+      ],
+      "parent_native_modules": []
+    }
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/isolated_embeddings.py": "51cd1cdafc9fc49ae065cdf6ce22eb03022274b2a9102f1a7d9c07b8ea3ad50d"
+  }
+}

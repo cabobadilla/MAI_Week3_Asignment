@@ -1,0 +1,1 @@
+{"parent_failed_run": "aa55ac9e-df0a-40e9-91e8-e9861e3b0cca", "material_fix": "validated concise generator trusted prompt, same reviewer", "model": "qwen/qwen3.8-flash", "max_revisions": 1, "max_input_tokens": 12000, "synthetic_only": true}

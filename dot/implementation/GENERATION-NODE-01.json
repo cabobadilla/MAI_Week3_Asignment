@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "b4f764d9567bfb8abab2b9fcf51ffb37e3c2fb1a8ecc4e63d94c964b5dcafaa0",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-generation-node-round0",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "scope": "generator node with real contracts/injected call, mock acceptance only",
+  "application_llm_calls": false
+}

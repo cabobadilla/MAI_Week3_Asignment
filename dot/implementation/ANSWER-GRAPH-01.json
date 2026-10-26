@@ -1,0 +1,64 @@
+{
+  "unit": "ANSWER-GRAPH-01",
+  "initial": "/tmp/gwa-answer-graph-round0",
+  "status": "accepted_integrated",
+  "scope": "New existing-checkpoint human continuation through generator/reviewer; preserves original limits and no-answer behavior",
+  "allowlist": [
+    "app/agent_generation_node.py",
+    "app/agent_review_node.py",
+    "app/agent_pipeline.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/agent_generation_node.py": "b4f764d9567bfb8abab2b9fcf51ffb37e3c2fb1a8ecc4e63d94c964b5dcafaa0",
+    "app/agent_review_node.py": "c762cc8b1f8ceb9ab5a3e1df2d7d692eed3392a9e1990f8d322364b4e27798f4",
+    "app/agent_pipeline.py": "236901af0629b6c2ed43de386501e121acdfa8ad49ff80361ac480e89b7eaa44"
+  },
+  "timestamp": "2026-10-26T11:37:23.141614+00:00",
+  "recovery": {
+    "model_requested": "opencode-go/deepseek-v4.1-flash",
+    "effective_model": {
+      "id": "deepseek-v4.1-flash",
+      "providerID": "opencode-go",
+      "variant": "default"
+    },
+    "process_outcome": "response_received",
+    "delivery_outcome": "not_accepted_pending_guard_and_tests",
+    "server_pid": 17829,
+    "server_stopped": true,
+    "session_id": "ses_e8816c50fffeprfc8o8e5bM9ue",
+    "inference_submitted": true,
+    "native_tools": "all_denied_in_original_per_invocation_config",
+    "response_sha256": "95ecfc9ffeaaa6084c4cb7ade053c17896a31ffe9ed26955f31675398c3ebd31",
+    "recovered_after_transport_loss": true,
+    "original_supervisor_report_missing": true,
+    "recovery_method": "read-only opencode session export; public text only",
+    "session_elapsed_seconds": 732.354,
+    "time_limit_seconds": 600,
+    "time_limit_deviation": true,
+    "deviation_reason": "Supervisor lost with exec transport; orphan session continued; no new inference requested during recovery",
+    "original_assistant_finish": "stop",
+    "earlier_provider_errors_count": 2,
+    "raw_assistant_time": {
+      "created": 1793013774190,
+      "streamed": 1793013868386,
+      "completed": 1793013868404
+    },
+    "reconciled_at": "2026-10-26T11:34:32.702982+00:00"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/agent_generation_node.py": "59fde9c5048d3822bfa1a66a27e90ad96f8b37c96c2871fbec9fb9b879f7f459",
+    "app/agent_review_node.py": "18096fb096d41ca5b823bc96cc1fc819e329f70a89f1f502d3e269d8c7390774",
+    "app/agent_pipeline.py": "9143098d3c406eaa1ce2cf96fbbfc1730ac27eccf1f001b314f97cdc1ebae020"
+  },
+  "tests": {
+    "graph_and_regression_passed": 11,
+    "legacy_nodes_passed": 11,
+    "one_obsolete_END_after_answer_test_deselected": true,
+    "offline_only": true
+  }
+}

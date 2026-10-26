@@ -1,0 +1,120 @@
+{
+  "timestamp": "2026-10-26T01:32:59.544626+00:00",
+  "active_go": null,
+  "go_processes_verified_stopped": true,
+  "app_api_process_active": false,
+  "no_new_rounds_after_transfer_request": true,
+  "video_ready": false,
+  "demo_restarted": false,
+  "user_database_touched": false,
+  "files_integrated": {
+    "app/llm_client.py": "111b8d51e0912a2d3f12f85eb754c597b3f0562aa5817e672f0fd6a0f3492d92",
+    "app/component_embeddings.py": "07fedc4af09d0592f4849dc14d8182321b8ce4066d4c8033e7f3c818a908d162",
+    "app/response_schemas.py": "3240a3a3722a5a74165a91672a8e3f6b5b92451832b7dcc094e311642ee3ef69"
+  },
+  "tests": {
+    "canonical_reasoning_final": {
+      "passed": 34,
+      "failed": 0
+    },
+    "json_object_initial": {
+      "passed": 35,
+      "failed": 0
+    },
+    "strict_json_schema_client": {
+      "passed": 42,
+      "failed": 0
+    },
+    "provider_response_schemas": {
+      "passed": 16,
+      "failed": 0
+    },
+    "component_loader_final": {
+      "passed": 17,
+      "failed": 0
+    }
+  },
+  "native": {
+    "passed": true,
+    "seconds": 14.351,
+    "embedding_pid": 53684,
+    "vector_pid": 53891,
+    "vector_seconds": 0.42,
+    "separate_processes": true,
+    "same_pinned_model": true,
+    "embedding_torch_only": true,
+    "vector_faiss_only": true,
+    "production_proxy_integrated": false,
+    "bitwise_equivalence_to_sentence_transformers_tested": false
+  },
+  "real_trials": {
+    "original_run": {
+      "id": "e5041e8d-7a14-4b29-a1b4-b733f1a6472b",
+      "attempts": 3,
+      "completed_responses": 1,
+      "last_reported_cost": "0.00139514",
+      "earlier_cost_unknown": true,
+      "diagnosis": "initial TLS repaired; accepted response malformed JSON at body key; strict parser correctly rejected"
+    },
+    "schema_dialect_run": {
+      "id": "7b6518da-efb7-413f-83ec-1e309ae9d4af",
+      "attempts": 3,
+      "completed_responses": 0,
+      "http_status": 400,
+      "provider": "Alibaba",
+      "exact_reason": "uniqueItems unsupported on array schemas",
+      "reported_cost": null,
+      "not_claimed_zero_cost": true
+    },
+    "current": {
+      "id": "91b49a14-462b-483f-b4a9-ed478b9ac33c",
+      "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-schema2-real-p825mt2i",
+      "calls_completed": 4,
+      "all_http_status": 200,
+      "provider": "Alibaba",
+      "model": "qwen/qwen3.8-flash",
+      "reported_cost": "0.003816624",
+      "status": "failed",
+      "error": "revision_limit",
+      "configured_max_revisions": 1,
+      "drafts": 2,
+      "reviews": 2,
+      "human_approved": false,
+      "receipt": "dot/implementation/QWEN-STRUCTURED-EVAL-02.json"
+    },
+    "known_reported_subtotal": "0.005211764",
+    "overall_total_unknown": true,
+    "source_selection": "curated verified excerpts, NOT semantic RAG"
+  },
+  "denials_not_to_retry": [
+    {
+      "path": "scripts/run_protected_tests.py",
+      "reason": "automatic approval review rejected modification of protected runner; no write executed; do not copy or alter to bypass",
+      "receipt": "dot/implementation/RUNNER-SUITE-REGISTRATION-BLOCKED.json"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "previous write denied; no retry authorized; user approval evidence remains in independent receipts"
+    }
+  ],
+  "next": [
+    "Read this transfer_checkpoint first; older nested fields may be superseded. Do not repeat completed GO or any previous API request.",
+    "Connect accepted ComponentEmbeddings to an OS-sandboxed production worker/proxy in one small GO unit at a time. Existing isolated_embeddings.py/embedding_worker.py still use old SentenceTransformer path; DO NOT run it expecting the fixed loader. Preserve exact pin and forbid FAISS/sklearn/ST in embedding process; FAISS stays in separate parent/process.",
+    "Build actual retrieval using both validated v0.2 sources, not the handout. Choose chunks fitting128-token guard; existing900char curated fixture is not semantic retrieval evidence. Verify tokenizer/pooling equivalence and fresh index provenance with independent tests.",
+    "Inspect saved graph output/final review. Current real trial reached the configured one-revision limit with unapproved content. Do not label it passed or silently approve. If continuing necessary evaluation, preserve call ledger and document allowed bounded cycle; no blind replay or counter reset.",
+    "Materialize only genuinely validated final graph drafts as immutable UNAPPROVED versions, then wire real HTTP/run reader and existing approved editor UI with correct real-vs-demo labels. These integration functions/routes are NOT implemented yet.",
+    "Before changing user server8501 notify/coordinate; preserve demo password/data and possible edits. User has authorized app API trials with key-managed budget; no new credential/budget question needed."
+  ],
+  "qa_paths": {
+    "source_fixture": "/tmp/gwa-trial-source-fixture.json",
+    "latest_real_scenario": "/tmp/gwa-run-structured2-eval.py",
+    "latest_real_state": "/tmp/gwa-authorized-qwen-structured2-state.json",
+    "native_final_parent": "/tmp/gwa-component-native-probe/direct-parent.py",
+    "native_final_child": "/tmp/gwa-component-native-probe/direct-child.py",
+    "native_final_receipt": "/tmp/gwa-component-native-probe/direct-final-receipt.json",
+    "vector_receipt": "/tmp/gwa-component-native-probe/vector-receipt.json",
+    "component_frozen_tests": "/tmp/gwa-sandbox-control/test_component_loader_direct.py",
+    "schema_frozen_tests": "/tmp/gwa-sandbox-control/test_response_schemas_dialect.py",
+    "client_frozen_tests": "/tmp/gwa-sandbox-control/test_llm_schema.py"
+  }
+}

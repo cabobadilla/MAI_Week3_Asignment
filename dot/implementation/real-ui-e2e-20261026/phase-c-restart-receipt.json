@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "existing password required after server restart",
+    "real source draft and reviewer result survives server restart",
+    "frozen source and history hashes preserved",
+    "exact immutable versions survive restart",
+    "explicit synthetic approval survives restart",
+    "export manifests survive restart",
+    "restart recovery performs no inference",
+    "real reviewer evidence restored visibly"
+  ],
+  "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "posts": [
+    "http://127.0.0.1:58671/api/auth/login"
+  ]
+}

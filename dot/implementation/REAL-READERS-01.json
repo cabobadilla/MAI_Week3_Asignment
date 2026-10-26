@@ -1,0 +1,32 @@
+{
+  "unit": "REAL-READERS-01",
+  "initial": "/tmp/gwa-readers-real-round0",
+  "status": "accepted_integrated",
+  "scope": "Mixed real/demo reader binding with honest real pending mode; existing approval hashes unchanged",
+  "allowlist": [
+    "app/web_review.py",
+    "app/web_demo.py",
+    "app/real_results.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/web_review.py": "e1d1a0c1cd4e40c3ecee44a62011364eacd8bb760953cc3c616a875430632683",
+    "app/web_demo.py": "5231ad4d3a182475153bf166779e8a50407984cf5173e63ecf1ae4b3ea704cb8",
+    "app/real_results.py": "d3fbae28430bca7c80dcafe16e812764bca0b9f344547b174956ba0374197d81"
+  },
+  "timestamp": "2026-10-26T02:47:17.536790+00:00",
+  "tests": {
+    "passed": 25,
+    "failed": 0,
+    "scope": "real human approval/edit invalidate, real pending honest, existing demo/review regression"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/web_review.py": "7357195e6d4f10569b04dad556f045c29b2f77724d98cf97b0c421b81f442e5e",
+    "app/web_demo.py": "644b689b041d6448d80bc7bc5e00e169fe220e6bf4cca804325a33d59d943dd8",
+    "app/real_results.py": "69d29f05fe0f9d8611d4f7558cfa79e0af0e7f08572244e9bb582e9e32cdf733"
+  }
+}

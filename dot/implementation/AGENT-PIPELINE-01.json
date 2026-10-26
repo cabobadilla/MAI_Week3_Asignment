@@ -1,0 +1,16 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "236901af0629b6c2ed43de386501e121acdfa8ad49ff80361ac480e89b7eaa44",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "initial": "/tmp/gwa-agent-pipeline-round0",
+  "initial_result": "4pass1fail revision-limit error shape",
+  "repair1": "/tmp/gwa-agent-pipeline-repair1",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "scope": "connected LangGraph retrieval/generation/review, revision cycle, SQLite persistence, human gates; mock provider only",
+  "application_llm_calls": false
+}

@@ -1,0 +1,68 @@
+{
+  "checks": [
+    "independent source review completed",
+    "exact reviewed agent result",
+    "all four formats remain unapproved",
+    "original generated LinkedIn selected",
+    "unsaved edit blocks approval",
+    "edited body persisted as new version",
+    "approval requires explicit confirmation",
+    "explicit synthetic QA approval persisted",
+    "export download links visible",
+    "authenticated export downloads",
+    "authenticated export downloads",
+    "authenticated export downloads",
+    "authenticated export downloads",
+    "authenticated export downloads",
+    "authenticated export downloads",
+    "approval and export perform no inference",
+    "approval and exports survive page reload"
+  ],
+  "posts": [
+    "http://127.0.0.1:58671/api/campaigns/af8908ec-63d0-4664-8f02-a4b87f522065/approvals",
+    "http://127.0.0.1:58671/api/approvals/0784d6ab-65f8-429d-88ad-aef61999cf32/exports"
+  ],
+  "downloads": [
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/0",
+      "text": "ad-18c67437-881f-4c5b-b3ae-c06db94e7e0d.md",
+      "bytes": 351,
+      "sha256": "2837f1644df9bbba679b8729d550bc795e32c7c8db99daf807eb9809923078fc"
+    },
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/1",
+      "text": "ad-3b109d1d-de83-44d0-a833-d7a2af69f16e.md",
+      "bytes": 353,
+      "sha256": "1866e9d87e86596827e7ed9d0b80216a807fbd30eb3978a53443678780538e0c"
+    },
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/2",
+      "text": "ad-a49a79bb-bff7-47f0-bbb0-63609deea1c0.md",
+      "bytes": 354,
+      "sha256": "c6c85c40112d958ffbc1ac7187441ffc17f3d46a9a0fd3fd6a3e74527405eb99"
+    },
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/3",
+      "text": "article-f80276ee-a9cf-4bb4-8d89-d0ce7695037d.md",
+      "bytes": 1327,
+      "sha256": "c8642d2af319643110e0bc88f82997a31155186ec7a364fac25613fd02f62aeb"
+    },
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/4",
+      "text": "email-84972c3f-bd30-493e-bd4c-19aa48fe4e35.md",
+      "bytes": 469,
+      "sha256": "768082fa68709a2f99914105b122fa181bb000ece344307e1c77c2c2f096f6de"
+    },
+    {
+      "url": "http://127.0.0.1:58671/api/exports/65d28671-87d8-4100-976e-ba2b61c55d80/files/5",
+      "text": "linkedin-565b370a-7764-4808-89f6-0b7eabc53b9e.md",
+      "bytes": 515,
+      "sha256": "64f55762985034d44d09a5524f8184a69ed6424110bcdac5d9e7afcd295a5f45"
+    }
+  ],
+  "approval_id": "0784d6ab-65f8-429d-88ad-aef61999cf32",
+  "export_ids": [
+    "65d28671-87d8-4100-976e-ba2b61c55d80"
+  ],
+  "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650"
+}

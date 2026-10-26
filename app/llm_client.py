@@ -40,6 +40,9 @@ class LLMResult:
     input_tokens: int
     output_tokens: int
     request_id: str
+    provider: str | None = None
+    reported_cost: str | None = None
+    response_id: str | None = None
 
 
 def _raise_error(code: str, *, retryable: bool = False, outcome_unknown: bool = False) -> NoReturn:
@@ -64,6 +67,40 @@ def _is_positive_int(value: Any) -> bool:
 
 def _is_nonnegative_int(value: Any) -> bool:
     return isinstance(value, int) and not isinstance(value, bool) and value >= 0
+
+
+def _freeze_response_schema(response_schema: Any) -> dict[str, Any]:
+    if type(response_schema) is not dict:
+        _raise_error('invalid_configuration')
+    if response_schema.get('type') != 'object':
+        _raise_error('invalid_configuration')
+    properties = response_schema.get('properties')
+    if not isinstance(properties, dict) or not properties:
+        _raise_error('invalid_configuration')
+    required = response_schema.get('required')
+    if not isinstance(required, list):
+        _raise_error('invalid_configuration')
+    if any(not isinstance(name, str) for name in required):
+        _raise_error('invalid_configuration')
+    if len(set(required)) != len(required):
+        _raise_error('invalid_configuration')
+    if set(required) != set(properties.keys()):
+        _raise_error('invalid_configuration')
+    if response_schema.get('additionalProperties') is not False:
+        _raise_error('invalid_configuration')
+    try:
+        encoded = json.dumps(response_schema, allow_nan=False).encode('utf-8')
+    except (TypeError, ValueError, UnicodeError, OverflowError):
+        _raise_error('invalid_configuration')
+    if len(encoded) > 24000:
+        _raise_error('invalid_configuration')
+    try:
+        schema = json.loads(encoded)
+    except (TypeError, ValueError, UnicodeError):
+        _raise_error('invalid_configuration')
+    if type(schema) is not dict:
+        _raise_error('invalid_configuration')
+    return schema
 
 
 def _validate_config(config: AppConfig) -> None:
@@ -137,14 +174,21 @@ def _read_bounded_body(response: httpx.Response) -> bytes:
     return bytes(data)
 
 
-def _parse_success(body: bytes, config: AppConfig, request_id: str) -> LLMResult:
+def _parse_success(
+    body: bytes,
+    config: AppConfig,
+    request_id: str,
+    *,
+    response_model_aliases: tuple[str, ...] = (),
+) -> LLMResult:
     try:
         payload = json.loads(body.decode('utf-8'))
     except (UnicodeDecodeError, ValueError):
         _raise_error('invalid_response')
     if not isinstance(payload, dict):
         _raise_error('invalid_response')
-    if payload.get('model') != config.model:
+    response_model = payload.get('model')
+    if response_model != config.model and response_model not in response_model_aliases:
         _raise_error('invalid_response')
     choices = payload.get('choices')
     if not isinstance(choices, list) or len(choices) != 1:
@@ -179,12 +223,55 @@ def _parse_success(body: bytes, config: AppConfig, request_id: str) -> LLMResult
         _raise_error('output_limit')
     if input_tokens + output_tokens > config.max_total_tokens_per_run:
         _raise_error('total_limit')
+    provider_value = payload.get('provider') if isinstance(payload, dict) else None
+    response_id_value = payload.get('id') if isinstance(payload, dict) else None
+    cost_value = usage.get('cost') if isinstance(usage, dict) else None
+
+    provider = None
+    if provider_value is not None:
+        if (
+            not isinstance(provider_value, str)
+            or not provider_value.strip()
+            or len(provider_value) > 160
+            or _has_control(provider_value)
+        ):
+            _raise_error('invalid_response')
+        provider = provider_value
+
+    response_id = None
+    if response_id_value is not None:
+        if (
+            not isinstance(response_id_value, str)
+            or not response_id_value.strip()
+            or len(response_id_value) > 160
+            or _has_control(response_id_value)
+        ):
+            _raise_error('invalid_response')
+        response_id = response_id_value
+
+    reported_cost = None
+    if cost_value is not None:
+        if isinstance(cost_value, bool) or not isinstance(cost_value, (int, float, str)):
+            _raise_error('invalid_response')
+        from decimal import Decimal, InvalidOperation
+
+        try:
+            cost_decimal = Decimal(str(cost_value))
+        except (InvalidOperation, ValueError):
+            cost_decimal = None
+        if cost_decimal is None or not cost_decimal.is_finite() or cost_decimal < 0:
+            _raise_error('invalid_response')
+        reported_cost = str(cost_decimal)
+
     return LLMResult(
         text=text,
         model=config.model,
         input_tokens=input_tokens,
         output_tokens=output_tokens,
         request_id=request_id,
+        provider=provider,
+        reported_cost=reported_cost,
+        response_id=response_id,
     )
 
 
@@ -195,15 +282,53 @@ class LLMClient:
         *,
         transport: httpx.BaseTransport | None = None,
         allow_remote: bool = False,
+        response_model_aliases: tuple[str, ...] = (),
+        reasoning_enabled: bool = False,
+        response_schema: dict | None = None,
     ) -> None:
         _validate_config(config)
+        if not isinstance(response_model_aliases, tuple):
+            _raise_error('invalid_configuration')
+        if len(response_model_aliases) > 4:
+            _raise_error('invalid_configuration')
+        for alias in response_model_aliases:
+            if not isinstance(alias, str):
+                _raise_error('invalid_configuration')
+        if len(set(response_model_aliases)) != len(response_model_aliases):
+            _raise_error('invalid_configuration')
+        alias_pattern = re.compile(re.escape(config.model) + r'-[0-9]{8}')
+        for alias in response_model_aliases:
+            if len(alias) > 160 or not alias.isascii():
+                _raise_error('invalid_configuration')
+            if alias_pattern.fullmatch(alias) is None:
+                _raise_error('invalid_configuration')
         self._config = config
+        self._response_model_aliases = response_model_aliases
+        if type(reasoning_enabled) is not bool:
+            _raise_error('invalid_configuration')
+        self._reasoning_enabled = reasoning_enabled
+        if response_schema is None:
+            self._response_schema = None
+        else:
+            self._response_schema = _freeze_response_schema(response_schema)
         self._closed = False
         if transport is None and not allow_remote:
             _raise_error('remote_disabled')
         try:
+            verify = True
+            if transport is None:
+                import ssl
+                import truststore
+
+                verify = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+                if not (
+                    verify.check_hostname is True
+                    and verify.verify_mode == ssl.CERT_REQUIRED
+                ):
+                    _raise_error('invalid_configuration')
             self._client = httpx.Client(
                 transport=transport,
+                verify=verify,
                 trust_env=False,
                 follow_redirects=False,
                 timeout=config.timeout_seconds,
@@ -240,12 +365,26 @@ class LLMClient:
         _validate_messages(messages)
         if _input_upper_bound(messages) > config.max_input_tokens:
             _raise_error('input_limit')
+        response_format = {'type': 'json_object'}
+        if self._response_schema is not None:
+            response_format = {
+                'type': 'json_schema',
+                'json_schema': {
+                    'name': 'growwithai_response',
+                    'strict': True,
+                    'schema': self._response_schema,
+                },
+            }
         payload = {
             'model': config.model,
             'messages': [{'role': message['role'], 'content': message['content']} for message in messages],
             'max_tokens': config.max_output_tokens,
             'stream': False,
+            'response_format': response_format,
+            'reasoning': {'enabled': self._reasoning_enabled, 'exclude': True},
         }
+        if self._response_schema is not None:
+            payload['provider'] = {'require_parameters': True}
         headers = {'Authorization': f'Bearer {config.api_key}'}
         try:
             with self._client.stream(
@@ -265,4 +404,9 @@ class LLMClient:
             _raise_error('provider_transport', outcome_unknown=True)
         except Exception:
             _raise_error('provider_transport', outcome_unknown=True)
-        return _parse_success(body, config, request_id)
+        return _parse_success(
+            body,
+            config,
+            request_id,
+            response_model_aliases=self._response_model_aliases,
+        )

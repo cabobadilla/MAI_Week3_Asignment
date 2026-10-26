@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-26T00:27:16.595340+00:00",
+  "status": "failed",
+  "mode": "real OpenRouter Qwen graph evaluation",
+  "model": "qwen/qwen3.8-flash",
+  "same_run_id": "e5041e8d-7a14-4b29-a1b4-b733f1a6472b",
+  "same_campaign_id": "9b06e5ab-37ce-4637-aa61-f741a9535253",
+  "calls_completed_this_recovery": [],
+  "reported_cost_completed_recovery": null,
+  "initial_attempt_cost_unknown": true,
+  "reserved_attempts_total": 2,
+  "call_states": {
+    "e5041e8d-7a14-4b29-a1b4-b733f1a6472b-generator-0": {
+      "status": "uncertain",
+      "stage": "generator",
+      "code": "provider_transport",
+      "outcome_unknown": true
+    },
+    "e5041e8d-7a14-4b29-a1b4-b733f1a6472b-generator-1": {
+      "status": "failed",
+      "stage": "generator",
+      "code": "invalid_response",
+      "outcome_unknown": false
+    }
+  },
+  "source_selection": "two curated verified excerpts, NOT semantic RAG evidence",
+  "source_count": 2,
+  "human_approved": false,
+  "native_ml_imports": false,
+  "user_database_touched": false,
+  "user_server_restarted": false,
+  "sent_or_published": false,
+  "budget_reset": false,
+  "global_tls_trust_modified": false,
+  "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-real-jmzthu4m"
+}

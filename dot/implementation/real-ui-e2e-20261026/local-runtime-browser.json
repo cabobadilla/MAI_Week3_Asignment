@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8501",
+  "health": {
+    "status": "ok",
+    "mode": "real",
+    "generation": "llm"
+  },
+  "existing_password_required": true,
+  "setup_required": false,
+  "no_posts_or_inference": true,
+  "browser_errors": [],
+  "mobile_no_overflow": true,
+  "user_password_not_entered_or_read": true
+}

@@ -1,0 +1,14 @@
+{
+  "integrated": true,
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "source_sha256": "7d387013a789494a728a8d52f6cc506e4b5a91871e5f034931dfeac9f3fab2be",
+  "tests": {
+    "passed": 22,
+    "failed": 0
+  },
+  "run": "/tmp/gwa-llm-metadata-round0",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "application_llm_calls": false,
+  "scope": "provider-reported cost/provider/response ID only; no numerical budget restriction; 18originaltests retained"
+}

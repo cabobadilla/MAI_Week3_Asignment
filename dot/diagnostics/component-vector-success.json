@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "seconds": 0.42,
+  "result": {
+    "ok": true,
+    "pid": 53891,
+    "nearest_self": 0,
+    "score": 1.0000001192092896,
+    "openmp_images": [
+      "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/lib/python3.11/site-packages/faiss/.dylibs/libomp.dylib"
+    ],
+    "torch_loaded": false,
+    "faiss_loaded": true,
+    "sklearn_loaded": false
+  },
+  "stderr_bytes": 0
+}

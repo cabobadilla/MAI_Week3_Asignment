@@ -1,0 +1,240 @@
+{
+  "mode": "real OpenRouter",
+  "status": "failed",
+  "model": "qwen/qwen3.8-flash",
+  "calls": [
+    {
+      "stage": "generator",
+      "request_id": "91b49a14-462b-483f-b4a9-ed478b9ac33c-generator-0",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "input_tokens": 1806,
+      "output_tokens": 2568,
+      "reported_cost": "0.001272036",
+      "response_id": "gen-1792978164-PAQahYwrHvzrA3AEUBgC",
+      "elapsed_seconds": 42.225,
+      "provider_submitted": true,
+      "real": true
+    },
+    {
+      "stage": "reviewer",
+      "request_id": "91b49a14-462b-483f-b4a9-ed478b9ac33c-reviewer-0",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "input_tokens": 4373,
+      "output_tokens": 321,
+      "reported_cost": "0.00080682",
+      "response_id": "gen-1792978206-ttdcYcD8b1yhci3hm4me",
+      "elapsed_seconds": 6.625,
+      "provider_submitted": true,
+      "real": true
+    },
+    {
+      "stage": "generator",
+      "request_id": "91b49a14-462b-483f-b4a9-ed478b9ac33c-generator-1",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "input_tokens": 2064,
+      "output_tokens": 2319,
+      "reported_cost": "0.001159402",
+      "response_id": "gen-1792978213-Kk96z5JEBNkDheG8wUlg",
+      "elapsed_seconds": 45.5,
+      "provider_submitted": true,
+      "real": true
+    },
+    {
+      "stage": "reviewer",
+      "request_id": "91b49a14-462b-483f-b4a9-ed478b9ac33c-reviewer-1",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "input_tokens": 4125,
+      "output_tokens": 352,
+      "reported_cost": "0.000578366",
+      "response_id": "gen-1792978258-u15IFWlaohLFZyHQfK0N",
+      "elapsed_seconds": 7.184,
+      "provider_submitted": true,
+      "real": true
+    }
+  ],
+  "reported_cost_total": "0.003816624",
+  "source_count": 2,
+  "prior_trial_receipt_preserved": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-schema-real-354o8sfb/schema-error-cycle2-receipt.json",
+  "http_observations": [
+    {
+      "status": 200,
+      "content_type": "application/json",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "response_id": "gen-1792978164-PAQahYwrHvzrA3AEUBgC",
+      "finish_reason": "stop",
+      "role": "assistant",
+      "content_type_json": "str",
+      "content_characters": 7534,
+      "usage": {
+        "prompt_tokens": 1806,
+        "completion_tokens": 2568,
+        "total_tokens": 4374,
+        "cost": 0.001272036
+      },
+      "top_keys": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "provider",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "private_reasoning_saved": false
+    },
+    {
+      "status": 200,
+      "content_type": "application/json",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "response_id": "gen-1792978206-ttdcYcD8b1yhci3hm4me",
+      "finish_reason": "stop",
+      "role": "assistant",
+      "content_type_json": "str",
+      "content_characters": 907,
+      "usage": {
+        "prompt_tokens": 4373,
+        "completion_tokens": 321,
+        "total_tokens": 4694,
+        "cost": 0.00080682
+      },
+      "top_keys": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "provider",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "private_reasoning_saved": false
+    },
+    {
+      "status": 200,
+      "content_type": "application/json",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "response_id": "gen-1792978213-Kk96z5JEBNkDheG8wUlg",
+      "finish_reason": "stop",
+      "role": "assistant",
+      "content_type_json": "str",
+      "content_characters": 6324,
+      "usage": {
+        "prompt_tokens": 2064,
+        "completion_tokens": 2319,
+        "total_tokens": 4383,
+        "cost": 0.001159402
+      },
+      "top_keys": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "provider",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "private_reasoning_saved": false
+    },
+    {
+      "status": 200,
+      "content_type": "application/json",
+      "model": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "response_id": "gen-1792978258-u15IFWlaohLFZyHQfK0N",
+      "finish_reason": "stop",
+      "role": "assistant",
+      "content_type_json": "str",
+      "content_characters": 1111,
+      "usage": {
+        "prompt_tokens": 4125,
+        "completion_tokens": 352,
+        "total_tokens": 4477,
+        "cost": 0.000578366
+      },
+      "top_keys": [
+        "choices",
+        "created",
+        "id",
+        "model",
+        "object",
+        "provider",
+        "service_tier",
+        "system_fingerprint",
+        "usage"
+      ],
+      "private_reasoning_saved": false
+    }
+  ],
+  "max_revisions": 1,
+  "strict_json_schema": true,
+  "source_selection": "curated verified excerpt fixture; NOT semantic/vector retrieval",
+  "source_fingerprint": "231e4d7e610b84030a92d817c768c14a637cd4ecd48a2adbaf901b2da21b94ee",
+  "source_evidence": [
+    {
+      "source_id": "libfile_6c37cc40080c8191b552dd3b1d48f25b",
+      "chunk_id": "libfile_6c37cc40080c8191b552dd3b1d48f25b:0.2:dac390c730f770bd9d6dd801ec1571452ebe20e0d8652c686667858796acd4fb:0:900",
+      "source_hash": "41460fbcf2db043902747cbe081cf55b09581cc150f67e0a18a28026d30a816b",
+      "text_hash": "c1b2e34b578b41da96ca6c7ea369e4998272989c182396eaa5dc62984de0cc58",
+      "content_version": "0.2",
+      "line_start": 1,
+      "line_end": 6
+    },
+    {
+      "source_id": "libfile_53f339c6e3808191aa4d31aa25664829",
+      "chunk_id": "libfile_53f339c6e3808191aa4d31aa25664829:0.2:509e78e960fdeeb22ae9f92a1dfc9d6b5b31a0e86d5615779fa064fe80f44fa0:0:900",
+      "source_hash": "028c2b664f03d8032ab940025cc863cda85081ac12b01a2eb1b113f11dd78507",
+      "text_hash": "4b6777e9b7f5a327e7ed5385cd20a2cefed2e5b5e861ed91f6242979f58399d4",
+      "content_version": "0.2",
+      "line_start": 1,
+      "line_end": 19
+    }
+  ],
+  "native_ml_imports": false,
+  "request_timeout_seconds": 60,
+  "human_approved": false,
+  "user_database_touched": false,
+  "user_server_restarted": false,
+  "sent_or_published": false,
+  "credentials_in_artifacts": false,
+  "folder": "/private/var/folders/vz/mb4bsxd106n5pc9jwf48pkk40000gn/T/gwa-agent-schema2-real-p825mt2i",
+  "graph_error": {
+    "code": "revision_limit",
+    "retryable": false,
+    "outcome_unknown": false
+  },
+  "final_review": {
+    "verdict": "revise",
+    "issues": [
+      {
+        "piece_key": "email:",
+        "category": "tone",
+        "message": "El brief especifica un tono 'Cercano', pero el borrador del email utiliza una estructura muy formal ('Te escribo porque...', 'colaboración estratégica o patrocinio') que puede percibirse como distante o corporativa rígida. Se sugiere suavizar la apertura y el cierre para alinearse mejor con la cercanía solicitada.",
+        "citations": []
+      },
+      {
+        "piece_key": "article:",
+        "category": "unsupported_fact",
+        "message": "La afirmación de que las organizaciones pueden ayudar a asegurar que el crecimiento sea 'medible' no está respaldada por las fuentes. Los documentos indican que el presupuesto, la figura jurídica y las alianzas están abiertos y que es un diseño inicial por validar; no se menciona la implementación de métricas de impacto ni la garantía de medibilidad en esta fase.",
+        "citations": [
+          "libfile_6c37cc40080c8191b552dd3b1d48f25b:0.2:dac390c730f770bd9d6dd801ec1571452ebe20e0d8652c686667858796acd4fb:0:900"
+        ]
+      }
+    ],
+    "questions": []
+  },
+  "draft_history_count": 2,
+  "review_history_count": 2,
+  "video_ready": false
+}

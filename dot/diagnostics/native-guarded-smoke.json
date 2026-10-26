@@ -1,0 +1,61 @@
+{
+  "embedding": {
+    "role": "embedding",
+    "pid": 46844,
+    "exit_code": 2,
+    "signal": null,
+    "elapsed_seconds": 17.424,
+    "bounded_stop_reason": null,
+    "stderr_bytes": 0,
+    "owned_child_stopped": true,
+    "result": {
+      "ok": false,
+      "pid": 46844,
+      "exception_types": [
+        "builtins.ValueError",
+        "_gwa_embedding_runtime_guard.NativeRuntimeConflict"
+      ],
+      "guard_conflict": true,
+      "modules": {
+        "torch": true,
+        "faiss": false,
+        "sklearn": false,
+        "sentence_transformers": true
+      },
+      "openmp_images": [
+        "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/lib/python3.11/site-packages/torch/lib/libomp.dylib"
+      ]
+    }
+  },
+  "vector": null,
+  "network": "denied",
+  "business_documents": "denied",
+  "credentials": "absent and read denied",
+  "user_server_restarted": false,
+  "automatic_retries": 0,
+  "model_changed": false,
+  "library_patches": false,
+  "status": "not_passed",
+  "timestamp": "2026-10-26T00:36:22.181671+00:00",
+  "scope": "single corrected native isolation probe; no semantic RAG success",
+  "probe_parent": "/tmp/gwa-native-guarded-probe/parent.py",
+  "probe_child": "/tmp/gwa-native-guarded-probe/child.py",
+  "probe_source_sha256": {
+    "parent.py": "46def50db81bc8222ddc8a8e5070adf49f34b5a189619d54c694f78af7cb8108",
+    "child.py": "007b0cac44abd3488484be19f8f30d72bfbb692f4fde11f2fa5ecf76943ebcb3"
+  },
+  "first_forbidden_import_name_recorded": false,
+  "static_dependency_evidence": [
+    {
+      "file": ".venv/lib/python3.11/site-packages/sentence_transformers/util/__init__.py",
+      "line": 39,
+      "fact": "eagerly imports similarity module"
+    },
+    {
+      "file": ".venv/lib/python3.11/site-packages/sentence_transformers/util/similarity.py",
+      "line": 8,
+      "fact": "unconditional from sklearn.metrics import pairwise_distances"
+    }
+  ],
+  "no_repetition_until_material_dependency_fix": true
+}

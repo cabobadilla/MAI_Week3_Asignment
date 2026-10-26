@@ -1,0 +1,38 @@
+{
+  "pid": 17355,
+  "url": "http://127.0.0.1:8502",
+  "folder": "/tmp/gwa-recording-20261026",
+  "original_preserved": "/tmp/gwa-real-ui-complete-20261026",
+  "campaign_id": "af8908ec-63d0-4664-8f02-a4b87f522065",
+  "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+  "new_model_calls": 0,
+  "copy_only_failed_campaigns_archived": true,
+  "existing_QA_password_copied_not_changed": true,
+  "tests": 3,
+  "source_sha256": "750564b42551f32cdf80217b3fc0e191fa82266d697bcde99fc494ee301c949e",
+  "browser": {
+    "url": "http://127.0.0.1:8502",
+    "historical_label_visible": true,
+    "run_id": "9e6af784-d39b-46e9-a91c-a3869fdeb650",
+    "real_generation_original": true,
+    "review": "pass",
+    "pieces": 6,
+    "sources": 4,
+    "source_documents": 2,
+    "export_download_hashes_verified": 6,
+    "live_generation_hidden": true,
+    "no_new_generation_posts": true,
+    "browser_errors": [],
+    "mobile_no_overflow": true,
+    "click_path": [
+      "Campa\u00f1as",
+      "Abrir mesa"
+    ],
+    "saved_approval": true
+  },
+  "verified_at": "2026-10-26T11:08:57.326913+00:00",
+  "mode": "prior_real_run_copy_not_new_or_simulated",
+  "production_8501_untouched": true,
+  "original_QA_evidence_untouched": true,
+  "auth_password": "existing syntheticQA credential copied unchanged; no new credential"
+}

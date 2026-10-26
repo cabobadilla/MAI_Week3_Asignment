@@ -230,13 +230,775 @@
       "scope": "generator prompt/schema only; not a completed generation workflow"
     },
     "RETRIEVAL-GRAPH-01": {
-      "unit": "RETRIEVAL-GRAPH-01",
-      "run": "/tmp/gwa-agent-retrieval-graph-round0",
-      "exec_session": 7556,
-      "maximum_round_seconds": 600,
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "add74396c1854347592e4af10645f0f10cb862ebcba6054c2bbebaa9d80e7634",
+      "tests": {
+        "passed": 5,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-agent-retrieval-graph-round0",
+      "initial_result": "4pass1fail versionstring mismatch",
+      "repair1": "/tmp/gwa-agent-retrieval-graph-repair1",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "scope": "LangGraph+SQLite real checkpoint, bounded mock reader, persistent human interrupt; generator/reviewer not wired",
+      "native_imports": "blocked before loading by test tripwire",
+      "application_llm_calls": false
+    },
+    "REVIEW-CONTRACT-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524",
+      "tests": {
+        "passed": 19,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-review-contract-round0",
+      "repair1": "/tmp/gwa-review-contract-repair1",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "application_llm_calls": false,
+      "scope": "reviewer messages+strict findings schema, explicit piece/source IDs; not real review evaluation",
+      "status": "accepted_integrated",
+      "repair2": "/tmp/gwa-review-contract-repair2",
+      "base_hashes": {
+        "app/review_contract.py": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524"
+      },
+      "source_hashes": {
+        "app/review_contract.py": "441d490fb17c8792ab289827a703d347daeb8fe1c33579abee7fc9635fa87fa9"
+      },
+      "timestamp": "2026-10-26T03:48:59.610125+00:00"
+    },
+    "LLM-EXECUTION-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "da16a6d36b315d086fe278a1dd4f60a702f1e6365b64741510ae51a7f7424a51",
+      "tests": {
+        "passed": 8,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-llm-execution-round0",
+      "repair1": "/tmp/gwa-llm-execution-repair1",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "application_llm_calls": false,
+      "scope": "durable reservation, completed replay, unknown/crash stop and reported usage/provider metadata retained",
+      "repair2": "/tmp/gwa-llm-execution-repair2"
+    },
+    "LLM-METADATA-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "7d387013a789494a728a8d52f6cc506e4b5a91871e5f034931dfeac9f3fab2be",
+      "tests": {
+        "passed": 22,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-llm-metadata-round0",
       "repair_count": 0,
       "remaining_repairs": 2,
-      "status": "initial active"
+      "application_llm_calls": false,
+      "scope": "provider-reported cost/provider/response ID only; no numerical budget restriction; 18originaltests retained"
+    },
+    "GENERATION-NODE-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "b4f764d9567bfb8abab2b9fcf51ffb37e3c2fb1a8ecc4e63d94c964b5dcafaa0",
+      "tests": {
+        "passed": 6,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-generation-node-round0",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "scope": "generator node with real contracts/injected call, mock acceptance only",
+      "application_llm_calls": false
+    },
+    "REVIEW-NODE-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "c762cc8b1f8ceb9ab5a3e1df2d7d692eed3392a9e1990f8d322364b4e27798f4",
+      "tests": {
+        "passed": 5,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-review-node-round0",
+      "initial_result": "0pass5fail empty variant incorrectly rejected",
+      "repair1": "/tmp/gwa-review-node-repair1",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "application_llm_calls": false
+    },
+    "AGENT-PIPELINE-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "236901af0629b6c2ed43de386501e121acdfa8ad49ff80361ac480e89b7eaa44",
+      "tests": {
+        "passed": 5,
+        "failed": 0
+      },
+      "initial": "/tmp/gwa-agent-pipeline-round0",
+      "initial_result": "4pass1fail revision-limit error shape",
+      "repair1": "/tmp/gwa-agent-pipeline-repair1",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "scope": "connected LangGraph retrieval/generation/review, revision cycle, SQLite persistence, human gates; mock provider only",
+      "application_llm_calls": false
+    },
+    "LLM-TLS-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "870e0be3658f8da23cdec486f3540dd34c6a961a14048b1b65ef319d951ebf76",
+      "tests": {
+        "passed": 24,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-llm-tls-round0",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "scope": "explicit native OS TLS context for remote path; mock path unchanged",
+      "verification_disabled": false,
+      "global_trust_modified": false,
+      "new_packages_installed": false
+    },
+    "LLM-CANONICAL-01": {
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "source_sha256": "18857dab81f2dfb613b1a8c5600d2b9fdcd1314ad339b3b9ee4de1fdfe603c04",
+      "tests": {
+        "passed": 34,
+        "failed": 0
+      },
+      "run": "/tmp/gwa-llm-canonical-repair2",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "scope": "explicit reasoning control; one-line module helper correction",
+      "verified_public_catalog": {
+        "id": "qwen/qwen3.8-flash",
+        "canonical_slug": "qwen/qwen3.8-flash-20260826"
+      },
+      "not_claimed_as_proven_cause_of_prior_invalid_response": true,
+      "repair1": "/tmp/gwa-llm-canonical-repair1",
+      "repair1_result": "31pass3fail nonboolhandler calls self._raise_error; candidate NOTintegrated",
+      "repair2_prompt": "/tmp/gwa-llm-canonical-repair2-prompt.txt",
+      "status": "accepted final repair2; 34/34",
+      "unit": "LLM-CANONICAL-01",
+      "timestamp": "2026-10-26T01:03:03.274116+00:00",
+      "repair2": "/tmp/gwa-llm-canonical-repair2"
+    },
+    "COMPONENT-LOADER-01": {
+      "unit": "COMPONENT-LOADER-01",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "integrated": true,
+      "activated_in_user_demo": false,
+      "tests": {
+        "passed": 17,
+        "failed": 0,
+        "native_runtime_loaded": false
+      },
+      "source_sha256": "07fedc4af09d0592f4849dc14d8182321b8ce4066d4c8033e7f3c818a908d162",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "initial": "/tmp/gwa-component-loader-round0",
+      "repair1": "/tmp/gwa-component-loader-repair1",
+      "timestamp": "2026-10-26T01:10:57.764635+00:00",
+      "repair2": "/tmp/gwa-component-loader-repair2",
+      "scope": "exact BertModel+PreTrainedTokenizerFast pin; no Auto factory; sameweights",
+      "native_smoke": {
+        "passed": true,
+        "seconds": 14.351,
+        "embedding_pid": 53684,
+        "vector_pid": 53891,
+        "vector_seconds": 0.42,
+        "separate_processes": true,
+        "same_pinned_model": true,
+        "embedding_torch_only": true,
+        "vector_faiss_only": true,
+        "production_proxy_integrated": false,
+        "bitwise_equivalence_to_sentence_transformers_tested": false
+      }
+    },
+    "LLM-JSON-OUTPUT-01": {
+      "unit": "LLM-JSON-OUTPUT-01",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "integrated": true,
+      "tests": {
+        "passed": 42,
+        "failed": 0
+      },
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "source_sha256": "111b8d51e0912a2d3f12f85eb754c597b3f0562aa5817e672f0fd6a0f3492d92",
+      "run": "/tmp/gwa-json-output-round0",
+      "scope": "strict explicit JSON Schema plus provider.require_parameters; no parser relaxation/fallback",
+      "timestamp": "2026-10-26T01:12:17.942730+00:00",
+      "repair1": "/tmp/gwa-json-schema-repair1"
+    },
+    "RESPONSE-SCHEMAS-01": {
+      "unit": "RESPONSE-SCHEMAS-01",
+      "integrated": true,
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "tests": {
+        "passed": 16,
+        "failed": 0
+      },
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "run": "/tmp/gwa-response-schemas-round0",
+      "source_sha256": "3240a3a3722a5a74165a91672a8e3f6b5b92451832b7dcc094e311642ee3ef69",
+      "scope": "provider dialect omits unsupported uniqueItems; local parsers retain duplicate rejection",
+      "repair1": "/tmp/gwa-response-schemas-repair1"
+    },
+    "WORKER-COMPONENT-01": {
+      "unit": "WORKER-COMPONENT-01",
+      "status": "accepted_integrated",
+      "scope": "Connect accepted component loader to standalone worker only; no loader/proxy/UI changes",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "initial": "/tmp/gwa-worker-component-round0",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "max_round_seconds": 600,
+      "allowlist": [
+        "app/embedding_worker.py"
+      ],
+      "base": {
+        "path": "app/embedding_worker.py",
+        "sha256": "51b6e1c67d9d79836685a373b7dd2d9268fb2b0870804b74830f25237769193c",
+        "git_base": "11f926b9c0d77836f98ac63ffbd4fac53e601bad",
+        "family": "WORKER-COMPONENT-01",
+        "round": 0,
+        "max_repairs": 2,
+        "timeout_seconds": 600
+      },
+      "timestamp": "2026-10-26T01:44:59.284836+00:00",
+      "repair1": "/tmp/gwa-worker-component-repair1",
+      "initial_test_results": "7mockpass; nativefail pretorch component isolation find_spec conflict",
+      "tests": {
+        "passed": 7,
+        "failed": 0,
+        "native_worker": {
+          "passed": true,
+          "seconds": 11.337,
+          "receipt": "/tmp/gwa-component-native-probe/worker-candidate-r1-result.json"
+        },
+        "note": "Native probe uses synthetic text, OS sandbox; no API. Initial exact class assertion adjusted before repair result to accept subclass adapter; raw initial fixture preserved."
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/embedding_worker.py": "c254e50eefc2baf5fbd59860d4cf4aebe64f2eecbd87aecbd9cef0316c908056"
+      }
+    },
+    "PROXY-OS-01": {
+      "unit": "PROXY-OS-01",
+      "initial": "/tmp/gwa-proxy-os-round0",
+      "status": "accepted_integrated",
+      "scope": "OS sandbox on existing component proxy launch only",
+      "allowlist": [
+        "app/isolated_embeddings.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "max_round_seconds": 600,
+      "base_sha256": "ba740b24e3acb6c03910824de0397993a98a6c0c350f0aafbe2812c412322caa",
+      "timestamp": "2026-10-26T01:54:42.007118+00:00",
+      "repair1": "/tmp/gwa-proxy-os-repair1",
+      "initial_tests": "12passed1historicaldirectlaunchsuperseded; nativecwd failure; cwd-only coordinator experiment passed",
+      "tests": {
+        "passed": 12,
+        "failed": 0,
+        "historical_directlaunch_assertion_superseded": 1,
+        "native_proxy": {
+          "passed": true,
+          "seconds": 25.816,
+          "vectors_count": 2,
+          "dimension": 384,
+          "canaries": [
+            {
+              "env_denied": true,
+              "docs_denied": true,
+              "network_denied": true
+            }
+          ],
+          "parent_native_modules": []
+        }
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/isolated_embeddings.py": "51cd1cdafc9fc49ae065cdf6ce22eb03022274b2a9102f1a7d9c07b8ea3ad50d"
+      }
+    },
+    "LOCAL-RETRIEVAL-01": {
+      "unit": "LOCAL-RETRIEVAL-01",
+      "initial": "/tmp/gwa-local-retrieval-round0",
+      "status": "accepted_integrated",
+      "scope": "Current approved corpus to persisted semantic index and query only",
+      "allowlist": [
+        "app/live_retrieval.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/live_retrieval.py": null
+      },
+      "timestamp": "2026-10-26T02:07:37.242331+00:00",
+      "tests": {
+        "passed": 4,
+        "failed": 0,
+        "native_semantic_retrieval": {
+          "passed": true,
+          "index_build_seconds": 8.063,
+          "query_seconds": 4.332,
+          "elapsed_seconds": 12.44,
+          "chunk_count": 87,
+          "max_tokens": 116,
+          "source_ids": [
+            "libfile_53f339c6e3808191aa4d31aa25664829",
+            "libfile_6c37cc40080c8191b552dd3b1d48f25b"
+          ],
+          "selected_count": 4,
+          "source_fingerprint": "8cd168479543769ec3a92660faf50368ebfbb3980fee7a61cd59a1e42dddd3c8",
+          "index_path": "/private/tmp/gwa-sandbox-control/scratch/native-retrieval-production/index/8cd168479543769ec3a92660faf50368ebfbb3980fee7a61cd59a1e42dddd3c8-0b648a6f921b9399.json",
+          "cache_reopened": true,
+          "parent_modules": {
+            "torch": false,
+            "faiss": true,
+            "sklearn": false,
+            "sentence_transformers": false
+          },
+          "parent_openmp_images": [
+            "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/.venv/lib/python3.11/site-packages/faiss/.dylibs/libomp.dylib"
+          ],
+          "application_api_calls": 0
+        },
+        "OS_note": "macOS forbids nested sandbox_apply; native coordinator uses empty environment, worker retains own OS sandbox. Parent FAISS only, child Torch only."
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/live_retrieval.py": "dcbab114205e862cd32f7455bec7c73849e939051ba6b40448a314cd3615ff64"
+      }
+    },
+    "GENERATION-GROUNDING-01": {
+      "unit": "GENERATION-GROUNDING-01",
+      "initial": "/tmp/gwa-generation-grounding-round0",
+      "status": "accepted_integrated",
+      "scope": "Runtime generator prompt grounding and response-to-review instructions only; reviewer unchanged",
+      "allowlist": [
+        "app/generation_contract.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/generation_contract.py": "5b43db6f9a102c1e2b753a9285a972603327a42d13c287b62a064a7db9c1824a"
+      },
+      "timestamp": "2026-10-26T03:53:12.758359+00:00",
+      "tests": {
+        "passed": 14,
+        "failed": 0,
+        "AST_unchanged_outside_SYSTEM_PROMPT": true,
+        "reviewer_sha256_unchanged": "441d490fb17c8792ab289827a703d347daeb8fe1c33579abee7fc9635fa87fa9"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/generation_contract.py": "b0cea59347658d2bdbcb4f2c4d2cb3d5e7beffab530c1c885fcd37911b469fd2"
+      },
+      "prior_accepted_receipt": {
+        "unit": "GENERATION-GROUNDING-01",
+        "initial": "/tmp/gwa-generation-grounding-round0",
+        "status": "accepted_integrated",
+        "scope": "Runtime generator prompt grounding and response-to-review instructions only; reviewer unchanged",
+        "allowlist": [
+          "app/generation_contract.py"
+        ],
+        "model": "opencode-go/deepseek-v4.1-flash",
+        "repair_count": 0,
+        "remaining_repairs": 2,
+        "max_round_seconds": 600,
+        "base_hashes": {
+          "app/generation_contract.py": "6a2172f13cedece95af15b51ef2b3287b7a5881f32e6878e8a320308a201abf0"
+        },
+        "timestamp": "2026-10-26T02:10:45.910764+00:00",
+        "tests": {
+          "passed": 12,
+          "failed": 0,
+          "AST_unchanged_outside_SYSTEM_PROMPT": true,
+          "reviewer_source_hash_unchanged": "6f5fe0fc33203d3b0a23435966a6b8f0eadf4ca63cbbd61da42300dfddc20524",
+          "real_model_quality_not_yet_evaluated": true
+        },
+        "integrated": true,
+        "source_hashes": {
+          "app/generation_contract.py": "5b43db6f9a102c1e2b753a9285a972603327a42d13c287b62a064a7db9c1824a"
+        }
+      },
+      "repair1": "/tmp/gwa-generation-grounding-repair1"
+    },
+    "REAL-RESULTS-01": {
+      "unit": "REAL-RESULTS-01",
+      "initial": "/tmp/gwa-real-results-round0",
+      "status": "accepted_integrated",
+      "scope": "Atomic public graph result persistence and unapproved validated version materialization only",
+      "allowlist": [
+        "app/real_results.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/real_results.py": null
+      },
+      "timestamp": "2026-10-26T02:20:10.062460+00:00",
+      "repair1": "/tmp/gwa-real-results-repair1",
+      "initial_results": "3passed3failed string-vs-dict contract; not integrated",
+      "tests": {
+        "passed": 8,
+        "failed": 0,
+        "scope": "actual SQLite immutable unapproved6pieces, replay after edit/reopen, failure no versions, tamper detection, exact dict/chunk_id contracts"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/real_results.py": "d3fbae28430bca7c80dcafe16e812764bca0b9f344547b174956ba0374197d81"
+      }
+    },
+    "REAL-EXECUTION-01": {
+      "unit": "REAL-EXECUTION-01",
+      "initial": "/tmp/gwa-real-execution-round0",
+      "status": "accepted_integrated",
+      "scope": "Execute one prepared graph with real retrieval, durable calls and terminal result; no API or UI",
+      "allowlist": [
+        "app/real_execution.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 2,
+      "remaining_repairs": 0,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/real_execution.py": null
+      },
+      "timestamp": "2026-10-26T02:36:50.174027+00:00",
+      "repair1": "/tmp/gwa-real-execution-repair1",
+      "initial_results": "1passed4failed zero calls; invented fallback module resolver rejected",
+      "repair2": "/tmp/gwa-real-execution-repair2",
+      "repair1_results": "4pass1fail nestedinterruptquestions missing,0native/API",
+      "tests": {
+        "passed": 5,
+        "failed": 0,
+        "native": false,
+        "real_api": false,
+        "scope": "SQLite+LangGraph+mockclient; persistent calls, pass6pieces, revision_limit4calls, missing-source questions, uncertain call no retry, running CAS"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/real_execution.py": "74eb6c8a8650fb7124602741106fb1fd50701df0dfc8612c02ee8285025a3bdf"
+      }
+    },
+    "REAL-HTTP-01": {
+      "unit": "REAL-HTTP-01",
+      "initial": "/tmp/gwa-real-http-round0",
+      "status": "accepted_integrated",
+      "scope": "Authenticated explicit real run starter/status only; background existing executor",
+      "allowlist": [
+        "app/web_real.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 1,
+      "remaining_repairs": 1,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/web_real.py": null
+      },
+      "timestamp": "2026-10-26T02:45:14.597180+00:00",
+      "repair1": "/tmp/gwa-real-http-repair1",
+      "initial_results": "0/4, await missing; wrong table; coordinator corrected get_run absent raisesValueError",
+      "tests": {
+        "passed": 4,
+        "failed": 0,
+        "scope": "explicit authenticated start/status, durable marker, terminal no resubmit, invalid/no effects, campaign isolation; no actual API"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/web_real.py": "dba34b7f376e70278cd00dc5f441e094ca3cc903742b24b6aa193a1c2bd738a7"
+      }
+    },
+    "REAL-READERS-01": {
+      "unit": "REAL-READERS-01",
+      "initial": "/tmp/gwa-readers-real-round0",
+      "status": "accepted_integrated",
+      "scope": "Mixed real/demo reader binding with honest real pending mode; existing approval hashes unchanged",
+      "allowlist": [
+        "app/web_review.py",
+        "app/web_demo.py",
+        "app/real_results.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/web_review.py": "e1d1a0c1cd4e40c3ecee44a62011364eacd8bb760953cc3c616a875430632683",
+        "app/web_demo.py": "5231ad4d3a182475153bf166779e8a50407984cf5173e63ecf1ae4b3ea704cb8",
+        "app/real_results.py": "d3fbae28430bca7c80dcafe16e812764bca0b9f344547b174956ba0374197d81"
+      },
+      "timestamp": "2026-10-26T02:47:17.536790+00:00",
+      "tests": {
+        "passed": 25,
+        "failed": 0,
+        "scope": "real human approval/edit invalidate, real pending honest, existing demo/review regression"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/web_review.py": "7357195e6d4f10569b04dad556f045c29b2f77724d98cf97b0c421b81f442e5e",
+        "app/web_demo.py": "644b689b041d6448d80bc7bc5e00e169fe220e6bf4cca804325a33d59d943dd8",
+        "app/real_results.py": "69d29f05fe0f9d8611d4f7558cfa79e0af0e7f08572244e9bb582e9e32cdf733"
+      }
+    },
+    "UI-REAL-BRIDGE-01": {
+      "unit": "UI-REAL-BRIDGE-01",
+      "initial": "/tmp/gwa-ui-real-bridge-round0",
+      "status": "accepted_integrated",
+      "scope": "Guarded real-generation busy and exact run load hooks in existing workspace only",
+      "allowlist": [
+        "app/ui_work.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/ui_work.py": "c6102a21e7982803b9015dc5acca4d0f674a2806708d097f192569eae71def40"
+      },
+      "timestamp": "2026-10-26T02:53:27.929476+00:00",
+      "tests": {
+        "browser_checks": 11,
+        "errors": 0,
+        "real_http": true,
+        "real_auth": true,
+        "real_sqlite": true,
+        "llm": false,
+        "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-38fe5f1582984d6e8d318285b01c85fd/browser-bridge-report.json"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/ui_work.py": "fcfd0e6c2ef0fc196d4fb81df5454fbee5751d8c21e7c4ad0dd4cb731361783c"
+      }
+    },
+    "UI-REAL-START-01": {
+      "unit": "UI-REAL-START-01",
+      "initial": "/tmp/gwa-ui-real-start-round0",
+      "status": "accepted_integrated",
+      "scope": "Explicit real start/status control reusing accepted workspace busy/run hooks",
+      "allowlist": [
+        "app/ui_real_start.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/ui_real_start.py": null
+      },
+      "timestamp": "2026-10-26T03:03:06.141748+00:00",
+      "tests": {
+        "browser_checks": 13,
+        "errors": 0,
+        "real_http": true,
+        "real_auth": true,
+        "real_sqlite": true,
+        "client": "explicit synthetic; no app remote inference",
+        "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-42535617ce464373b6ae76585096b081/browser-real-start-report.json"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/ui_real_start.py": "b5ce184c2c7b148d9e874b19755d75dc604e0c24468bb9f78c932ed447a60787"
+      }
+    },
+    "UI-REAL-EVIDENCE-01": {
+      "unit": "UI-REAL-EVIDENCE-01",
+      "initial": "/tmp/gwa-ui-real-evidence-round0",
+      "status": "accepted_integrated",
+      "scope": "Readonly public agent evidence: sources, generated drafts, reviewer findings and reported usage; no actions",
+      "allowlist": [
+        "app/ui_real_evidence.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/ui_real_evidence.py": null
+      },
+      "timestamp": "2026-10-26T03:12:18.937219+00:00",
+      "tests": {
+        "browser_checks": 22,
+        "errors": 0,
+        "real_http": true,
+        "real_auth": true,
+        "real_sqlite": true,
+        "client": "explicit synthetic",
+        "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-0cf9e62c52914ef1957d50dd39b655df/browser-real-evidence-report.json"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/ui_real_evidence.py": "e88c2f16874034d61e522117c8151cb4b87ce535a2e9eed054e47c6bd90237e5"
+      }
+    },
+    "RUNTIME-REAL-01": {
+      "unit": "RUNTIME-REAL-01",
+      "initial": "/tmp/gwa-runtime-real-round0",
+      "status": "accepted_integrated",
+      "scope": "Local real runtime factory/CLI wiring and honest mode labels, same database/auth; no inference at boot",
+      "allowlist": [
+        "app/runtime.py",
+        "app/web_auth.py",
+        "app/ui_shell.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/runtime.py": "87052175d8e900adbdc08670307286b54532aaaa903d1eaa8f181ab551e0cdc3",
+        "app/web_auth.py": "3950d0d89538ff14f98dd8ee10aec6e647b00cdc9c1f6140bc9abc2babb199c7",
+        "app/ui_shell.py": "06a90cf61b4b2b82104551d47bd3319ea36cbce4f0d63860c1e721b5e6887c21"
+      },
+      "timestamp": "2026-10-26T03:20:52.500155+00:00",
+      "tests": {
+        "runtime_tests_passed": 5,
+        "canonical_http_tests_passed": 80,
+        "failed": 0,
+        "auth_AST_unchanged_outside_health": true,
+        "fixture_note": "Original unauth POST omitted Origin so existing boundary correctly403; corrected test supplied legitimateOrigin and then asserted401. Initial fixture preserved. No auth policy change.",
+        "legacy_scratch_collection": "8failed88passed obsolete combined-route scratchfixtures; not used to modify product; canonical current tests80passed; both receipts retained",
+        "canonical_receipt": "/tmp/gwa-sandbox-control/scratch/final-canonical-http-regression/receipt.json",
+        "protected_guard_passed": 27
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/runtime.py": "15954a2db8fa0196ef69fcf61dd406a3730adf908b01aa6a1363adb846766cab",
+        "app/web_auth.py": "53201f2159759a5f4170700b2f2af582692d3463a2b03dc2a48e5a7ba51625d6",
+        "app/ui_shell.py": "14a05c9cbeeaa2cb97c0e6af4edf77c427246541c855a0236b48a7e784b31a7b"
+      }
+    },
+    "RECORDING-SNAPSHOT-01": {
+      "unit": "RECORDING-SNAPSHOT-01",
+      "initial": "/tmp/gwa-recording-round0",
+      "status": "accepted_integrated",
+      "scope": "Labelled prior-real snapshot viewer; generationblocked, existing UI over separate copiedDB",
+      "allowlist": [
+        "app/recording_runtime.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/recording_runtime.py": null
+      },
+      "timestamp": "2026-10-26T11:04:18.149416+00:00",
+      "integrated": true,
+      "source_hashes": {
+        "app/recording_runtime.py": "750564b42551f32cdf80217b3fc0e191fa82266d697bcde99fc494ee301c949e"
+      }
+    },
+    "ANSWER-MESSAGES-01": {
+      "unit": "ANSWER-MESSAGES-01",
+      "initial": "/tmp/gwa-answer-messages-round0",
+      "status": "accepted_integrated",
+      "scope": "New scoped human-answer transport and unique per-round request identity; no graph/execution changes",
+      "allowlist": [
+        "app/answer_messages.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/answer_messages.py": null
+      },
+      "timestamp": "2026-10-26T11:12:14.524515+00:00",
+      "integrated": true,
+      "source_hashes": {
+        "app/answer_messages.py": "bc1edb09f9b7b4d81417a728a1576db1a21907af8948c2f1fd6ba4d45c707a60"
+      }
+    },
+    "ANSWER-GRAPH-01": {
+      "unit": "ANSWER-GRAPH-01",
+      "initial": "/tmp/gwa-answer-graph-round0",
+      "status": "accepted_integrated",
+      "scope": "New existing-checkpoint human continuation through generator/reviewer; preserves original limits and no-answer behavior",
+      "allowlist": [
+        "app/agent_generation_node.py",
+        "app/agent_review_node.py",
+        "app/agent_pipeline.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/agent_generation_node.py": "b4f764d9567bfb8abab2b9fcf51ffb37e3c2fb1a8ecc4e63d94c964b5dcafaa0",
+        "app/agent_review_node.py": "c762cc8b1f8ceb9ab5a3e1df2d7d692eed3392a9e1990f8d322364b4e27798f4",
+        "app/agent_pipeline.py": "236901af0629b6c2ed43de386501e121acdfa8ad49ff80361ac480e89b7eaa44"
+      },
+      "timestamp": "2026-10-26T11:37:23.141614+00:00",
+      "recovery": {
+        "model_requested": "opencode-go/deepseek-v4.1-flash",
+        "effective_model": {
+          "id": "deepseek-v4.1-flash",
+          "providerID": "opencode-go",
+          "variant": "default"
+        },
+        "process_outcome": "response_received",
+        "delivery_outcome": "not_accepted_pending_guard_and_tests",
+        "server_pid": 17829,
+        "server_stopped": true,
+        "session_id": "ses_e8816c50fffeprfc8o8e5bM9ue",
+        "inference_submitted": true,
+        "native_tools": "all_denied_in_original_per_invocation_config",
+        "response_sha256": "95ecfc9ffeaaa6084c4cb7ade053c17896a31ffe9ed26955f31675398c3ebd31",
+        "recovered_after_transport_loss": true,
+        "original_supervisor_report_missing": true,
+        "recovery_method": "read-only opencode session export; public text only",
+        "session_elapsed_seconds": 732.354,
+        "time_limit_seconds": 600,
+        "time_limit_deviation": true,
+        "deviation_reason": "Supervisor lost with exec transport; orphan session continued; no new inference requested during recovery",
+        "original_assistant_finish": "stop",
+        "earlier_provider_errors_count": 2,
+        "raw_assistant_time": {
+          "created": 1793013774190,
+          "streamed": 1793013868386,
+          "completed": 1793013868404
+        },
+        "reconciled_at": "2026-10-26T11:34:32.702982+00:00"
+      },
+      "integrated": true,
+      "source_hashes": {
+        "app/agent_generation_node.py": "59fde9c5048d3822bfa1a66a27e90ad96f8b37c96c2871fbec9fb9b879f7f459",
+        "app/agent_review_node.py": "18096fb096d41ca5b823bc96cc1fc819e329f70a89f1f502d3e269d8c7390774",
+        "app/agent_pipeline.py": "9143098d3c406eaa1ce2cf96fbbfc1730ac27eccf1f001b314f97cdc1ebae020"
+      }
+    },
+    "ANSWER-STATE-01": {
+      "unit": "ANSWER-STATE-01",
+      "initial": "/tmp/gwa-answer-state-round0",
+      "status": "frozen_before_initial",
+      "scope": "Atomic answer reservation/claim and append-only previous-result preservation; no execution or HTTP",
+      "allowlist": [
+        "app/answer_state.py"
+      ],
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "repair_count": 0,
+      "remaining_repairs": 2,
+      "max_round_seconds": 600,
+      "base_hashes": {
+        "app/answer_state.py": null
+      },
+      "timestamp": "2026-10-26T11:37:23.230594+00:00"
     }
   },
   "shared_harness_modified": false

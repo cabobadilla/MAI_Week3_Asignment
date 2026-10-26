@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-10-26T10:42:42.851648+00:00",
+  "result": "BLOCKED_REPEATED_HTTP429_AFTER_SINGLE_BOUNDED_RETRY",
+  "first_attempt_run_id": "82336d68-727a-47c7-bfc0-0e24cc5fc3c8",
+  "retry_run_id": "6c0d1a7d-d358-494f-abde-9158c1e03a96",
+  "failed_generator_requests_total": 2,
+  "completed_generations": 0,
+  "reviewer_calls": 0,
+  "versions": 0,
+  "reported_cost": null,
+  "cost_unknown_not_zero": true,
+  "inference_provider_not_reported": true,
+  "model": "qwen/qwen3.8-flash",
+  "gateway": "OpenRouter",
+  "retryable": true,
+  "outcome_unknown": false,
+  "Retry_After": "not preserved by existing client; no cooldown value available",
+  "response_body_detail": "not read/preserved by existing error handling",
+  "initial_duration_seconds": 19.676482,
+  "initial_UI_duration_seconds": 21.582,
+  "retry_duration_seconds": 16.213771,
+  "cooldown_before_retry_seconds": 353.983829,
+  "identical_generator_message_hash": "19f6a1dd9c2a807e8675fa195957beb5d0d18ed95d64b6a72a36eb33b0e432fe",
+  "same_brief_sources_history_config_verified": true,
+  "exact_source_snapshot_matches_historical_success": true,
+  "QA_no_contacts_or_recipients": true,
+  "no_model_or_limits_changed": true,
+  "app_code_changed": false,
+  "user_app_or_data_modified": false,
+  "owned_QA_stopped_pid": 15553,
+  "user_real_app_pid": 11561,
+  "first_attempt_receipt": "dot/implementation/REPRO-TEST-20261026.json",
+  "retry_UI_readback": "/tmp/gwa-repro-20261026-833201e4/retry-readback-receipt.json",
+  "fixture_observation": "Initial retry browser wait observed previous terminal bundle before new result; exact new-run GET-only readback then verified rate_limit. No extra model call.",
+  "remaining_blocker": "OpenRouter HTTP429 persists; record cannot distinguish account quota, key limit or upstream capacity. Retry allowance exhausted; do not submit more without next decision.",
+  "next_step": "Operator checks OpenRouter dashboard limits/activity without sharing key; retain model and do not change limits or fallback automatically.",
+  "context_findings": {
+    "manifest": "docs/references/manifest.json",
+    "originals": [
+      "docs/references/originals/proyecto_formacion_digital_ia_base_v01.docx",
+      "docs/references/originals/resumen_formacion_digital_ia_chile.html"
+    ],
+    "extracted": [
+      "docs/references/extracted/proyecto_formacion_digital_ia_base_v01.txt",
+      "docs/references/extracted/resumen_formacion_digital_ia_chile.txt"
+    ],
+    "content_version": "0.2",
+    "index": "/Users/bobadillachristian/CodeLab/MAI_Week3_Asignment/data/demo/real-agent/index/8cd168479543769ec3a92660faf50368ebfbb3980fee7a61cd59a1e42dddd3c8-0b648a6f921b9399.json",
+    "chunk_count": 87,
+    "retrieved_per_query": 4,
+    "run_snapshots": "data/demo/app.sqlite: generation_run.sources_json/context_json/config_json",
+    "checkpoint": "data/demo/real-agent/checkpoints.sqlite",
+    "UI": [
+      "Campa\u00f1as",
+      "Abrir mesa",
+      "Fuentes",
+      "Evidencia del agente real",
+      "Fuentes y procedencia",
+      "Contexto capturado"
+    ],
+    "Registro y contexto": "manual distribution/history, not document management",
+    "document_upload_edit_view_page": false,
+    "waiting_input_answer_UI": false,
+    "resume_scope_notes": [
+      "Graph ask node currently ends after interrupt resumes; generator ignores human_answer",
+      "No authenticated resume endpoint; real_execution returns stored waiting_input unchanged",
+      "Existing result persistence immutable, so continuation must preserve prior evidence instead of overwriting",
+      "Separate small GO units needed: resumable answer/checkpoint/results contract, authorized/idempotent HTTP action, UI answer form; retain run limits, new request IDs and strict source authority"
+    ]
+  }
+}

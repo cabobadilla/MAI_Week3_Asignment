@@ -1,0 +1,28 @@
+{
+  "unit": "REAL-HTTP-01",
+  "initial": "/tmp/gwa-real-http-round0",
+  "status": "accepted_integrated",
+  "scope": "Authenticated explicit real run starter/status only; background existing executor",
+  "allowlist": [
+    "app/web_real.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 1,
+  "remaining_repairs": 1,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/web_real.py": null
+  },
+  "timestamp": "2026-10-26T02:45:14.597180+00:00",
+  "repair1": "/tmp/gwa-real-http-repair1",
+  "initial_results": "0/4, await missing; wrong table; coordinator corrected get_run absent raisesValueError",
+  "tests": {
+    "passed": 4,
+    "failed": 0,
+    "scope": "explicit authenticated start/status, durable marker, terminal no resubmit, invalid/no effects, campaign isolation; no actual API"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/web_real.py": "dba34b7f376e70278cd00dc5f441e094ca3cc903742b24b6aa193a1c2bd738a7"
+  }
+}

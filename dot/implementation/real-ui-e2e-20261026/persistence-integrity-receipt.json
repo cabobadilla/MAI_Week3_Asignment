@@ -1,0 +1,11 @@
+{
+  "original_version_preserved": true,
+  "new_parent_version_verified": true,
+  "export_download_sha256_verified": 6,
+  "graph_checkpoint_restored_without_inference": true,
+  "graph_finished_no_pending_nodes": true,
+  "llm_calls_after_edit_approval_export": 2,
+  "reported_cost": "0.001840052",
+  "all_calls_provider": "Alibaba",
+  "real_model": "qwen/qwen3.8-flash"
+}

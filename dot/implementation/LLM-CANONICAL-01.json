@@ -1,0 +1,15 @@
+{
+  "unit": "LLM-CANONICAL-01",
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 2,
+  "remaining_repairs": 0,
+  "integrated": true,
+  "tests": {
+    "passed": 34,
+    "failed": 0
+  },
+  "source_sha256": "18857dab81f2dfb613b1a8c5600d2b9fdcd1314ad339b3b9ee4de1fdfe603c04",
+  "run": "/tmp/gwa-llm-canonical-repair2",
+  "scope": "explicit reasoning control; one-line module helper correction",
+  "timestamp": "2026-10-26T01:03:03.274116+00:00"
+}

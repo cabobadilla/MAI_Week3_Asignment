@@ -1,0 +1,30 @@
+{
+  "unit": "UI-REAL-BRIDGE-01",
+  "initial": "/tmp/gwa-ui-real-bridge-round0",
+  "status": "accepted_integrated",
+  "scope": "Guarded real-generation busy and exact run load hooks in existing workspace only",
+  "allowlist": [
+    "app/ui_work.py"
+  ],
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "repair_count": 0,
+  "remaining_repairs": 2,
+  "max_round_seconds": 600,
+  "base_hashes": {
+    "app/ui_work.py": "c6102a21e7982803b9015dc5acca4d0f674a2806708d097f192569eae71def40"
+  },
+  "timestamp": "2026-10-26T02:53:27.929476+00:00",
+  "tests": {
+    "browser_checks": 11,
+    "errors": 0,
+    "real_http": true,
+    "real_auth": true,
+    "real_sqlite": true,
+    "llm": false,
+    "receipt": "/tmp/gwa-sandbox-control/scratch/catalog-live-38fe5f1582984d6e8d318285b01c85fd/browser-bridge-report.json"
+  },
+  "integrated": true,
+  "source_hashes": {
+    "app/ui_work.py": "fcfd0e6c2ef0fc196d4fb81df5454fbee5751d8c21e7c4ad0dd4cb731361783c"
+  }
+}
